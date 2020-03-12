@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tiago/CLionProjects/TrabalhoLI2/dados.h
+
+/home/tiago/CLionProjects/TrabalhoLI2/interface.c
+interface.h
+/home/tiago/CLionProjects/TrabalhoLI2/interface.h
+dados.h
+/home/tiago/CLionProjects/TrabalhoLI2/dados.h
+stdio.h
+-
+
+/home/tiago/CLionProjects/TrabalhoLI2/interface.h
+dados.h
+/home/tiago/CLionProjects/TrabalhoLI2/dados.h
+
