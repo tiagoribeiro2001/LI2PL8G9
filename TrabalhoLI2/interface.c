@@ -37,6 +37,8 @@ void mostrar_tabuleiro(ESTADO *e) {
     }
 }
 
+/*
+
 int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2];
@@ -50,4 +52,6 @@ int interpretador(ESTADO *e) {
     }
     return 1;
 }
+
+*/
 
