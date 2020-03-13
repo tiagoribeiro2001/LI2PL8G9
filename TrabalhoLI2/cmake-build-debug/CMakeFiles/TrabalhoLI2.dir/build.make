@@ -43,10 +43,10 @@ RM = /home/tiago/Documents/CLion-2019.3.3/clion-2019.3.3/bin/cmake/linux/bin/cma
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tiago/CLionProjects/TrabalhoLI2
+CMAKE_SOURCE_DIR = /home/tiago/CLionProjects/LI2/TrabalhoLI2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TrabalhoLI2.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/TrabalhoLI2.dir/flags.make
 
 CMakeFiles/TrabalhoLI2.dir/main.c.o: CMakeFiles/TrabalhoLI2.dir/flags.make
 CMakeFiles/TrabalhoLI2.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TrabalhoLI2.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrabalhoLI2.dir/main.c.o   -c /home/tiago/CLionProjects/TrabalhoLI2/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TrabalhoLI2.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrabalhoLI2.dir/main.c.o   -c /home/tiago/CLionProjects/LI2/TrabalhoLI2/main.c
 
 CMakeFiles/TrabalhoLI2.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TrabalhoLI2.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/TrabalhoLI2/main.c > CMakeFiles/TrabalhoLI2.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/TrabalhoLI2/main.c > CMakeFiles/TrabalhoLI2.dir/main.c.i
 
 CMakeFiles/TrabalhoLI2.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TrabalhoLI2.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/TrabalhoLI2/main.c -o CMakeFiles/TrabalhoLI2.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/TrabalhoLI2/main.c -o CMakeFiles/TrabalhoLI2.dir/main.c.s
 
 CMakeFiles/TrabalhoLI2.dir/dados.c.o: CMakeFiles/TrabalhoLI2.dir/flags.make
 CMakeFiles/TrabalhoLI2.dir/dados.c.o: ../dados.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TrabalhoLI2.dir/dados.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrabalhoLI2.dir/dados.c.o   -c /home/tiago/CLionProjects/TrabalhoLI2/dados.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TrabalhoLI2.dir/dados.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrabalhoLI2.dir/dados.c.o   -c /home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.c
 
 CMakeFiles/TrabalhoLI2.dir/dados.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TrabalhoLI2.dir/dados.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/TrabalhoLI2/dados.c > CMakeFiles/TrabalhoLI2.dir/dados.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.c > CMakeFiles/TrabalhoLI2.dir/dados.c.i
 
 CMakeFiles/TrabalhoLI2.dir/dados.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TrabalhoLI2.dir/dados.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/TrabalhoLI2/dados.c -o CMakeFiles/TrabalhoLI2.dir/dados.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.c -o CMakeFiles/TrabalhoLI2.dir/dados.c.s
 
 CMakeFiles/TrabalhoLI2.dir/logica.c.o: CMakeFiles/TrabalhoLI2.dir/flags.make
 CMakeFiles/TrabalhoLI2.dir/logica.c.o: ../logica.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TrabalhoLI2.dir/logica.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrabalhoLI2.dir/logica.c.o   -c /home/tiago/CLionProjects/TrabalhoLI2/logica.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TrabalhoLI2.dir/logica.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrabalhoLI2.dir/logica.c.o   -c /home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.c
 
 CMakeFiles/TrabalhoLI2.dir/logica.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TrabalhoLI2.dir/logica.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/TrabalhoLI2/logica.c > CMakeFiles/TrabalhoLI2.dir/logica.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.c > CMakeFiles/TrabalhoLI2.dir/logica.c.i
 
 CMakeFiles/TrabalhoLI2.dir/logica.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TrabalhoLI2.dir/logica.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/TrabalhoLI2/logica.c -o CMakeFiles/TrabalhoLI2.dir/logica.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.c -o CMakeFiles/TrabalhoLI2.dir/logica.c.s
 
 CMakeFiles/TrabalhoLI2.dir/interface.c.o: CMakeFiles/TrabalhoLI2.dir/flags.make
 CMakeFiles/TrabalhoLI2.dir/interface.c.o: ../interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/TrabalhoLI2.dir/interface.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrabalhoLI2.dir/interface.c.o   -c /home/tiago/CLionProjects/TrabalhoLI2/interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/TrabalhoLI2.dir/interface.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TrabalhoLI2.dir/interface.c.o   -c /home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.c
 
 CMakeFiles/TrabalhoLI2.dir/interface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TrabalhoLI2.dir/interface.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/TrabalhoLI2/interface.c > CMakeFiles/TrabalhoLI2.dir/interface.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.c > CMakeFiles/TrabalhoLI2.dir/interface.c.i
 
 CMakeFiles/TrabalhoLI2.dir/interface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TrabalhoLI2.dir/interface.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/TrabalhoLI2/interface.c -o CMakeFiles/TrabalhoLI2.dir/interface.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.c -o CMakeFiles/TrabalhoLI2.dir/interface.c.s
 
 # Object files for target TrabalhoLI2
 TrabalhoLI2_OBJECTS = \
@@ -125,7 +125,7 @@ TrabalhoLI2: CMakeFiles/TrabalhoLI2.dir/logica.c.o
 TrabalhoLI2: CMakeFiles/TrabalhoLI2.dir/interface.c.o
 TrabalhoLI2: CMakeFiles/TrabalhoLI2.dir/build.make
 TrabalhoLI2: CMakeFiles/TrabalhoLI2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable TrabalhoLI2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable TrabalhoLI2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TrabalhoLI2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/TrabalhoLI2.dir/clean:
 .PHONY : CMakeFiles/TrabalhoLI2.dir/clean
 
 CMakeFiles/TrabalhoLI2.dir/depend:
-	cd /home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tiago/CLionProjects/TrabalhoLI2 /home/tiago/CLionProjects/TrabalhoLI2 /home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug /home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug /home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tiago/CLionProjects/LI2/TrabalhoLI2 /home/tiago/CLionProjects/LI2/TrabalhoLI2 /home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug /home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug /home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TrabalhoLI2.dir/depend
 

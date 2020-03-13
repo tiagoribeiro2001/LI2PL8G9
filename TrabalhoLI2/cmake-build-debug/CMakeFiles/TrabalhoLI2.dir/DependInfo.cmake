@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/tiago/CLionProjects/TrabalhoLI2/dados.c" "/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o"
-  "/home/tiago/CLionProjects/TrabalhoLI2/interface.c" "/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o"
-  "/home/tiago/CLionProjects/TrabalhoLI2/logica.c" "/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o"
-  "/home/tiago/CLionProjects/TrabalhoLI2/main.c" "/home/tiago/CLionProjects/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o"
+  "/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o"
+  "/home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o"
+  "/home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o"
+  "/home/tiago/CLionProjects/LI2/TrabalhoLI2/main.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

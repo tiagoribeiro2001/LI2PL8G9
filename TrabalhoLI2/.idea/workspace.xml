@@ -11,7 +11,30 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="" />
+    <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +44,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1YwBHW8MaqArR4WRgbEEPPZ96V7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,8 +56,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TPC3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="TrabalhoLI2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TrabalhoLI2" TARGET_NAME="TrabalhoLI2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TrabalhoLI2" RUN_TARGET_NAME="TrabalhoLI2">
@@ -51,6 +79,8 @@
       <updated>1583843689493</updated>
       <workItem from="1583843695229" duration="609000" />
       <workItem from="1584014272515" duration="10964000" />
+      <workItem from="1584028741122" duration="1234000" />
+      <workItem from="1584097775340" duration="170000" />
     </task>
     <servers />
   </component>
@@ -58,26 +88,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584017614229">
+    <state x="525" y="119" width="860" height="814" key="CommitChangelistDialog2" timestamp="1584098093256">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1584017614229" />
-    <state width="1874" height="255" key="GridCell.Tab.0.bottom" timestamp="1584026258940">
+    <state x="525" y="119" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1584098093256" />
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584098080449">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="255" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1584026258940" />
-    <state width="1874" height="255" key="GridCell.Tab.0.center" timestamp="1584026258939">
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1584098080449" />
+    <state width="1874" height="255" key="GridCell.Tab.0.bottom" timestamp="1584030510269">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="255" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1584026258939" />
-    <state width="1874" height="255" key="GridCell.Tab.0.left" timestamp="1584026258939">
+    <state width="1874" height="255" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1584030510269" />
+    <state width="1874" height="255" key="GridCell.Tab.0.center" timestamp="1584030510268">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="255" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1584026258939" />
-    <state width="1874" height="255" key="GridCell.Tab.0.right" timestamp="1584026258940">
+    <state width="1874" height="255" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1584030510268" />
+    <state width="1874" height="255" key="GridCell.Tab.0.left" timestamp="1584030510267">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="255" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1584026258940" />
+    <state width="1874" height="255" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1584030510267" />
+    <state width="1874" height="255" key="GridCell.Tab.0.right" timestamp="1584030510268">
+      <screen x="0" y="27" width="1920" height="991" />
+    </state>
+    <state width="1874" height="255" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1584030510268" />
     <state width="1874" height="315" key="GridCell.Tab.1.bottom" timestamp="1584023548436">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
@@ -94,9 +128,9 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state width="1874" height="315" key="GridCell.Tab.1.right/0.27.1920.991@0.27.1920.991" timestamp="1584023548436" />
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1583843695234">
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1584097961850">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1583843695234" />
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1584097961850" />
   </component>
 </project>

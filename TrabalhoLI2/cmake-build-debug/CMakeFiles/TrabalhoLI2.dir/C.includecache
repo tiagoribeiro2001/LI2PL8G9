@@ -6,17 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/tiago/CLionProjects/TrabalhoLI2/dados.h
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
 
-/home/tiago/CLionProjects/TrabalhoLI2/interface.c
-interface.h
-/home/tiago/CLionProjects/TrabalhoLI2/interface.h
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.h
 dados.h
-/home/tiago/CLionProjects/TrabalhoLI2/dados.h
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
+
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.h
+
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/main.c
 stdio.h
 -
-
-/home/tiago/CLionProjects/TrabalhoLI2/interface.h
 dados.h
-/home/tiago/CLionProjects/TrabalhoLI2/dados.h
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
+logica.h
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.h
+interface.h
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.h
 
