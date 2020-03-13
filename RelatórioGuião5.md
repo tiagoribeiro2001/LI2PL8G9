@@ -1,6 +1,6 @@
 # Relatório Guião 5
 
-Nesta semana completamos o trbalho pedido no Guião 5, ou seja:
+Nesta semana completamos o trabalho pedido no Guião 5, ou seja:
 
 1. Criamos os vários módulos;
 2. Implementamos a função que inicializa o estado do jogo;
