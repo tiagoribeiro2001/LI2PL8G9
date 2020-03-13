@@ -1,5 +1,8 @@
-//
-// Created by tiago on 12/03/20.
-//
-
 #include "logica.h"
+#include "dados.h"
+#include <stdio.h>
+
+int jogar(ESTADO *e, COORDENADA c) {
+    printf("jogar %d %d\n", c.coluna, c.linha);
+    return 1;
+}
