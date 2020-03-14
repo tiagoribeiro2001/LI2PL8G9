@@ -13,7 +13,12 @@ ESTADO *inicializar_estado() {
             novo->tab[i][j] = VAZIO;
         }
     }
-    novo->tab[4][3] = BRANCA;
+    novo->tab[3][4] = BRANCA;
     return novo;
 }
 
+CASA obter_casa (ESTADO *e, int i, int k){
+    CASA c;
+    c = e->tab[i][k];
+    return c;
+}

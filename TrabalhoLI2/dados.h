@@ -21,4 +21,6 @@ typedef struct {
 
 ESTADO *inicializar_estado();
 
+CASA obter_casa (ESTADO *e, int i, int k);
+
 #endif //TRABALHOLI2_DADOS_H
