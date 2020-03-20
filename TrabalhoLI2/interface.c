@@ -1,7 +1,10 @@
 #include "interface.h"
 #include "dados.h"
 #include <stdio.h>
+#include <string.h>
 #include "logica.h"
+
+#define BUF_SIZE 1024
 
 void mostrar_tabuleiro(ESTADO *e) {
     for (int i = 0; i < 8; i++) {
@@ -12,12 +15,9 @@ void mostrar_tabuleiro(ESTADO *e) {
     }
 }
 
-/*
-
 int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2];
-    //completar
     if(fgets(linha, BUF_SIZE, stdin) == NULL)
         return 0;
     if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
@@ -28,5 +28,5 @@ int interpretador(ESTADO *e) {
     return 1;
 }
 
-*/
+
 

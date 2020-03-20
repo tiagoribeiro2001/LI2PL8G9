@@ -3,6 +3,8 @@
 
 #include "dados.h"
 
-int joga_branca(ESTADO *e, COORDENADA c);
+int jogar(ESTADO *e, COORDENADA c);
 
-#endif //TRABALHOLI2_LOGICA_H
+int valida_jogada(ESTADO *e, COORDENADA c);
+
+#endif
