@@ -14,6 +14,8 @@ ESTADO *inicializar_estado() {
         }
     }
     novo->tab[3][4] = BRANCA;
+    novo->tab[7][0] = UM;
+    novo->tab[0][7] = DOIS;
     return novo;
 }
 

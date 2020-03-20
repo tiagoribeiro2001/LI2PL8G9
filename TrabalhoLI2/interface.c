@@ -6,12 +6,7 @@
 void mostrar_tabuleiro(ESTADO *e) {
     for (int i = 0; i < 8; i++) {
         for (int k = 0; k < 8; k++) {
-            if (i == 0 && k == 7)
-                printf("2");
-            else if (i == 7 && k == 0)
-                printf("1");
-            else
-                printf((obter_casa(e, i, k) == VAZIO) ? "." : (obter_casa(e, i, k) == BRANCA) ? "*" : "#" );
+            printf((obter_casa(e, i, k) == VAZIO) ? "." : (obter_casa(e, i, k) == BRANCA) ? "*" : (obter_casa(e, i, k) == UM) ? "1" : (obter_casa(e, i, k) == DOIS) ? "2" : "#" );
         }
         putchar('\n');
     }
