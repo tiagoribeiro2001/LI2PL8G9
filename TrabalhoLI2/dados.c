@@ -22,3 +22,15 @@ CASA obter_casa (ESTADO *e, int i, int k){
     c = e->tab[i][k];
     return c;
 }
+
+int obter_numero_de_jogadas(ESTADO *e){
+    int n;
+    n = e->num_jogadas;
+    return n;
+}
+
+int obter_jogador_atual(ESTADO *e){
+    int j;
+    j = e->jogador_atual;
+    return j;
+}

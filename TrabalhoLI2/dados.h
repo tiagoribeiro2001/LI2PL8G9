@@ -23,4 +23,8 @@ ESTADO *inicializar_estado();
 
 CASA obter_casa (ESTADO *e, int i, int k);
 
+int obter_numero_de_jogadas(ESTADO *e);
+
+int obter_jogador_atual(ESTADO *e);
+
 #endif //TRABALHOLI2_DADOS_H
