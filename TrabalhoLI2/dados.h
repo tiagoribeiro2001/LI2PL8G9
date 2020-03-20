@@ -21,7 +21,7 @@ typedef struct {
 
 ESTADO *inicializar_estado();
 
-CASA obter_casa (ESTADO *e, int i, int k);
+CASA obter_casa (ESTADO *e, int c, int l);
 
 int obter_numero_de_jogadas(ESTADO *e);
 

@@ -6,23 +6,23 @@ ESTADO *inicializar_estado() {
     int i, j;
     novo->jogador_atual = 1;
     novo->num_jogadas = 0;
-    novo->ultima_jogada.coluna = 3;
-    novo->ultima_jogada.linha = 4;
+    novo->ultima_jogada.coluna = 4;
+    novo->ultima_jogada.linha = 3;
     for (i=0; i<8; i++){
         for (j=0; j<8; j++){
             novo->tab[i][j] = VAZIO;
         }
     }
-    novo->tab[3][4] = BRANCA;
-    novo->tab[7][0] = UM;
-    novo->tab[0][7] = DOIS;
+    novo->tab[4][3] = BRANCA;
+    novo->tab[0][7] = UM;
+    novo->tab[7][0] = DOIS;
     return novo;
 }
 
-CASA obter_casa (ESTADO *e, int i, int k){
-    CASA c;
-    c = e->tab[i][k];
-    return c;
+CASA obter_casa (ESTADO *e, int c, int l){
+    CASA casa;
+    casa = e->tab[c][l];
+    return casa;
 }
 
 int obter_numero_de_jogadas(ESTADO *e){
