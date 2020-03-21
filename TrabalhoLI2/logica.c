@@ -1,6 +1,6 @@
 #include "logica.h"
 #include "dados.h"
-
+#include "interface.h"
 
 int jogar(ESTADO *e, COORDENADA c) {
     int i = valida_jogada (e,c);

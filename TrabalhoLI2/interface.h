@@ -9,4 +9,6 @@ int interpretador(ESTADO *e);
 
 void congratula_jogador (ESTADO *e);
 
+void jogada_invalida ();
+
 #endif //TRABALHOLI2_INTERFACE_H

@@ -6,8 +6,6 @@
 
 #define BUF_SIZE 1024
 
-int nc=1; // número de comandos
-
 void mostrar_tabuleiro(ESTADO *e) {
     for (int l = 0; l < 8; l++) {
         printf ("%i ",8-l);
@@ -17,7 +15,7 @@ void mostrar_tabuleiro(ESTADO *e) {
         putchar('\n');
     }
     printf ("  abcdefgh\n");
-    printf ("# %i PL%i (%i)> ", nc++, obter_jogador_atual(e), obter_numero_de_jogadas(e));
+    printf ("# PL%i (%i)> ", obter_jogador_atual(e), obter_numero_de_jogadas(e));
 }
 
 int interpretador(ESTADO *e) {
@@ -27,9 +25,11 @@ int interpretador(ESTADO *e) {
         return 0;
     if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', 7-(*lin - '1')};
-        jogar(e, coord);
-        putchar('\n');
-        mostrar_tabuleiro(e);
+        if (valida_jogada(e,coord)){
+            jogar(e, coord);
+            putchar('\n');
+            mostrar_tabuleiro(e);
+        }
     }
     return 1;
 }
@@ -38,4 +38,6 @@ void congratula_jogador (ESTADO *e){
     printf ("Parabéns jogador %i! Ganhaste!", verifica_vencedor(e));
 }
 
-
+void jogada_invalida (){
+    printf ("\nJogada inválida. Tenta novamente.> ");
+}
