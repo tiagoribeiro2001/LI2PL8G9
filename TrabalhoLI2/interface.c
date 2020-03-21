@@ -6,6 +6,8 @@
 
 #define BUF_SIZE 1024
 
+int nc=1; // número de comandos
+
 void mostrar_tabuleiro(ESTADO *e) {
     for (int l = 0; l < 8; l++) {
         printf ("%i ",8-l);
@@ -14,7 +16,8 @@ void mostrar_tabuleiro(ESTADO *e) {
         }
         putchar('\n');
     }
-    printf ("  abcdefgh");
+    printf ("  abcdefgh\n");
+    printf ("# %i PL%i (%i)> ", nc++, obter_jogador_atual(e), obter_numero_de_jogadas(e));
 }
 
 int interpretador(ESTADO *e) {
