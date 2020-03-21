@@ -33,3 +33,10 @@ int verifica_fim(ESTADO *e){
     if (obter_casa(e,7,0) == BRANCA) i = 0;
     return i;
 }
+
+int verifica_vencedor(ESTADO *e){
+    int i=0;
+    if (obter_casa(e,0,7) == BRANCA) i = 1;
+    if (obter_casa(e,7,0) == BRANCA) i = 2;
+    return i;
+}

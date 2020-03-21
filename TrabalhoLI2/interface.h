@@ -7,4 +7,6 @@ void mostrar_tabuleiro(ESTADO *e);
 
 int interpretador(ESTADO *e);
 
+void congratula_jogador (ESTADO *e);
+
 #endif //TRABALHOLI2_INTERFACE_H

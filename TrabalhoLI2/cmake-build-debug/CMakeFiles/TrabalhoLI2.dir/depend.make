@@ -15,5 +15,6 @@ CMakeFiles/TrabalhoLI2.dir/logica.c.o: ../logica.h
 
 CMakeFiles/TrabalhoLI2.dir/main.c.o: ../dados.h
 CMakeFiles/TrabalhoLI2.dir/main.c.o: ../interface.h
+CMakeFiles/TrabalhoLI2.dir/main.c.o: ../logica.h
 CMakeFiles/TrabalhoLI2.dir/main.c.o: ../main.c
 

@@ -28,10 +28,14 @@ int interpretador(ESTADO *e) {
     if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', 7-(*lin - '1')};
         jogar(e, coord);
+        putchar('\n');
         mostrar_tabuleiro(e);
     }
     return 1;
 }
 
+void congratula_jogador (ESTADO *e){
+    printf ("Parabéns jogador %i! Ganhaste!", verifica_vencedor(e));
+}
 
 
