@@ -1,6 +1,5 @@
 #include "logica.h"
 #include "dados.h"
-#include "interface.h"
 
 int jogar(ESTADO *e, COORDENADA c) {
     int i = valida_jogada (e,c);
@@ -11,7 +10,7 @@ int jogar(ESTADO *e, COORDENADA c) {
         else if (e->jogador_atual == 2) e->jogador_atual = 1;
         e->ultima_jogada.coluna = c.coluna;
         e->ultima_jogada.linha = c.linha;
-        //falta alterar o array jogadas (adicionar a jogada atual)
+        if (e->jogador_atual == 2) e->jogadas[e->num_jogadas] = (JOGADA) {e->ultima_jogada, c};
         if (e->jogador_atual == 2) (e->num_jogadas = (e->num_jogadas + 1));
         e->num_comandos = (e->num_comandos + 1);
     }
@@ -32,11 +31,24 @@ int verifica_fim(ESTADO *e){
     int i=1;
     if (obter_casa(e,0,7) == BRANCA) i = 0;
     if (obter_casa(e,7,0) == BRANCA) i = 0;
+    i = (i && verifica_pos(e));
+    return i;
+}
+
+int verifica_pos(ESTADO *e){
+    int i=0, c, l, cm=(e->ultima_jogada.coluna)+1, lm=(e->ultima_jogada.linha)+1;
+    for (c=(e->ultima_jogada.coluna)-1; c<=cm; c++){
+        for (l=(e->ultima_jogada.linha)-1; l<=lm; l++){
+            if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA) i = 1;
+        }
+    }
     return i;
 }
 
 int verifica_vencedor(ESTADO *e){
     int i=0;
+    if (e->jogador_atual == 1) i = 2;
+    if (e->jogador_atual == 2) i = 1;
     if (obter_casa(e,0,7) == BRANCA) i = 1;
     if (obter_casa(e,7,0) == BRANCA) i = 2;
     return i;

@@ -31,6 +31,13 @@ int valida_jogada(ESTADO *e, COORDENADA c);
 int verifica_fim(ESTADO *e);
 
 /**
+\brief Verifica se o jogador tem algum sitio aonde jogar
+@param e Apontador para o estado
+@returns Devolve um caso seja possível jogar e zero caso contrário.
+*/
+int verifica_pos(ESTADO *e);
+
+/**
 \brief Verifica qual jogador venceu o jogo
 @param e Apontador para o estado
 @returns Devolve um caso o jogador um tenha ganho ou dois caso o jogador dois tenha ganho.

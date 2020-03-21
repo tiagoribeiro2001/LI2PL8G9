@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inicializar_5festado',['inicializar_estado',['../dados_8h.html#a7e0c7e26fb685d9ab501e19b05e6954f',1,'dados.c']]]
+  ['congratula_5fjogador',['congratula_jogador',['../interface_8h.html#aaaf509be89741f8de3260571974be8b0',1,'interface.c']]]
 ];
