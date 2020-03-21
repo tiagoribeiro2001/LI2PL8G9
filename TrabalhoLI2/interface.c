@@ -15,7 +15,10 @@ void mostrar_tabuleiro(ESTADO *e) {
         putchar('\n');
     }
     printf ("  abcdefgh\n");
-    printf ("# PL%i (%i)> ", obter_jogador_atual(e), obter_numero_de_jogadas(e));
+}
+
+void prompt (ESTADO *e){
+    printf ("# %i PL%i (%i)> ", obter_numero_comandos(e), obter_jogador_atual(e), obter_numero_de_jogadas(e));
 }
 
 int interpretador(ESTADO *e) {
@@ -29,6 +32,7 @@ int interpretador(ESTADO *e) {
             jogar(e, coord);
             putchar('\n');
             mostrar_tabuleiro(e);
+            prompt(e);
         }
     }
     return 1;
@@ -36,8 +40,4 @@ int interpretador(ESTADO *e) {
 
 void congratula_jogador (ESTADO *e){
     printf ("Parabéns jogador %i! Ganhaste!", verifica_vencedor(e));
-}
-
-void jogada_invalida (){
-    printf ("\nJogada inválida. Tenta novamente.> ");
 }

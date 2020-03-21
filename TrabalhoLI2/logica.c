@@ -13,6 +13,7 @@ int jogar(ESTADO *e, COORDENADA c) {
         e->ultima_jogada.linha = c.linha;
         //falta alterar o array jogadas (adicionar a jogada atual)
         if (e->jogador_atual == 2) (e->num_jogadas = (e->num_jogadas + 1));
+        e->num_comandos = (e->num_comandos + 1);
     }
     return i;
 }

@@ -13,12 +13,17 @@
   <component name="ChangeListManager">
     <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/dados.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/dados.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +78,7 @@
       <workItem from="1584702686977" duration="1289000" />
       <workItem from="1584717877324" duration="10766000" />
       <workItem from="1584794161692" duration="618000" />
-      <workItem from="1584803083660" duration="5699000" />
+      <workItem from="1584803083660" duration="8488000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -145,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584807455050</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Alterações no interpretador">
+      <created>1584809347133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584809347133</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,33 +210,34 @@
     <MESSAGE value="Interpretador alterado" />
     <MESSAGE value="Implementado o prompt (jogo semi-jogável)" />
     <MESSAGE value="Implementada a função que congratula o vencedor do jogo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementada a função que congratula o vencedor do jogo" />
+    <MESSAGE value="Alterações no interpretador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterações no interpretador" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="509" y="204" width="860" height="814" key="CommitChangelistDialog2" timestamp="1584807454960">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1584811968255">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="509" y="204" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1584807454960" />
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1584811968255" />
     <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584365354363">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1584365354363" />
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1584809262551">
+    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1584811969110">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1584809262551" />
-    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1584809262550">
+    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1584811969110" />
+    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1584811969110">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1584809262550" />
-    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1584809262549">
+    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1584811969110" />
+    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1584811969110">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1584809262549" />
-    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1584809262551">
+    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1584811969110" />
+    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1584811969110">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1584809262551" />
+    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1584811969110" />
     <state width="1874" height="315" key="GridCell.Tab.1.bottom" timestamp="1584728994034">
       <screen x="0" y="27" width="1920" height="991" />
     </state>

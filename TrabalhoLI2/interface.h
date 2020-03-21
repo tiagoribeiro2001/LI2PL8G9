@@ -5,6 +5,8 @@
 
 void mostrar_tabuleiro(ESTADO *e);
 
+void prompt (ESTADO *e);
+
 int interpretador(ESTADO *e);
 
 void congratula_jogador (ESTADO *e);

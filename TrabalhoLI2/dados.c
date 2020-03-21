@@ -8,6 +8,7 @@ ESTADO *inicializar_estado() {
     novo->num_jogadas = 0;
     novo->ultima_jogada.coluna = 4;
     novo->ultima_jogada.linha = 3;
+    novo->num_comandos = 1;
     for (i=0; i<8; i++){
         for (j=0; j<8; j++){
             novo->tab[i][j] = VAZIO;
@@ -35,4 +36,10 @@ int obter_jogador_atual(ESTADO *e){
     int j;
     j = e->jogador_atual;
     return j;
+}
+
+int obter_numero_comandos(ESTADO *e){
+    int n;
+    n = e->num_comandos;
+    return n;
 }
