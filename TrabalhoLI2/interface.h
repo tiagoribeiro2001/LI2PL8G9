@@ -31,4 +31,9 @@ int interpretador(ESTADO *e);
 */
 void congratula_jogador (ESTADO *e);
 
-#endif //TRABALHOLI2_INTERFACE_H
+/**
+\brief Imprime a mensagem que indica que a jogada introduzida é inválida
+*/
+void jogada_invalida();
+
+#endif

@@ -34,10 +34,16 @@ int interpretador(ESTADO *e) {
             mostrar_tabuleiro(e);
             prompt(e);
         }
+        else jogada_invalida();
     }
+    else jogada_invalida();
     return 1;
 }
 
 void congratula_jogador (ESTADO *e){
     printf ("Parabéns jogador %i! Ganhaste!", verifica_vencedor(e));
+}
+
+void jogada_invalida(){
+    printf("Jogada inválida, tenta novamente> ");
 }
