@@ -30,13 +30,12 @@ int interpretador(ESTADO *e) {
         return 0;
     printf("Jogador: %s\n",linha);
     token = strtok(linha," ");
-    if (strcmp(token, "Q\n") == 0) {
+    if (strcmp(token, "Q\n") == 0 || strcmp(token, "q\n") == 0) {
         printf("A sair do programa.\n");
         exit(0);
     }
     else if (strcmp(token, "gr") == 0) {
         // Ler nome do ficheiro
-        printf("Xico: ");
         token = strtok(NULL, " \n");
         if (token != NULL) {
             printf("Gravar o jogo no seguinte ficheiro: %s\n", token);
@@ -44,15 +43,16 @@ int interpretador(ESTADO *e) {
             ficheiro = fopen(token,"wb");
             fwrite(e,sizeof(ESTADO),1,ficheiro);
             fclose(ficheiro);
+            mostrar_tabuleiro(e);
             prompt(e);
         }
     }
     else if (strcmp(token, "ler") == 0) {
         // Ler nome do ficheiro
-        printf("Xico1: ");
         token = strtok(NULL, " \n");
         if (token != NULL) {
             printf("Ler o jogo no seguinte ficheiro: %s\n", token);
+            // Pode ler um ficheiro de teste fazendo "ler ficheiro.teste"
             FILE * ficheiro;
             ficheiro = fopen(token,"rb");
             fread(e,sizeof(ESTADO),1,ficheiro);
