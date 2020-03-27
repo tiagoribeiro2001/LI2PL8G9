@@ -34,6 +34,9 @@ int interpretador(ESTADO *e) {
         printf("A sair do programa.\n");
         exit(0);
     }
+    else if (strcmp(token, "movs\n") == 0) {
+       movs(e);
+    }
     else if (strcmp(token, "gr") == 0) {
         // Ler nome do ficheiro
         token = strtok(NULL, " \n");
@@ -76,6 +79,23 @@ int interpretador(ESTADO *e) {
         } else jogada_invalida();
     }
     return 1;
+}
+
+void movs (ESTADO *e){
+    int i,j=(e->num_jogadas)-1;
+    if (e->num_jogadas == 0) printf ("Comando movs inválido. Ainda não foram efetuadas jogadas.\n");
+    else {
+        for (i = 0; i < (e->num_jogadas)-1; i++) {
+            printf("%d: %c%d %c%d\n", i + 1, (e->jogadas[j].jogador1.coluna + 97),
+                   (e->jogadas[j].jogador1.linha),
+                   (e->jogadas[j].jogador2.coluna + 97),
+                   (e->jogadas[j].jogador2.linha) );
+        }
+        if (e->jogador_atual == 2) {
+            printf("%d: %c%d\n", i+1, (e->jogadas[j].jogador1.coluna + 97),
+                   (e->jogadas[j].jogador1.linha));
+        }
+    }
 }
 
 void congratula_jogador (ESTADO *e){

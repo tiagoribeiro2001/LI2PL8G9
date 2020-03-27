@@ -10,8 +10,15 @@ int jogar(ESTADO *e, COORDENADA c) {
         else if (e->jogador_atual == 2) e->jogador_atual = 1;
         e->ultima_jogada.coluna = c.coluna;
         e->ultima_jogada.linha = c.linha;
-        if (e->jogador_atual == 2) e->jogadas[e->num_jogadas] = (JOGADA) {e->ultima_jogada, c};
         if (e->jogador_atual == 2) (e->num_jogadas = (e->num_jogadas + 1));
+        if (e->jogador_atual == 1){
+            e->jogadas[e->num_jogadas].jogador1.coluna = c.coluna;
+            e->jogadas[e->num_jogadas].jogador1.linha = c.linha;
+        }
+        if (e->jogador_atual == 2){
+            e->jogadas[e->num_jogadas].jogador2.coluna = c.coluna;
+            e->jogadas[e->num_jogadas].jogador2.linha = c.linha;
+        }
         e->num_comandos = (e->num_comandos + 1);
     }
     return i;

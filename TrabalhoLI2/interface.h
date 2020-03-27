@@ -25,6 +25,8 @@ void prompt (ESTADO *e);
 */
 int interpretador(ESTADO *e);
 
+void movs (ESTADO *e);
+
 /**
 \brief Imprime a mensagem que congratula o jogador vencedor
 @param e Apontador para o estado
