@@ -55,10 +55,13 @@ int interpretador(ESTADO *e) {
             // Pode ler um ficheiro de teste fazendo "ler ficheiro.teste"
             FILE * ficheiro;
             ficheiro = fopen(token,"rb");
-            fread(e,sizeof(ESTADO),1,ficheiro);
-            fclose(ficheiro);
-            mostrar_tabuleiro(e);
-            prompt(e);
+            if (ficheiro == NULL) printf("Ficheiro não existente.\n");
+            else {
+                fread(e,sizeof(ESTADO),1,ficheiro);
+                fclose(ficheiro);
+                mostrar_tabuleiro(e);
+                prompt(e);
+            }
         }
     }
     else {

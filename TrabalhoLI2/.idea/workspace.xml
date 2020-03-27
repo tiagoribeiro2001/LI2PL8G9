@@ -11,15 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="Melhoria da interface (introduzida a mensagem que indica se a jogada é inválida)">
+    <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/interface_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/logica_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +71,10 @@
       <workItem from="1584717877324" duration="10766000" />
       <workItem from="1584794161692" duration="618000" />
       <workItem from="1584803083660" duration="14022000" />
-      <workItem from="1584890913308" duration="7094000" />
+      <workItem from="1584890913308" duration="7363000" />
+      <workItem from="1584961822166" duration="8000" />
+      <workItem from="1585307865245" duration="1301000" />
+      <workItem from="1585320563934" duration="1380000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -191,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584891988702</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Modificados os comandos">
+      <created>1584904993581</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1584904993581</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,57 +253,58 @@
     <MESSAGE value="Adicionado novo modo de vencer (sem possibilidades de jogada)" />
     <MESSAGE value="Melhoria da interface (introduzida a mensagem que indica se a jogada é inválida)" />
     <MESSAGE value="Atualizado o Doxygen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizado o Doxygen" />
+    <MESSAGE value="Modificados os comandos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificados os comandos" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1584891988360">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1584904993419">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1584891988360" />
-    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584365354363">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1584904993419" />
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584961828652">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1584365354363" />
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1584904821766">
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1584961828652" />
+    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1585321986557">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1584904821766" />
-    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1584904821765">
+    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1585321986557" />
+    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1585321986557">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1584904821765" />
-    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1584904821765">
+    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1585321986557" />
+    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1585321986557">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1584904821765" />
-    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1584904821765">
+    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1585321986557" />
+    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1585321986557">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1584904821765" />
-    <state width="1874" height="315" key="GridCell.Tab.1.bottom" timestamp="1584895761677">
+    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1585321986557" />
+    <state width="1874" height="315" key="GridCell.Tab.1.bottom" timestamp="1584905013476">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.1.bottom/0.27.1920.991@0.27.1920.991" timestamp="1584895761677" />
-    <state width="1874" height="315" key="GridCell.Tab.1.center" timestamp="1584895761677">
+    <state width="1874" height="315" key="GridCell.Tab.1.bottom/0.27.1920.991@0.27.1920.991" timestamp="1584905013476" />
+    <state width="1874" height="315" key="GridCell.Tab.1.center" timestamp="1584905013476">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.1.center/0.27.1920.991@0.27.1920.991" timestamp="1584895761677" />
-    <state width="1874" height="315" key="GridCell.Tab.1.left" timestamp="1584895761677">
+    <state width="1874" height="315" key="GridCell.Tab.1.center/0.27.1920.991@0.27.1920.991" timestamp="1584905013476" />
+    <state width="1874" height="315" key="GridCell.Tab.1.left" timestamp="1584905013476">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.1.left/0.27.1920.991@0.27.1920.991" timestamp="1584895761677" />
-    <state width="1874" height="315" key="GridCell.Tab.1.right" timestamp="1584895761677">
+    <state width="1874" height="315" key="GridCell.Tab.1.left/0.27.1920.991@0.27.1920.991" timestamp="1584905013476" />
+    <state width="1874" height="315" key="GridCell.Tab.1.right" timestamp="1584905013476">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.1.right/0.27.1920.991@0.27.1920.991" timestamp="1584895761677" />
+    <state width="1874" height="315" key="GridCell.Tab.1.right/0.27.1920.991@0.27.1920.991" timestamp="1584905013476" />
     <state x="803" y="440" width="303" height="171" key="VCS.ChangelistChooser" timestamp="1584098271549">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="803" y="440" width="303" height="171" key="VCS.ChangelistChooser/0.27.1920.991@0.27.1920.991" timestamp="1584098271549" />
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1584890913327">
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1585320563444">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1584890913327" />
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1585320563444" />
     <state x="852" y="275" width="432" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584722478592">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
