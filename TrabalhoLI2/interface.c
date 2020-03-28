@@ -18,7 +18,6 @@ void mostrar_tabuleiro(ESTADO *e) {
     printf ("  abcdefgh\n");
 }
 
-
 void guardar_tabuleiro(char *nome, ESTADO *e){
     FILE *ficheiro = fopen(nome,"w");
     //print do tabuleiro
@@ -41,62 +40,86 @@ void guardar_tabuleiro(char *nome, ESTADO *e){
             }
         } else {
             for (i = 0; i < (e->num_jogadas)-1; i++) {
-                fprintf(ficheiro,"%d: %c%d %c%d\n", i + 1, (e->jogadas[i].jogador1.coluna + 97),
+                fprintf(ficheiro,"%02d: %c%d %c%d\n", i + 1, (e->jogadas[i].jogador1.coluna + 97),
                        8 - (e->jogadas[i].jogador1.linha),
                        (e->jogadas[i].jogador2.coluna + 97),
                        8 - (e->jogadas[i].jogador2.linha));
             }
-            fprintf(ficheiro,"%d: %c%d\n", i + 1, (e->jogadas[(e->num_jogadas)-1].jogador1.coluna + 97),
+            fprintf(ficheiro,"%02d: %c%d\n", i + 1, (e->jogadas[(e->num_jogadas)-1].jogador1.coluna + 97),
                    8 - (e->jogadas[(e->num_jogadas)-1].jogador1.linha));
         }
     }
     fclose(ficheiro);
 }
 
-
-void ler_tabuleiro(char *nome, ESTADO *e){
-    FILE *ficheiro = fopen(nome,"r");
-    char j,h;
-    int x=0;
+void ler_tabuleiro(char *nome, ESTADO *e) {
+    FILE *ficheiro = fopen(nome, "r");
+    char j, h;
+    int x = 0;
     if (ficheiro == NULL) printf("Ficheiro não existente.\n");
-    else{
+    else {
         printf("Tabuleiro inserido: \n");
         for (int l = 0; l < 8; l++) {
             for (int c = 0; c < 8; c++) {
-                fscanf(ficheiro,"%c", &j);
+                fscanf(ficheiro, "%c", &j);
                 // Lê um caracter do ficheiro. Esse caracter contém um ponto ('.'),ou um ('*'), ou um ('#') ou um ('1') ou um ('2').
                 // Eu vou agora verificar qual destes carateres é que li e vou preencher a respetiva casa do tabuleiro da variável Estado
                 if (j == '.') {
                     e->tab[c][l] = VAZIO;
-                }
-                else if (j == '*') {
+                } else if (j == '*') {
                     e->tab[c][l] = BRANCA;
-                }
-                else if (j == '#') {
+                    e->ultima_jogada.coluna=c;
+                    e->ultima_jogada.linha=l;
+                } else if (j == '#') {
                     e->tab[c][l] = PRETA;
                     x++;
-                }
-                else if (j == '1') {
+                } else if (j == '1') {
                     e->tab[c][l] = UM;
-                }
-                else {
+                } else if (j =='2'){
                     e->tab[c][l] = DOIS;
                 }
             }
-            fscanf(ficheiro, "%c",&h);
+            fscanf(ficheiro, "%c", &h);
         }
         if (x % 2 == 0) {
             e->jogador_atual = 1;
-        }
-        else {
+        } else {
             e->jogador_atual = 2;
         }
-        e->num_comandos = x+1;
-        e->num_jogadas = (x/2 +1);
+        e->num_comandos = x + 1;
+        e->num_jogadas = (e->num_comandos / 2);
+        char col1[2], lin1[2], col2[2], lin2[2];
+        fscanf(ficheiro, "%c", &h);
+        if (e->num_jogadas != 0) {
+            if (e->jogador_atual == 1) {
+                for (int i = 0; i < e->num_jogadas; i++) {
+                    fscanf(ficheiro, "%c%c%c%c", &h,&h,&h,&h);
+                    fscanf(ficheiro, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2);
+                    COORDENADA coord1 = {*col1 - 'a', 7 - (*lin1 - '1')};
+                    COORDENADA coord2 = {*col2 - 'a', 7 - (*lin2 - '1')};
+                    e->jogadas[i].jogador1 = coord1;
+                    e->jogadas[i].jogador2 = coord2;
+                    fscanf(ficheiro, "%c", &h);
+                }
+            } else {
+                for (int k = 0; k < (e->num_jogadas)-1; k++) {
+                    fscanf(ficheiro, "%c%c%c%c", &h,&h,&h,&h);
+                    fscanf(ficheiro, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2);
+                    COORDENADA coord1 = {*col1 - 'a', 7 - (*lin1 - '1')};
+                    COORDENADA coord2 = {*col2 - 'a', 7 - (*lin2 - '1')};
+                    e->jogadas[k].jogador1 = coord1;
+                    e->jogadas[k].jogador2 = coord2;
+                    fscanf(ficheiro, "%c", &h);
+                }
+                fscanf(ficheiro, "%c%c%c%c", &h, &h,&h,&h);
+                fscanf(ficheiro, "%[a-h]%[1-8]", col1, lin1);
+                COORDENADA coord1 = {*col1 - 'a', 7 - (*lin1 - '1')};
+                e->jogadas[(e->num_jogadas)-1].jogador1 = coord1;
+                fscanf(ficheiro, "%c", &h);
+            }
+        }
     }
 }
-
-
 
 void prompt (ESTADO *e){
     printf ("# %i PL%i (%i)> ", obter_numero_comandos(e), obter_jogador_atual(e), obter_numero_de_jogadas(e));
@@ -164,12 +187,12 @@ void movs (ESTADO *e) {
             }
         } else {
             for (i = 0; i < (e->num_jogadas)-1; i++) {
-                printf("%d: %c%d %c%d\n", i + 1, (e->jogadas[i].jogador1.coluna + 97),
+                printf("%02d: %c%d %c%d\n", i + 1, (e->jogadas[i].jogador1.coluna + 97),
                        8 - (e->jogadas[i].jogador1.linha),
                        (e->jogadas[i].jogador2.coluna + 97),
                        8 - (e->jogadas[i].jogador2.linha));
             }
-                printf("%d: %c%d\n", i + 1, (e->jogadas[(e->num_jogadas)-1].jogador1.coluna + 97),
+                printf("%02d: %c%d\n", i + 1, (e->jogadas[(e->num_jogadas)-1].jogador1.coluna + 97),
                        8 - (e->jogadas[(e->num_jogadas)-1].jogador1.linha));
         }
     }
