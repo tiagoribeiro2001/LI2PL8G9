@@ -18,6 +18,63 @@ void mostrar_tabuleiro(ESTADO *e) {
     printf ("  abcdefgh\n");
 }
 
+
+void guardar_tabuleiro(char *nome, ESTADO *e){
+    FILE *ficheiro = fopen(nome,"w");
+    for (int l = 0; l < 8; l++) {
+        for (int c = 0; c < 8; c++) {
+            fprintf(ficheiro,(obter_casa(e, c, l) == VAZIO) ? "." : (obter_casa(e, c, l) == BRANCA) ? "*" : (obter_casa(e, c, l) == UM) ? "1" : (obter_casa(e, c, l) == DOIS) ? "2" : "#" );
+        }
+        fputc('\n',ficheiro);
+    }
+    fclose(ficheiro);
+}
+
+
+void ler_tabuleiro(char *nome, ESTADO *e){
+    FILE *ficheiro = fopen(nome,"r");
+    char j,h;
+    int x=0,k=0;
+    printf("Tabuleiro inserido: \n");
+    if (ficheiro == NULL) printf("Ficheiro não existente.\n");
+    else{
+        for (int l = 0; l < 8; l++) {
+            for (int c = 0; c < 8; c++) {
+                fscanf(ficheiro,"%c", &j);
+                // Eu, xiconovo, acabei de ler um caratere do ficheiro. Esse caratere contém um ponto ('.'),ou um ('*'), ou um ('#') ou um ('1') ou um ('2').
+                // Eu vou agora verificar qual destes carateres é que li e vou preencher a respetiva casa do tabuleiro da variável Estado
+                if (j == '.') {
+                    e->tab[c][l] = VAZIO;
+                }
+                else if (j == '*') {
+                    e->tab[c][l] = BRANCA;
+                }
+                else if (j == '#') {
+                    e->tab[c][l] = PRETA;
+                    x++;
+                }
+                else if (j == '1') {
+                    e->tab[c][l] = UM;
+                }
+                else {
+                    e->tab[c][l] = DOIS;
+                }
+            }
+            fscanf(ficheiro, "%c",&h);
+        }
+        if (x % 2 == 0) {
+            e->jogador_atual = 1;
+        }
+        else {
+            e->jogador_atual = 2;
+        }
+        e->num_comandos = x+1;
+        e->num_jogadas = (x/2 +1);
+    }
+}
+
+
+
 void prompt (ESTADO *e){
     printf ("# %i PL%i (%i)> ", obter_numero_comandos(e), obter_jogador_atual(e), obter_numero_de_jogadas(e));
 }
@@ -42,10 +99,7 @@ int interpretador(ESTADO *e) {
         token = strtok(NULL, " \n");
         if (token != NULL) {
             printf("Gravar o jogo no seguinte ficheiro: %s\n", token);
-            FILE * ficheiro;
-            ficheiro = fopen(token,"wb");
-            fwrite(e,sizeof(ESTADO),1,ficheiro);
-            fclose(ficheiro);
+            guardar_tabuleiro(token,e);
             mostrar_tabuleiro(e);
             prompt(e);
         }
@@ -55,17 +109,10 @@ int interpretador(ESTADO *e) {
         token = strtok(NULL, " \n");
         if (token != NULL) {
             printf("Ler o jogo no seguinte ficheiro: %s\n", token);
-            // Pode ler um ficheiro de teste fazendo "ler ficheiro.teste"
-            FILE * ficheiro;
-            ficheiro = fopen(token,"rb");
-            if (ficheiro == NULL) printf("Ficheiro não existente.\n");
-            else {
-                fread(e,sizeof(ESTADO),1,ficheiro);
-                fclose(ficheiro);
-                mostrar_tabuleiro(e);
-                prompt(e);
+            ler_tabuleiro(token,e);
+            mostrar_tabuleiro(e);
+            prompt(e);
             }
-        }
     }
     else {
         if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
