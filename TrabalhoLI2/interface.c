@@ -34,14 +34,14 @@ void guardar_tabuleiro(char *nome, ESTADO *e){
 void ler_tabuleiro(char *nome, ESTADO *e){
     FILE *ficheiro = fopen(nome,"r");
     char j,h;
-    int x=0,k=0;
-    printf("Tabuleiro inserido: \n");
+    int x=0;
     if (ficheiro == NULL) printf("Ficheiro não existente.\n");
     else{
+        printf("Tabuleiro inserido: \n");
         for (int l = 0; l < 8; l++) {
             for (int c = 0; c < 8; c++) {
                 fscanf(ficheiro,"%c", &j);
-                // Eu, xiconovo, acabei de ler um caratere do ficheiro. Esse caratere contém um ponto ('.'),ou um ('*'), ou um ('#') ou um ('1') ou um ('2').
+                // Lê um caracter do ficheiro. Esse caracter contém um ponto ('.'),ou um ('*'), ou um ('#') ou um ('1') ou um ('2').
                 // Eu vou agora verificar qual destes carateres é que li e vou preencher a respetiva casa do tabuleiro da variável Estado
                 if (j == '.') {
                     e->tab[c][l] = VAZIO;
