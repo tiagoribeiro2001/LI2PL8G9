@@ -140,6 +140,16 @@ int interpretador(ESTADO *e) {
     else if (strcmp(token, "movs\n") == 0) {
        movs(e);
     }
+    else if (strcmp(token, "pos") == 0) {
+        token = strtok(NULL, " \n");
+        if (token != NULL) {
+            printf ("Jogada %s\n",token);
+            pos(e, 2);
+            mostrar_tabuleiro(e);
+            prompt(e);
+        }
+        else printf("Comando pos inválido.");
+    }
     else if (strcmp(token, "gr") == 0) {
         // Ler nome do ficheiro
         token = strtok(NULL, " \n");
@@ -196,6 +206,30 @@ void movs (ESTADO *e) {
                        8 - (e->jogadas[(e->num_jogadas)-1].jogador1.linha));
         }
     }
+}
+
+void pos (ESTADO *e, int n){
+    int i, j;
+    for (i=0; i<8; i++){
+        for (j=0; j<8; j++){
+            e->tab[i][j] = VAZIO;
+        }
+    }
+    e->tab[4][3] = BRANCA;
+    e->tab[0][7] = UM;
+    e->tab[7][0] = DOIS;
+    e->jogador_atual = 1;
+    e->ultima_jogada.coluna = 4;
+    e->ultima_jogada.linha = 3;
+    for (i=0; i<n; i++){
+        e->tab[e->ultima_jogada.coluna][e->ultima_jogada.linha] = PRETA;
+        e->tab[e->jogadas[i].jogador1.coluna][e->jogadas[i].jogador1.linha] = PRETA;
+        e->tab[e->jogadas[i].jogador2.coluna][e->jogadas[i].jogador2.linha] = BRANCA;
+        e->ultima_jogada.coluna = e->jogadas[i].jogador2.coluna;
+        e->ultima_jogada.linha = e->jogadas[i].jogador2.linha;
+    }
+    e->num_jogadas = n;
+    e->num_comandos = 2*n+1;
 }
 
 void congratula_jogador (ESTADO *e){

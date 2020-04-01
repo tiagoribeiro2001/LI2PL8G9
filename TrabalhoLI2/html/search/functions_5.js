@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['prompt',['prompt',['../interface_8h.html#a33d09196f922a638847c19f3aca3fc3c',1,'interface.c']]]
+  ['mostrar_5ftabuleiro',['mostrar_tabuleiro',['../interface_8h.html#aa0b6c1689e60ac852a73d67e066c1df5',1,'interface.c']]],
+  ['movs',['movs',['../interface_8h.html#a8d63019a8176de612e33bf8c72121760',1,'interface.c']]]
 ];
