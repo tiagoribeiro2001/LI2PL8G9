@@ -22,8 +22,11 @@ ESTADO *inicializar_estado() {
 
 CASA obter_casa (ESTADO *e, int c, int l){
     CASA casa;
-    casa = e->tab[c][l];
-    return casa;
+    if (c>=0 && c<=8 && l>=0 && l<=8) {
+        casa = e->tab[c][l];
+        return casa;
+    }
+    else return ERRO;
 }
 
 int obter_numero_de_jogadas(ESTADO *e){

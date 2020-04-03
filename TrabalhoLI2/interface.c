@@ -129,6 +129,7 @@ int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char *token;
     char col[2], lin[2];
+    int x;
     if(fgets(linha, BUF_SIZE, stdin) == NULL)
         return 0;
     printf("Jogador: %s\n",linha);
@@ -142,9 +143,10 @@ int interpretador(ESTADO *e) {
     }
     else if (strcmp(token, "pos") == 0) {
         token = strtok(NULL, " \n");
-        if (token != NULL) {
+        x = *token -'0';
+        if (token != NULL && x >= 0 && x < e->num_jogadas) {
             printf ("Jogada %s\n",token);
-            pos(e, 2);
+            pos(e, x);
             mostrar_tabuleiro(e);
             prompt(e);
         }

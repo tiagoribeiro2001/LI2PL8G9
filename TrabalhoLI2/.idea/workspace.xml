@@ -13,32 +13,12 @@
   <component name="ChangeListManager">
     <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/interface_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/interface_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/logica_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/dados.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/dados.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/interface_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/interface_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +86,9 @@
       <workItem from="1585420317063" duration="5000" />
       <workItem from="1585424213659" duration="12000" />
       <workItem from="1585492030970" duration="152000" />
-      <workItem from="1585755690256" duration="4184000" />
+      <workItem from="1585755690256" duration="4417000" />
+      <workItem from="1585832916023" duration="17000" />
+      <workItem from="1585909975677" duration="1878000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -269,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585414572760</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Implementação do comando pos (não está totalmente funcional)">
+      <created>1585759979059</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1585759979059</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,33 +323,34 @@
     <MESSAGE value="Implementação da função movs e da lista de jogadas quando é gravado o jogo" />
     <MESSAGE value="Atualização do comando movs" />
     <MESSAGE value="Atualização da documentação" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualização da documentação" />
+    <MESSAGE value="Implementação do comando pos (não está totalmente funcional)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação do comando pos (não está totalmente funcional)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1585759963692">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1585759978915">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1585759963692" />
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1585759978915" />
     <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585424222998">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1585424222998" />
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1585759914203">
+    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1585913981193">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1585759914203" />
-    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1585759914201">
+    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1585913981193" />
+    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1585913981190">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1585759914201" />
-    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1585759914200">
+    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1585913981190" />
+    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1585913981189">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1585759914200" />
-    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1585759914202">
+    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1585913981189" />
+    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1585913981192">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1585759914202" />
+    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1585913981192" />
     <state width="1874" height="315" key="GridCell.Tab.1.bottom" timestamp="1585414644778">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
@@ -381,10 +371,10 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="803" y="440" width="303" height="171" key="VCS.ChangelistChooser/0.27.1920.991@0.27.1920.991" timestamp="1584098271549" />
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1585755690388">
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1585909976516">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1585755690388" />
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1585909976516" />
     <state x="852" y="275" width="432" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584722478592">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
