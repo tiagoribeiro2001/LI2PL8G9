@@ -12,13 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/listas.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/listas.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/dados.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/dados.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +101,10 @@
       <workItem from="1585492030970" duration="152000" />
       <workItem from="1585755690256" duration="4417000" />
       <workItem from="1585832916023" duration="17000" />
-      <workItem from="1585909975677" duration="1878000" />
+      <workItem from="1585909975677" duration="2093000" />
+      <workItem from="1586529142207" duration="4000" />
+      <workItem from="1586537872067" duration="13000" />
+      <workItem from="1586788400487" duration="5250000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -258,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585759979059</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Correção do comando pos, da função verifica_pos e alteração da struct CASA">
+      <created>1585914042522</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1585914042522</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,33 +347,38 @@
     <MESSAGE value="Atualização do comando movs" />
     <MESSAGE value="Atualização da documentação" />
     <MESSAGE value="Implementação do comando pos (não está totalmente funcional)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação do comando pos (não está totalmente funcional)" />
+    <MESSAGE value="Correção do comando pos, da função verifica_pos e alteração da struct CASA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção do comando pos, da função verifica_pos e alteração da struct CASA" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1585759978915">
+    <state x="555" y="184" width="800" height="684" key="#New_File_Extensions" timestamp="1586788544600">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1585759978915" />
+    <state x="555" y="184" width="800" height="684" key="#New_File_Extensions/0.27.1920.991@0.27.1920.991" timestamp="1586788544600" />
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1586794649191">
+      <screen x="0" y="27" width="1920" height="991" />
+    </state>
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1586794649191" />
     <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585424222998">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1585424222998" />
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1585913981193">
+    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1585914059275">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1585913981193" />
-    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1585913981190">
+    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1585914059275" />
+    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1585914059275">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1585913981190" />
-    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1585913981189">
+    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1585914059275" />
+    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1585914059274">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1585913981189" />
-    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1585913981192">
+    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1585914059274" />
+    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1585914059275">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1585913981192" />
+    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1585914059275" />
     <state width="1874" height="315" key="GridCell.Tab.1.bottom" timestamp="1585414644778">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
@@ -371,10 +399,10 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="803" y="440" width="303" height="171" key="VCS.ChangelistChooser/0.27.1920.991@0.27.1920.991" timestamp="1584098271549" />
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1585909976516">
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1586537873061">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1585909976516" />
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1586537873061" />
     <state x="852" y="275" width="432" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584722478592">
       <screen x="0" y="27" width="1920" height="991" />
     </state>

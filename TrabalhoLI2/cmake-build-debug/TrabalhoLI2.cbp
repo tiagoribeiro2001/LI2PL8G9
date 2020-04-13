@@ -90,6 +90,12 @@
 		<Unit filename="/home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.h">
 			<Option target="TrabalhoLI2"/>
 		</Unit>
+		<Unit filename="/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.c">
+			<Option target="TrabalhoLI2"/>
+		</Unit>
+		<Unit filename="/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h">
+			<Option target="TrabalhoLI2"/>
+		</Unit>
 		<Unit filename="/home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.c">
 			<Option target="TrabalhoLI2"/>
 		</Unit>

@@ -60,7 +60,7 @@ ESTADO *inicializar_estado();
 \brief Devolve o valor de uma casa
 @param e Apontador para o estado
 @param c O número da coluna
- @param l O número da linha
+@param l O número da linha
 @returns O valor da casa
 */
 CASA obter_casa (ESTADO *e, int c, int l);

@@ -27,7 +27,8 @@ enum \hyperlink{dados_8h_aba91601f16d4c485b2d9b8c429f27039}{C\+A\+SA} \{ \newlin
 {\bfseries P\+R\+E\+TA}, 
 {\bfseries UM}, 
 \newline
-{\bfseries D\+O\+IS}
+{\bfseries D\+O\+IS}, 
+{\bfseries E\+R\+RO}
  \}\begin{DoxyCompactList}\small\item\em Tipo de dados para a casa. \end{DoxyCompactList}
 \end{DoxyCompactItemize}
 \subsection*{Functions}

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TrabalhoLI2.dir/dados.c.o"
   "CMakeFiles/TrabalhoLI2.dir/interface.c.o"
+  "CMakeFiles/TrabalhoLI2.dir/listas.c.o"
   "CMakeFiles/TrabalhoLI2.dir/logica.c.o"
   "CMakeFiles/TrabalhoLI2.dir/main.c.o"
   "TrabalhoLI2"

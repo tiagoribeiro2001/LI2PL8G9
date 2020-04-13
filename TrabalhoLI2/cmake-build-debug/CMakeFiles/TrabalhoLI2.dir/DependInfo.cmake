@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o"
   "/home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o"
+  "/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/listas.c.o"
   "/home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o"
   "/home/tiago/CLionProjects/LI2/TrabalhoLI2/main.c" "/home/tiago/CLionProjects/LI2/TrabalhoLI2/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o"
   )
