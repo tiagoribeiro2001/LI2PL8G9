@@ -1,6 +1,14 @@
+/**
+@file listas.h
+Módulo das listas ligadas
+*/
+
 #ifndef TRABALHOLI2_LISTAS_H
 #define TRABALHOLI2_LISTAS_H
 
+/**
+\brief Tipo para as listas ligadas
+*/
 typedef struct nodo {
     void *valor;
     struct nodo *proximo;
