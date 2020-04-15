@@ -52,6 +52,8 @@ void movs (ESTADO *e);
 */
 void pos (ESTADO *e, int i);
 
+void jog (ESTADO *e);
+
 /**
 \brief Imprime a mensagem que congratula o jogador vencedor
 @param e Apontador para o estado

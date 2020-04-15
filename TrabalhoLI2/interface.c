@@ -4,6 +4,7 @@
 #include <string.h>
 #include "logica.h"
 #include <stdlib.h>
+#include "listas.h"
 
 #define BUF_SIZE 1024
 
@@ -88,6 +89,7 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
         }
         e->num_comandos = x + 1;
         e->num_jogadas = (e->num_comandos / 2);
+        e->total_jogadas = e->num_jogadas;
         char col1[2], lin1[2], col2[2], lin2[2];
         fscanf(ficheiro, "%c", &h);
         if (e->num_jogadas != 0) {
@@ -140,11 +142,12 @@ int interpretador(ESTADO *e) {
     }
     else if (strcmp(token, "movs\n") == 0) {
        movs(e);
+       printf("\n>");
     }
     else if (strcmp(token, "pos") == 0) {
         token = strtok(NULL, " \n");
         x = *token -'0';
-        if (token != NULL && x >= 0 && x < e->num_jogadas) {
+        if ((token != NULL && x >= 0 && x < e->total_jogadas) || (x == e->total_jogadas && obter_jogador_atual(e) == 1)) {
             printf ("Jogada %s\n",token);
             pos(e, x);
             mostrar_tabuleiro(e);
@@ -171,6 +174,9 @@ int interpretador(ESTADO *e) {
             mostrar_tabuleiro(e);
             prompt(e);
             }
+    }
+    else if (strcmp(token, "jog\n") == 0) {
+        jog(e);
     }
     else {
         if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
@@ -232,6 +238,28 @@ void pos (ESTADO *e, int n){
     }
     e->num_jogadas = n;
     e->num_comandos = 2*n+1;
+}
+
+void jog (ESTADO *e){
+    int c, l, cm=(e->ultima_jogada.coluna)+1, lm=(e->ultima_jogada.linha)+1;
+    COORDENADA *k;
+    LISTA L;
+    L = criar_lista();
+    COORDENADA x;
+    for (c=(e->ultima_jogada.coluna)-1; c<=cm; c++){
+        for (l=(e->ultima_jogada.linha)-1; l<=lm; l++){
+            if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA && obter_casa(e,c,l) != ERRO){
+                x.coluna = c;
+                x.linha = l;
+                insere_cabeca(L,&x);
+            }
+        }
+    }
+    k = L->valor;
+    jogar(e, *k);
+    putchar('\n');
+    mostrar_tabuleiro(e);
+    prompt(e);
 }
 
 void congratula_jogador (ESTADO *e){

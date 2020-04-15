@@ -20,6 +20,7 @@ int jogar(ESTADO *e, COORDENADA c) {
             e->jogador_atual = 1;
         }
         e->num_comandos = (e->num_comandos + 1);
+        e->total_jogadas = e->num_jogadas;
     }
     return i;
 }

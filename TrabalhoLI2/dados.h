@@ -47,6 +47,7 @@ typedef struct {
     int jogador_atual;
     /** O número de comando, usado no prompt */
     int num_comandos;
+    int total_jogadas;
 } ESTADO;
 
 /**
