@@ -91,10 +91,43 @@ Functions</h2></td></tr>
 <tr class="memitem:abe252fb00afcbeeef6fc4abad6bcad22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#abe252fb00afcbeeef6fc4abad6bcad22">verifica_vencedor</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
 <tr class="memdesc:abe252fb00afcbeeef6fc4abad6bcad22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica qual jogador venceu o jogo.  <a href="#abe252fb00afcbeeef6fc4abad6bcad22">More...</a><br /></td></tr>
 <tr class="separator:abe252fb00afcbeeef6fc4abad6bcad22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de576437e8b6e3c224a112334f018f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a0de576437e8b6e3c224a112334f018f1">pos</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int i)</td></tr>
+<tr class="memdesc:a0de576437e8b6e3c224a112334f018f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Altera o estado do jogo para uma jogada anterior.  <a href="#a0de576437e8b6e3c224a112334f018f1">More...</a><br /></td></tr>
+<tr class="separator:a0de576437e8b6e3c224a112334f018f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1955c9d7c965e5b40a24d3d61d126702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a1955c9d7c965e5b40a24d3d61d126702">jog</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:a1955c9d7c965e5b40a24d3d61d126702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite ao jogador atual que peça ao computador para jogar por si.  <a href="#a1955c9d7c965e5b40a24d3d61d126702">More...</a><br /></td></tr>
+<tr class="separator:a1955c9d7c965e5b40a24d3d61d126702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parte lógica do programa </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a1955c9d7c965e5b40a24d3d61d126702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1955c9d7c965e5b40a24d3d61d126702">&#9670;&nbsp;</a></span>jog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> jog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permite ao jogador atual que peça ao computador para jogar por si. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A jogada escolhida para ser realizada </dd></dl>
+
+</div>
+</div>
 <a id="ac313d7e553b1e2b5f266acb9bfff8141"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac313d7e553b1e2b5f266acb9bfff8141">&#9670;&nbsp;</a></span>jogar()</h2>
 
@@ -130,6 +163,43 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Devolve um se for possível jogar e zero caso não seja possível. </dd></dl>
+
+</div>
+</div>
+<a id="a0de576437e8b6e3c224a112334f018f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de576437e8b6e3c224a112334f018f1">&#9670;&nbsp;</a></span>pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Altera o estado do jogo para uma jogada anterior. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
+    <tr><td class="paramname">i</td><td>Jogada para qual quere alterar o estado </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

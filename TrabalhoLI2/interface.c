@@ -4,7 +4,6 @@
 #include <string.h>
 #include "logica.h"
 #include <stdlib.h>
-#include "listas.h"
 
 #define BUF_SIZE 1024
 
@@ -145,6 +144,13 @@ int interpretador(ESTADO *e) {
        movs(e);
        printf("\n>");
     }
+    else if (strcmp(token, "jog\n") == 0) {
+        COORDENADA C = jog(e);
+        jogar(e,C);
+        putchar('\n');
+        mostrar_tabuleiro(e);
+        prompt(e);
+    }
     else if (strcmp(token, "pos") == 0) {
         token = strtok(NULL, " \n");
         x = *token -'0';
@@ -175,9 +181,6 @@ int interpretador(ESTADO *e) {
             mostrar_tabuleiro(e);
             prompt(e);
             }
-    }
-    else if (strcmp(token, "jog\n") == 0) {
-        jog(e);
     }
     else {
         if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
@@ -215,52 +218,6 @@ void movs (ESTADO *e) {
                        8 - (e->jogadas[(e->num_jogadas)-1].jogador1.linha));
         }
     }
-}
-
-void pos (ESTADO *e, int n){
-    int i, j;
-    for (i=0; i<8; i++){
-        for (j=0; j<8; j++){
-            e->tab[i][j] = VAZIO;
-        }
-    }
-    e->tab[4][3] = BRANCA;
-    e->tab[0][7] = UM;
-    e->tab[7][0] = DOIS;
-    e->jogador_atual = 1;
-    e->ultima_jogada.coluna = 4;
-    e->ultima_jogada.linha = 3;
-    for (i=0; i<n; i++){
-        e->tab[e->ultima_jogada.coluna][e->ultima_jogada.linha] = PRETA;
-        e->tab[e->jogadas[i].jogador1.coluna][e->jogadas[i].jogador1.linha] = PRETA;
-        e->tab[e->jogadas[i].jogador2.coluna][e->jogadas[i].jogador2.linha] = BRANCA;
-        e->ultima_jogada.coluna = e->jogadas[i].jogador2.coluna;
-        e->ultima_jogada.linha = e->jogadas[i].jogador2.linha;
-    }
-    e->num_jogadas = n;
-    e->num_comandos = 2*n+1;
-}
-
-void jog (ESTADO *e){
-    int c, l, cm=(e->ultima_jogada.coluna)+1, lm=(e->ultima_jogada.linha)+1;
-    COORDENADA *k;
-    LISTA L;
-    L = criar_lista();
-    COORDENADA x;
-    for (c=(e->ultima_jogada.coluna)-1; c<=cm; c++){
-        for (l=(e->ultima_jogada.linha)-1; l<=lm; l++){
-            if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA && obter_casa(e,c,l) != ERRO){
-                x.coluna = c;
-                x.linha = l;
-                insere_cabeca(L,&x);
-            }
-        }
-    }
-    k = L->valor;
-    jogar(e, *k);
-    putchar('\n');
-    mostrar_tabuleiro(e);
-    prompt(e);
 }
 
 void congratula_jogador (ESTADO *e){

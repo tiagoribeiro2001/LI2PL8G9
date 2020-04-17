@@ -44,4 +44,18 @@ int verifica_pos(ESTADO *e);
 */
 int verifica_vencedor(ESTADO *e);
 
+/**
+\brief Altera o estado do jogo para uma jogada anterior
+@param e Apontador para o estado
+@param i Jogada para qual quere alterar o estado
+*/
+void pos (ESTADO *e, int i);
+
+/**
+\brief Permite ao jogador atual que peça ao computador para jogar por si
+@param e Apontador para o estado
+@returns A jogada escolhida para ser realizada
+*/
+COORDENADA jog (ESTADO *e);
+
 #endif

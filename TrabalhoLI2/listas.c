@@ -4,7 +4,7 @@
 
 LISTA criar_lista(){
     LISTA L;
-    L = malloc(sizeof(struct nodo));
+    L = malloc(sizeof(NODO));
     L->proximo = NULL;
     return L;
 }
@@ -16,8 +16,8 @@ LISTA insere_cabeca(LISTA L, void *v){
     return n;
 }
 
-COORDENADA *devolve_cabeca(LISTA L){
-    COORDENADA *cabeca;
+void *devolve_cabeca(LISTA L){
+    void *cabeca;
     if (L == NULL) cabeca = NULL;
     else cabeca = L->valor;
     return cabeca;
@@ -26,7 +26,7 @@ COORDENADA *devolve_cabeca(LISTA L){
 LISTA proximo(LISTA L){
     LISTA p;
     if (L == NULL) p = NULL;
-    else p  = L->proximo;
+    else p = L->proximo;
     return p;
 }
 

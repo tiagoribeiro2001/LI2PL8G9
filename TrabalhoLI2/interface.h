@@ -46,15 +46,6 @@ int interpretador(ESTADO *e);
 void movs (ESTADO *e);
 
 /**
-\brief Altera o estado do jogo para uma jogada anterior
-@param e Apontador para o estado
- @param i Jogada para qual quere alterar o estado
-*/
-void pos (ESTADO *e, int i);
-
-void jog (ESTADO *e);
-
-/**
 \brief Imprime a mensagem que congratula o jogador vencedor
 @param e Apontador para o estado
 */

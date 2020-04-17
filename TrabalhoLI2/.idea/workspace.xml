@@ -13,7 +13,42 @@
   <component name="ChangeListManager">
     <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/dados.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h__dep__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h__dep__incl.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/dados_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_vars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/interface_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/interface_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/logica_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/variables_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/structESTADO-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structESTADO-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/structESTADO.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structESTADO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/dados_8h__dep__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h__dep__incl.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/dados_8h__dep__incl.md5" beforeDir="false" afterPath="$PROJECT_DIR$/latex/dados_8h__dep__incl.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/interface_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/interface_8h.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/structESTADO.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/structESTADO.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas.c" beforeDir="false" afterPath="$PROJECT_DIR$/listas.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listas.h" beforeDir="false" afterPath="$PROJECT_DIR$/listas.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logica.h" beforeDir="false" afterPath="$PROJECT_DIR$/logica.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +123,10 @@
       <workItem from="1586537872067" duration="13000" />
       <workItem from="1586788400487" duration="5880000" />
       <workItem from="1586963449846" duration="8745000" />
-      <workItem from="1587118259333" duration="2994000" />
+      <workItem from="1587118259333" duration="3438000" />
+      <workItem from="1587134613013" duration="2458000" />
+      <workItem from="1587138570918" duration="10000" />
+      <workItem from="1587144860540" duration="4261000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -293,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587121266816</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Atualizações no módulo das listas e no comando pos">
+      <created>1587121739984</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1587121739984</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,54 +413,58 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="555" y="184" width="800" height="684" key="#New_File_Extensions/0.27.1920.991@0.27.1920.991" timestamp="1586788544600" />
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1587121266670">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1587149152580">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1587121266670" />
-    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585424222998">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1587149152580" />
+    <state x="100" y="127" width="1720" height="791" key="DiffContextDialog" timestamp="1587136166697">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1585424222998" />
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom" timestamp="1587121334001">
+    <state x="100" y="127" width="1720" height="791" key="DiffContextDialog/0.27.1920.991@0.27.1920.991" timestamp="1587136166697" />
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1587138578529">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1587121334001" />
-    <state width="1874" height="296" key="GridCell.Tab.0.center" timestamp="1587121334001">
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1587138578529" />
+    <state width="1874" height="325" key="GridCell.Tab.0.bottom" timestamp="1587149119092">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1587121334001" />
-    <state width="1874" height="296" key="GridCell.Tab.0.left" timestamp="1587121334000">
+    <state width="1874" height="325" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1587149119092" />
+    <state width="1874" height="325" key="GridCell.Tab.0.center" timestamp="1587149119092">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1587121334000" />
-    <state width="1874" height="296" key="GridCell.Tab.0.right" timestamp="1587121334001">
+    <state width="1874" height="325" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1587149119092" />
+    <state width="1874" height="325" key="GridCell.Tab.0.left" timestamp="1587149119091">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="296" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1587121334001" />
-    <state width="1874" height="315" key="GridCell.Tab.1.bottom" timestamp="1586972498239">
+    <state width="1874" height="325" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1587149119091" />
+    <state width="1874" height="325" key="GridCell.Tab.0.right" timestamp="1587149119092">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.1.bottom/0.27.1920.991@0.27.1920.991" timestamp="1586972498239" />
-    <state width="1874" height="315" key="GridCell.Tab.1.center" timestamp="1586972498238">
+    <state width="1874" height="325" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1587149119092" />
+    <state width="1874" height="801" key="GridCell.Tab.1.bottom" timestamp="1587147469458">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.1.center/0.27.1920.991@0.27.1920.991" timestamp="1586972498238" />
-    <state width="1874" height="315" key="GridCell.Tab.1.left" timestamp="1586972498238">
+    <state width="1874" height="801" key="GridCell.Tab.1.bottom/0.27.1920.991@0.27.1920.991" timestamp="1587147469458" />
+    <state width="1874" height="801" key="GridCell.Tab.1.center" timestamp="1587147469457">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.1.left/0.27.1920.991@0.27.1920.991" timestamp="1586972498238" />
-    <state width="1874" height="315" key="GridCell.Tab.1.right" timestamp="1586972498238">
+    <state width="1874" height="801" key="GridCell.Tab.1.center/0.27.1920.991@0.27.1920.991" timestamp="1587147469457" />
+    <state width="1874" height="801" key="GridCell.Tab.1.left" timestamp="1587147469457">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="315" key="GridCell.Tab.1.right/0.27.1920.991@0.27.1920.991" timestamp="1586972498238" />
+    <state width="1874" height="801" key="GridCell.Tab.1.left/0.27.1920.991@0.27.1920.991" timestamp="1587147469457" />
+    <state width="1874" height="801" key="GridCell.Tab.1.right" timestamp="1587147469457">
+      <screen x="0" y="27" width="1920" height="991" />
+    </state>
+    <state width="1874" height="801" key="GridCell.Tab.1.right/0.27.1920.991@0.27.1920.991" timestamp="1587147469457" />
     <state x="803" y="440" width="303" height="171" key="VCS.ChangelistChooser" timestamp="1584098271549">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="803" y="440" width="303" height="171" key="VCS.ChangelistChooser/0.27.1920.991@0.27.1920.991" timestamp="1584098271549" />
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1587118259338">
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1587138571889">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1587118259338" />
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1587138571889" />
     <state x="852" y="275" width="432" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584722478592">
       <screen x="0" y="27" width="1920" height="991" />
     </state>

@@ -15,13 +15,35 @@ int \hyperlink{logica_8h_ad808d11f157af513ea97e573985f8153}{verifica\+\_\+fim} (
 int \hyperlink{logica_8h_af5c62c1dd5e596808949ac613ccb7774}{verifica\+\_\+pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Verifica se o jogador tem algum sitio aonde jogar. \end{DoxyCompactList}\item 
 int \hyperlink{logica_8h_abe252fb00afcbeeef6fc4abad6bcad22}{verifica\+\_\+vencedor} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Verifica qual jogador venceu o jogo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Verifica qual jogador venceu o jogo. \end{DoxyCompactList}\item 
+void \hyperlink{logica_8h_a0de576437e8b6e3c224a112334f018f1}{pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int i)
+\begin{DoxyCompactList}\small\item\em Altera o estado do jogo para uma jogada anterior. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}{jog} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Permite ao jogador atual que peça ao computador para jogar por si. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Parte lógica do programa 
 
 \subsection{Function Documentation}
+\mbox{\Hypertarget{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}\label{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}} 
+\index{logica.\+h@{logica.\+h}!jog@{jog}}
+\index{jog@{jog}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{jog()}{jog()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} jog (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Permite ao jogador atual que peça ao computador para jogar por si. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A jogada escolhida para ser realizada 
+\end{DoxyReturn}
 \mbox{\Hypertarget{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}\label{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}} 
 \index{logica.\+h@{logica.\+h}!jogar@{jogar}}
 \index{jogar@{jogar}!logica.\+h@{logica.\+h}}
@@ -42,6 +64,23 @@ Altera os parâmetros no estado mediante a jogada.
 \begin{DoxyReturn}{Returns}
 Devolve um se for possível jogar e zero caso não seja possível. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_a0de576437e8b6e3c224a112334f018f1}\label{logica_8h_a0de576437e8b6e3c224a112334f018f1}} 
+\index{logica.\+h@{logica.\+h}!pos@{pos}}
+\index{pos@{pos}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily void pos (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Altera o estado do jogo para uma jogada anterior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em i} & Jogada para qual quere alterar o estado \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{logica_8h_a2d4d0c62a9e078d27912af5a0af9c4ba}\label{logica_8h_a2d4d0c62a9e078d27912af5a0af9c4ba}} 
 \index{logica.\+h@{logica.\+h}!valida\+\_\+jogada@{valida\+\_\+jogada}}
 \index{valida\+\_\+jogada@{valida\+\_\+jogada}!logica.\+h@{logica.\+h}}

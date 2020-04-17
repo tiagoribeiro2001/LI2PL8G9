@@ -35,7 +35,7 @@ LISTA insere_cabeca(LISTA L, void *v);
 @param L Apontador para a lista
 @returns Devolve a cabeça da lista
 */
-COORDENADA *devolve_cabeca(LISTA L);
+void *devolve_cabeca(LISTA L);
 
 /**
 \brief Indica qual é a cauda da lista
