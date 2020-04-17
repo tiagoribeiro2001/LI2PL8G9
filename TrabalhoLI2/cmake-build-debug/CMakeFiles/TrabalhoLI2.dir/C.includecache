@@ -27,10 +27,14 @@ logica.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.h
 stdlib.h
 -
+listas.h
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h
 
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.h
 dados.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
+
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h
 
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.c
 logica.h
@@ -49,4 +53,12 @@ interface.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.h
 logica.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+listas.h
+/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h
 

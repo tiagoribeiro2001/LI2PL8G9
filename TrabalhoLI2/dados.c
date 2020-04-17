@@ -18,6 +18,7 @@ ESTADO *inicializar_estado() {
     novo->tab[0][7] = UM;
     novo->tab[7][0] = DOIS;
     novo->total_jogadas = 0;
+    novo->numj_pos = 1;
     return novo;
 }
 

@@ -90,6 +90,7 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
         e->num_comandos = x + 1;
         e->num_jogadas = (e->num_comandos / 2);
         e->total_jogadas = e->num_jogadas;
+        e->numj_pos = e->jogador_atual;
         char col1[2], lin1[2], col2[2], lin2[2];
         fscanf(ficheiro, "%c", &h);
         if (e->num_jogadas != 0) {
@@ -147,7 +148,7 @@ int interpretador(ESTADO *e) {
     else if (strcmp(token, "pos") == 0) {
         token = strtok(NULL, " \n");
         x = *token -'0';
-        if ((token != NULL && x >= 0 && x < e->total_jogadas) || (x == e->total_jogadas && obter_jogador_atual(e) == 1)) {
+        if ((token != NULL && x >= 0 && x < e->total_jogadas) || (x == e->total_jogadas && e->numj_pos == 1)) {
             printf ("Jogada %s\n",token);
             pos(e, x);
             mostrar_tabuleiro(e);
