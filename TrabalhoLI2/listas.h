@@ -6,11 +6,13 @@ Módulo das listas ligadas
 #ifndef TRABALHOLI2_LISTAS_H
 #define TRABALHOLI2_LISTAS_H
 
+#include "dados.h"
+
 /**
 \brief Tipo para as listas ligadas
 */
 typedef struct nodo {
-    void *valor;
+    COORDENADA *valor;
     struct nodo *proximo;
 } NODO, *LISTA;
 
@@ -33,7 +35,7 @@ LISTA insere_cabeca(LISTA L, void *v);
 @param L Apontador para a lista
 @returns Devolve a cabeça da lista
 */
-void *devolve_cabeca(LISTA L);
+COORDENADA *devolve_cabeca(LISTA L);
 
 /**
 \brief Indica qual é a cauda da lista

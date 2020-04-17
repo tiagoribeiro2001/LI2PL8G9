@@ -16,8 +16,8 @@ LISTA insere_cabeca(LISTA L, void *v){
     return n;
 }
 
-void *devolve_cabeca(LISTA L){
-    void *cabeca;
+COORDENADA *devolve_cabeca(LISTA L){
+    COORDENADA *cabeca;
     if (L == NULL) cabeca = NULL;
     else cabeca = L->valor;
     return cabeca;
