@@ -43,7 +43,11 @@ int \hyperlink{dados_8h_abbfeab93575f20e5867482fd41a71cba}{obter\+\_\+numero\+\_
 int \hyperlink{dados_8h_acc6c25533188a99cb69c12e7f2c406ef}{obter\+\_\+jogador\+\_\+atual} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Devolve o jogador atual. \end{DoxyCompactList}\item 
 int \hyperlink{dados_8h_adf753ce414d743fcaf922e4ec42a4b06}{obter\+\_\+numero\+\_\+comandos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Devolve o número de comandos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Devolve o número de comandos. \end{DoxyCompactList}\item 
+int \hyperlink{dados_8h_a8b174742d889842727b5860e3c52e754}{obter\+\_\+total\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Devolve o número de jogadas ocorridas aquando da utilização do comando pos. \end{DoxyCompactList}\item 
+int \hyperlink{dados_8h_aff00b5bf9dc40bbff1e1d313be850fe6}{obter\+\_\+numj\+\_\+pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Devolve o jogador atual aquando da utilização do comando pos. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -138,4 +142,40 @@ Devolve o número de jogadas.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 O número de jogadas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dados_8h_aff00b5bf9dc40bbff1e1d313be850fe6}\label{dados_8h_aff00b5bf9dc40bbff1e1d313be850fe6}} 
+\index{dados.\+h@{dados.\+h}!obter\+\_\+numj\+\_\+pos@{obter\+\_\+numj\+\_\+pos}}
+\index{obter\+\_\+numj\+\_\+pos@{obter\+\_\+numj\+\_\+pos}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{obter\+\_\+numj\+\_\+pos()}{obter\_numj\_pos()}}
+{\footnotesize\ttfamily int obter\+\_\+numj\+\_\+pos (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Devolve o jogador atual aquando da utilização do comando pos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O jogador atual aquando da utilização do comando pos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dados_8h_a8b174742d889842727b5860e3c52e754}\label{dados_8h_a8b174742d889842727b5860e3c52e754}} 
+\index{dados.\+h@{dados.\+h}!obter\+\_\+total\+\_\+jogadas@{obter\+\_\+total\+\_\+jogadas}}
+\index{obter\+\_\+total\+\_\+jogadas@{obter\+\_\+total\+\_\+jogadas}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{obter\+\_\+total\+\_\+jogadas()}{obter\_total\_jogadas()}}
+{\footnotesize\ttfamily int obter\+\_\+total\+\_\+jogadas (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Devolve o número de jogadas ocorridas aquando da utilização do comando pos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O número de jogadas ocorridas aquando da utilização do comando pos 
 \end{DoxyReturn}

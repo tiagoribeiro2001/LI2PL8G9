@@ -7,16 +7,16 @@ ESTADO *inicializar_estado() {
     novo->jogador_atual = 1;
     novo->num_jogadas = 0;
     novo->ultima_jogada.coluna = 4;
-    novo->ultima_jogada.linha = 3;
+    novo->ultima_jogada.linha = 4;
     novo->num_comandos = 1;
     for (i=0; i<8; i++){
         for (j=0; j<8; j++){
             novo->tab[i][j] = VAZIO;
         }
     }
-    novo->tab[4][3] = BRANCA;
-    novo->tab[0][7] = UM;
-    novo->tab[7][0] = DOIS;
+    novo->tab[4][4] = BRANCA;
+    novo->tab[0][0] = UM;
+    novo->tab[7][7] = DOIS;
     novo->total_jogadas = 0;
     novo->numj_pos = 1;
     return novo;

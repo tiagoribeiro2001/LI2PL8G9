@@ -128,6 +128,12 @@ Functions</h2></td></tr>
 <tr class="memitem:adf753ce414d743fcaf922e4ec42a4b06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dados_8h.html#adf753ce414d743fcaf922e4ec42a4b06">obter_numero_comandos</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
 <tr class="memdesc:adf753ce414d743fcaf922e4ec42a4b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devolve o número de comandos.  <a href="#adf753ce414d743fcaf922e4ec42a4b06">More...</a><br /></td></tr>
 <tr class="separator:adf753ce414d743fcaf922e4ec42a4b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b174742d889842727b5860e3c52e754"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dados_8h.html#a8b174742d889842727b5860e3c52e754">obter_total_jogadas</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:a8b174742d889842727b5860e3c52e754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devolve o número de jogadas ocorridas aquando da utilização do comando pos.  <a href="#a8b174742d889842727b5860e3c52e754">More...</a><br /></td></tr>
+<tr class="separator:a8b174742d889842727b5860e3c52e754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff00b5bf9dc40bbff1e1d313be850fe6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dados_8h.html#aff00b5bf9dc40bbff1e1d313be850fe6">obter_numj_pos</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:aff00b5bf9dc40bbff1e1d313be850fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devolve o jogador atual aquando da utilização do comando pos.  <a href="#aff00b5bf9dc40bbff1e1d313be850fe6">More...</a><br /></td></tr>
+<tr class="separator:aff00b5bf9dc40bbff1e1d313be850fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definição do estado e das funções que o manipulam </p>
@@ -275,6 +281,60 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>O número de jogadas </dd></dl>
+
+</div>
+</div>
+<a id="aff00b5bf9dc40bbff1e1d313be850fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff00b5bf9dc40bbff1e1d313be850fe6">&#9670;&nbsp;</a></span>obter_numj_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_numj_pos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devolve o jogador atual aquando da utilização do comando pos. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>O jogador atual aquando da utilização do comando pos </dd></dl>
+
+</div>
+</div>
+<a id="a8b174742d889842727b5860e3c52e754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b174742d889842727b5860e3c52e754">&#9670;&nbsp;</a></span>obter_total_jogadas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_total_jogadas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devolve o número de jogadas ocorridas aquando da utilização do comando pos. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>O número de jogadas ocorridas aquando da utilização do comando pos </dd></dl>
 
 </div>
 </div>
