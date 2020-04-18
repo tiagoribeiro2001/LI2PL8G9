@@ -1,7 +1,6 @@
 #include "logica.h"
 #include "dados.h"
 #include "listas.h"
-#include <stdlib.h>
 
 int jogar(ESTADO *e, COORDENADA c) {
     int i = valida_jogada (e,c);
@@ -10,13 +9,13 @@ int jogar(ESTADO *e, COORDENADA c) {
         e->tab[c.coluna][c.linha] = BRANCA;
         e->ultima_jogada.coluna = c.coluna;
         e->ultima_jogada.linha = c.linha;
-        if (e->jogador_atual == 1){
+        if (obter_jogador_atual(e) == 1){
             e->jogador_atual = 2;
             (e->num_jogadas = (e->num_jogadas + 1));
             e->jogadas[(e->num_jogadas)-1].jogador1.coluna = c.coluna;
             e->jogadas[(e->num_jogadas)-1].jogador1.linha = c.linha;
         }
-        else if (e->jogador_atual == 2){
+        else if (obter_jogador_atual(e) == 2){
             e->jogadas[(e->num_jogadas)-1].jogador2.coluna = c.coluna;
             e->jogadas[(e->num_jogadas)-1].jogador2.linha = c.linha;
             e->jogador_atual = 1;
@@ -58,8 +57,8 @@ int verifica_pos(ESTADO *e){
 
 int verifica_vencedor(ESTADO *e){
     int i=0;
-    if (e->jogador_atual == 1) i = 2;
-    if (e->jogador_atual == 2) i = 1;
+    if (obter_jogador_atual(e) == 1) i = 2;
+    if (obter_jogador_atual(e) == 2) i = 1;
     if (obter_casa(e,0,7) == BRANCA) i = 1;
     if (obter_casa(e,7,0) == BRANCA) i = 2;
     return i;
@@ -96,13 +95,16 @@ COORDENADA jog (ESTADO *e){
     for (c=(e->ultima_jogada.coluna)-1; c<=cm; c++){
         for (l=(e->ultima_jogada.linha)-1; l<=lm; l++){
             if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA && obter_casa(e,c,l) != ERRO){
-                COORDENADA *x = (COORDENADA *) malloc(sizeof(COORDENADA));
-                (*x).coluna = c;
-                (*x).linha = l;
-                insere_cabeca(L,x);
+                COORDENADA C;
+                C.coluna = c;
+                C.linha = l;
+                insere_cabeca(L,&C);
             }
         }
     }
-    COORDENADA *cord = (COORDENADA *) devolve_cabeca(L);
-    return *cord;
+    COORDENADA *ac = (COORDENADA *) devolve_cabeca(L);
+    COORDENADA coord;
+    coord.coluna = ac->coluna;
+    coord.linha = ac->linha;
+    return coord;
 }

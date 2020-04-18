@@ -90,4 +90,18 @@ int obter_jogador_atual(ESTADO *e);
 */
 int obter_numero_comandos(ESTADO *e);
 
+/**
+\brief Devolve o número de jogadas ocorridas aquando da utilização do comando pos
+@param e Apontador para o estado
+@returns O número de jogadas ocorridas aquando da utilização do comando pos
+*/
+int obter_total_jogadas(ESTADO *e);
+
+/**
+\brief Devolve o jogador atual aquando da utilização do comando pos
+@param e Apontador para o estado
+@returns O jogador atual aquando da utilização do comando pos
+*/
+int obter_numj_pos(ESTADO *e);
+
 #endif //TRABALHOLI2_DADOS_H

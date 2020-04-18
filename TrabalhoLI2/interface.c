@@ -30,16 +30,16 @@ void guardar_tabuleiro(char *nome, ESTADO *e){
     fputc('\n',ficheiro);
     //print das jogadas
     int i;
-    if (e->num_jogadas != 0){
-        if (e->jogador_atual == 1) {
-            for (i = 0; i < e->num_jogadas; i++) {
+    if (obter_numero_de_jogadas(e) != 0){
+        if (obter_jogador_atual(e) == 1) {
+            for (i = 0; i < obter_numero_de_jogadas(e); i++) {
                 fprintf(ficheiro,"%02d: %c%d %c%d\n", i + 1, (e->jogadas[i].jogador1.coluna + 97),
                        8 - (e->jogadas[i].jogador1.linha),
                        (e->jogadas[i].jogador2.coluna + 97),
                        8 - (e->jogadas[i].jogador2.linha));
             }
         } else {
-            for (i = 0; i < (e->num_jogadas)-1; i++) {
+            for (i = 0; i < obter_numero_de_jogadas(e)-1; i++) {
                 fprintf(ficheiro,"%02d: %c%d %c%d\n", i + 1, (e->jogadas[i].jogador1.coluna + 97),
                        8 - (e->jogadas[i].jogador1.linha),
                        (e->jogadas[i].jogador2.coluna + 97),
@@ -92,9 +92,9 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
         e->numj_pos = e->jogador_atual;
         char col1[2], lin1[2], col2[2], lin2[2];
         fscanf(ficheiro, "%c", &h);
-        if (e->num_jogadas != 0) {
-            if (e->jogador_atual == 1) {
-                for (int i = 0; i < e->num_jogadas; i++) {
+        if (obter_numero_de_jogadas(e) != 0) {
+            if (obter_jogador_atual(e) == 1) {
+                for (int i = 0; i < obter_numero_de_jogadas(e); i++) {
                     fscanf(ficheiro, "%c%c%c%c", &h,&h,&h,&h);
                     fscanf(ficheiro, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2);
                     COORDENADA coord1 = {*col1 - 'a', 7 - (*lin1 - '1')};
@@ -104,7 +104,7 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
                     fscanf(ficheiro, "%c", &h);
                 }
             } else {
-                for (int k = 0; k < (e->num_jogadas)-1; k++) {
+                for (int k = 0; k < obter_numero_de_jogadas(e)-1; k++) {
                     fscanf(ficheiro, "%c%c%c%c", &h,&h,&h,&h);
                     fscanf(ficheiro, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2);
                     COORDENADA coord1 = {*col1 - 'a', 7 - (*lin1 - '1')};
@@ -154,7 +154,7 @@ int interpretador(ESTADO *e) {
     else if (strcmp(token, "pos") == 0) {
         token = strtok(NULL, " \n");
         x = *token -'0';
-        if ((token != NULL && x >= 0 && x < e->total_jogadas) || (x == e->total_jogadas && e->numj_pos == 1)) {
+        if ((token != NULL && x >= 0 && x < obter_total_jogadas(e)) || (x == obter_total_jogadas(e) && obter_numj_pos(e) == 1)) {
             printf ("Jogada %s\n",token);
             pos(e, x);
             mostrar_tabuleiro(e);
@@ -198,17 +198,17 @@ int interpretador(ESTADO *e) {
 
 void movs (ESTADO *e) {
     int i;
-    if (e->num_jogadas == 0) printf("Comando movs inválido. Ainda não foram efetuadas jogadas.\n");
+    if (obter_numero_de_jogadas(e) == 0) printf("Comando movs inválido. Ainda não foram efetuadas jogadas.\n");
     else {
-        if (e->jogador_atual == 1) {
-            for (i = 0; i < e->num_jogadas; i++) {
+        if (obter_jogador_atual(e) == 1) {
+            for (i = 0; i < obter_numero_de_jogadas(e); i++) {
                 printf("%02d: %c%d %c%d\n", i + 1, (e->jogadas[i].jogador1.coluna + 97),
                        8 - (e->jogadas[i].jogador1.linha),
                        (e->jogadas[i].jogador2.coluna + 97),
                        8 - (e->jogadas[i].jogador2.linha));
             }
         } else {
-            for (i = 0; i < (e->num_jogadas)-1; i++) {
+            for (i = 0; i < obter_numero_de_jogadas(e)-1; i++) {
                 printf("%02d: %c%d %c%d\n", i + 1, (e->jogadas[i].jogador1.coluna + 97),
                        8 - (e->jogadas[i].jogador1.linha),
                        (e->jogadas[i].jogador2.coluna + 97),

@@ -48,3 +48,15 @@ int obter_numero_comandos(ESTADO *e){
     n = e->num_comandos;
     return n;
 }
+
+int obter_total_jogadas(ESTADO *e){
+    int n;
+    n = e->total_jogadas;
+    return n;
+}
+
+int obter_numj_pos(ESTADO *e){
+    int n;
+    n = e ->numj_pos;
+    return n;
+}
