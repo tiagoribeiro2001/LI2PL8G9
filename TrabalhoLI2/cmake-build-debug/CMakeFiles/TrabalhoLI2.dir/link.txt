@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/TrabalhoLI2.dir/main.c.o CMakeFiles/TrabalhoLI2.dir/dados.c.o CMakeFiles/TrabalhoLI2.dir/logica.c.o CMakeFiles/TrabalhoLI2.dir/interface.c.o CMakeFiles/TrabalhoLI2.dir/listas.c.o  -o TrabalhoLI2 
+/usr/bin/cc -g   CMakeFiles/TrabalhoLI2.dir/main.c.o CMakeFiles/TrabalhoLI2.dir/dados.c.o CMakeFiles/TrabalhoLI2.dir/logica.c.o CMakeFiles/TrabalhoLI2.dir/interface.c.o CMakeFiles/TrabalhoLI2.dir/listas.c.o  -o TrabalhoLI2 -lm 

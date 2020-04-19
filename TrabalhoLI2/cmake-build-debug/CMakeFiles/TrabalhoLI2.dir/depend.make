@@ -7,6 +7,7 @@ CMakeFiles/TrabalhoLI2.dir/dados.c.o: ../dados.h
 CMakeFiles/TrabalhoLI2.dir/interface.c.o: ../dados.h
 CMakeFiles/TrabalhoLI2.dir/interface.c.o: ../interface.c
 CMakeFiles/TrabalhoLI2.dir/interface.c.o: ../interface.h
+CMakeFiles/TrabalhoLI2.dir/interface.c.o: ../listas.h
 CMakeFiles/TrabalhoLI2.dir/interface.c.o: ../logica.h
 
 CMakeFiles/TrabalhoLI2.dir/listas.c.o: ../dados.h
