@@ -3,10 +3,9 @@
 #include <stdlib.h>
 
 LISTA criar_lista(){
-    LISTA L;
-    L = malloc(sizeof(NODO));
-    L->proximo = NULL;
-    return L;
+    LISTA novalista = malloc(sizeof(NODO));
+    novalista->proximo = NULL;
+    return novalista;
 }
 
 LISTA insere_cabeca(LISTA L, void *v){

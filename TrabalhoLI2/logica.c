@@ -2,6 +2,8 @@
 #include "dados.h"
 #include "listas.h"
 #include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
 int jogar(ESTADO *e, COORDENADA c) {
     int i = valida_jogada (e,c);
@@ -90,23 +92,51 @@ void pos (ESTADO *e, int n){
 }
 
 COORDENADA jog (ESTADO *e){
-    int c, l, cm=(e->ultima_jogada.coluna)+1, lm=(e->ultima_jogada.linha)+1;
-    int a = 0;
-    LISTA L;
-    L = criar_lista();
-    COORDENADA C;
-    for (c=(e->ultima_jogada.coluna)-1; c<=cm; c++){
-        for (l=(e->ultima_jogada.linha)-1; l<=lm; l++){
-            if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA && obter_casa(e,c,l) != ERRO){
-                C.coluna = c;
-                C.linha = l;
-                insere_cabeca(L,&C);
-                a++;
-                printf("%d %d \n", C.coluna , C.linha);
+    COORDENADA ult_coord = e->ultima_jogada;
+    int linha = ult_coord.linha, coluna = ult_coord.coluna, c, l;
+    LISTA L = criar_lista();
+    for (c=coluna-1; c<coluna+2; c++){
+        for (l=linha-1; l<linha+2; l++){
+            if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA && obter_casa(e,c,l) != ERRO) {
+                COORDENADA *C = (COORDENADA *) malloc(sizeof(COORDENADA));
+                (*C).coluna = c;
+                (*C).linha = l;
+                L = insere_cabeca(L, C);
+                printf("%d %d \n", (*C).coluna, (*C).linha);
             }
         }
     }
-    COORDENADA *x;
-    x = devolve_cabeca(L);
-    return *x;
+    //COORDENADA *coord = (COORDENADA *) devolve_cabeca(L);
+    printf("ola");
+    COORDENADA *coord = (COORDENADA *) decide_jog(e,L);
+    return *coord;
+}
+
+COORDENADA *decide_jog (ESTADO *e, LISTA L){
+    printf("ola");
+    COORDENADA *coordenada = malloc(sizeof(COORDENADA));
+    double distm = 100;
+    printf("ola");
+    for(LISTA T = L; !lista_esta_vazia(T); T = proximo(T)) {
+        COORDENADA *coord = (COORDENADA *) devolve_cabeca(T);
+        int c = coord->coluna;
+        int l = coord->linha;
+            if (obter_jogador_atual(e) == 1) {
+                double dist = sqrt((c - 0) * (c - 0) + (l - 0) * (l - 0));
+                if (dist < distm) {
+                    distm = dist;
+                    (*coordenada).coluna = c;
+                    (*coordenada).linha = l;
+                }
+            }
+            if (obter_jogador_atual(e) == 2) {
+                double dist = sqrt((c - 7) * (c - 7) + (l - 7) * (l - 7));
+                if (dist < distm) {
+                    distm = dist;
+                    (*coordenada).coluna = c;
+                    (*coordenada).linha = l;
+                }
+            }
+    }
+    return coordenada;
 }

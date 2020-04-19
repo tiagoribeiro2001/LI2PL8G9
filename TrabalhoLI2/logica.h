@@ -6,6 +6,7 @@ Parte lógica do programa
 #define TRABALHOLI2_LOGICA_H
 
 #include "dados.h"
+#include "listas.h"
 
 /**
 \brief Altera os parâmetros no estado mediante a jogada
@@ -57,5 +58,7 @@ void pos (ESTADO *e, int i);
 @returns A jogada escolhida para ser realizada
 */
 COORDENADA jog (ESTADO *e);
+
+COORDENADA *decide_jog (ESTADO *e, LISTA L);
 
 #endif

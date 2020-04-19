@@ -12,7 +12,7 @@ Módulo das listas ligadas
 \brief Tipo para as listas ligadas
 */
 typedef struct nodo {
-    COORDENADA *valor;
+    void *valor;
     struct nodo *proximo;
 } NODO, *LISTA;
 

@@ -146,9 +146,7 @@ int interpretador(ESTADO *e) {
        printf("\n>");
     }
     else if (strcmp(token, "jog\n") == 0) {
-        printf("teste");
         COORDENADA C = jog(e);
-        printf("%d %d \n", C.coluna, C.linha);
         jogar(e,C);
         putchar('\n');
         mostrar_tabuleiro(e);
