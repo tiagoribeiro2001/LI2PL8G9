@@ -13,30 +13,28 @@ int jogar(ESTADO *e, COORDENADA c) {
         e->ultima_jogada.coluna = c.coluna;
         e->ultima_jogada.linha = c.linha;
         if (obter_jogador_atual(e) == 1){
-            e->jogador_atual = 2;
-            (e->num_jogadas = (obter_numero_de_jogadas(e) + 1));
+            alterar_jogador_atual(e, 2);
+            alterar_numero_de_jogadas(e, obter_numero_de_jogadas(e) + 1);
             e->jogadas[obter_numero_de_jogadas(e)-1].jogador1.coluna = c.coluna;
             e->jogadas[obter_numero_de_jogadas(e)-1].jogador1.linha = c.linha;
         }
         else if (obter_jogador_atual(e) == 2){
             e->jogadas[obter_numero_de_jogadas(e)-1].jogador2.coluna = c.coluna;
             e->jogadas[obter_numero_de_jogadas(e)-1].jogador2.linha = c.linha;
-            e->jogador_atual = 1;
+            alterar_jogador_atual(e, 1);
         }
-        e->num_comandos = (obter_numero_comandos(e) + 1);
-        e->total_jogadas = obter_numero_de_jogadas(e);
-        e->numj_pos = obter_jogador_atual(e);
+        alterar_numero_comandos(e,obter_numero_comandos(e) + 1);
+        alterar_total_jogadas(e, obter_numero_de_jogadas(e));
+        alterar_numero_jogador_pos(e, obter_jogador_atual(e));
     }
     return i;
 }
 
 int valida_jogada(ESTADO *e, COORDENADA c){
     int p=1;
-    if (obter_casa(e,c.coluna,c.linha) == PRETA || obter_casa(e,c.coluna,c.linha) == BRANCA) p = 0;
+    if (obter_casa(e,c.coluna,c.linha) == PRETA || obter_casa(e,c.coluna,c.linha) == BRANCA || obter_casa(e,c.coluna,c.linha) == ERRO) p = 0;
     if (c.coluna > (e->ultima_jogada.coluna)+1 || c.coluna < (e->ultima_jogada.coluna)-1) p = 0;
     if (c.linha > (e->ultima_jogada.linha)+1 || c.linha < (e->ultima_jogada.linha)-1) p = 0;
-    if (c.coluna < 0 || c.coluna > 7) p = 0;
-    if (c.linha < 0 || c.linha > 7) p = 0;
     return p;
 }
 
@@ -77,7 +75,7 @@ void pos (ESTADO *e, int n){
     e->tab[4][4] = BRANCA;
     e->tab[0][0] = UM;
     e->tab[7][7] = DOIS;
-    e->jogador_atual = 1;
+    alterar_jogador_atual(e, 1);
     e->ultima_jogada.coluna = 4;
     e->ultima_jogada.linha = 4;
     for (i=0; i<n; i++){
@@ -87,8 +85,8 @@ void pos (ESTADO *e, int n){
         e->ultima_jogada.coluna = e->jogadas[i].jogador2.coluna;
         e->ultima_jogada.linha = e->jogadas[i].jogador2.linha;
     }
-    e->num_jogadas = n;
-    e->num_comandos = 2*n+1;
+    alterar_numero_de_jogadas(e, n);
+    alterar_numero_comandos(e, 2*n+1);
 }
 
 COORDENADA jog (ESTADO *e){

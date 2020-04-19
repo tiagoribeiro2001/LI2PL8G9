@@ -83,14 +83,14 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
             fscanf(ficheiro, "%c", &h);
         }
         if (x % 2 == 0) {
-            e->jogador_atual = 1;
+            alterar_jogador_atual(e, 1);
         } else {
-            e->jogador_atual = 2;
+            alterar_jogador_atual(e, 2);
         }
-        e->num_comandos = x + 1;
-        e->num_jogadas = (obter_numero_comandos(e) / 2);
-        e->total_jogadas = obter_numero_de_jogadas(e);
-        e->numj_pos = obter_jogador_atual(e);
+        alterar_numero_comandos(e, x+1);
+        alterar_numero_de_jogadas(e, (obter_numero_comandos(e) / 2));
+        alterar_total_jogadas(e, obter_numero_de_jogadas(e));
+        alterar_numero_jogador_pos(e, obter_jogador_atual(e));
         char col1[2], lin1[2], col2[2], lin2[2];
         fscanf(ficheiro, "%c", &h);
         if (obter_numero_de_jogadas(e) != 0) {

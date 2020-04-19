@@ -48,9 +48,9 @@ typedef struct {
     /** O número de comando, usado no prompt */
     int num_comandos;
     /** O número de jogadas ocorridas aquando da utilização do comando pos */
-    int total_jogadas;
+    int total_jogadas_pos;
     /** O jogador atual aquando da utilização do comando pos */
-    int numj_pos;
+    int numero_jogador_pos;
 } ESTADO;
 
 /**
@@ -77,11 +77,25 @@ CASA obter_casa (ESTADO *e, int c, int l);
 int obter_numero_de_jogadas(ESTADO *e);
 
 /**
+\brief Altera o número de jogadas
+@param e Apontador para o estado
+@param n Número de jogadas para o qual se pretende alterar
+*/
+void alterar_numero_de_jogadas(ESTADO *e, int n);
+
+/**
 \brief Devolve o jogador atual
 @param e Apontador para o estado
 @returns O jogador atual
 */
 int obter_jogador_atual(ESTADO *e);
+
+/**
+\brief Altera o jogador atual
+@param e Apontador para o estado
+@param n Jogador para o qual se pretende alterar
+*/
+void alterar_jogador_atual(ESTADO *e, int n);
 
 /**
 \brief Devolve o número de comandos
@@ -91,6 +105,13 @@ int obter_jogador_atual(ESTADO *e);
 int obter_numero_comandos(ESTADO *e);
 
 /**
+\brief Altera o número de comandos
+@param e Apontador para o estado
+@param n Valor para o qual se pretende alterar o número de comandos
+*/
+void alterar_numero_comandos(ESTADO *e, int n);
+
+/**
 \brief Devolve o número de jogadas ocorridas aquando da utilização do comando pos
 @param e Apontador para o estado
 @returns O número de jogadas ocorridas aquando da utilização do comando pos
@@ -98,10 +119,24 @@ int obter_numero_comandos(ESTADO *e);
 int obter_total_jogadas(ESTADO *e);
 
 /**
+\brief Altera o número de jogadas ocorridas aquando da utilização do comando pos
+@param e Apontador para o estado
+@param n Valor para o qual se pretende alterar o número de jogadas ocorridas aquando da utilização do comando pos
+*/
+void alterar_total_jogadas(ESTADO *e, int n);
+
+/**
 \brief Devolve o jogador atual aquando da utilização do comando pos
 @param e Apontador para o estado
 @returns O jogador atual aquando da utilização do comando pos
 */
 int obter_numj_pos(ESTADO *e);
+
+/**
+\brief Altera o jogador atual aquando da utilização do comando pos
+@param e Apontador para o estado
+@param n Jogador para o qual se pretende alterar
+*/
+void alterar_numero_jogador_pos(ESTADO *e, int n);
 
 #endif //TRABALHOLI2_DADOS_H
