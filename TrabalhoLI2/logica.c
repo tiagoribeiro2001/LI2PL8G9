@@ -89,13 +89,13 @@ void pos (ESTADO *e, int n){
     alterar_numero_comandos(e, 2*n+1);
 }
 
-COORDENADA jog (ESTADO *e){
+COORDENADA jog(ESTADO *e) {
     COORDENADA ult_coord = e->ultima_jogada;
     int linha = ult_coord.linha, coluna = ult_coord.coluna, c, l;
     LISTA L = criar_lista();
-    for (c=coluna-1; c<coluna+2; c++){
-        for (l=linha-1; l<linha+2; l++){
-            if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA && obter_casa(e,c,l) != ERRO) {
+    for (c = coluna - 1; c < coluna + 2; c++) {
+        for (l = linha - 1; l < linha + 2; l++) {
+            if (obter_casa(e, c, l) != PRETA && obter_casa(e, c, l) != BRANCA && obter_casa(e, c, l) != ERRO) {
                 COORDENADA *C = (COORDENADA *) malloc(sizeof(COORDENADA));
                 (*C).coluna = c;
                 (*C).linha = l;
@@ -103,35 +103,35 @@ COORDENADA jog (ESTADO *e){
             }
         }
     }
-    return decide_jog(e,L);
+    return decide_jog(e, L);
 }
 
-COORDENADA decide_jog (ESTADO *e, LISTA L){
-    COORDENADA melhor_coord;
+COORDENADA decide_jog(ESTADO *e, LISTA L) {
+    COORDENADA melhor_coord, coord;
     melhor_coord.coluna = 4;
     melhor_coord.linha = 4;
-    COORDENADA *coordenada = (COORDENADA *) devolve_cabeca(L);
-    double melhor_dist = sqrt(((coordenada->coluna) - 0) * ((coordenada->coluna) - 0) + ((coordenada->linha) - 0) * ((coordenada->linha) - 0));
+    COORDENADA coordenada = *devolve_cabeca(L);
+    double melhor_dist = sqrt(((coordenada.coluna) - 0) * ((coordenada.coluna) - 0) + ((coordenada.linha) - 0) * ((coordenada.linha) - 0));
     for (LISTA T = proximo(L); !lista_esta_vazia(T); T = proximo(T)) {
-        COORDENADA *coord = (COORDENADA *) devolve_cabeca(T);
-        int c = coord->coluna;
-        int l = coord->linha;
-            if (obter_jogador_atual(e) == 1) {
-                double dist = sqrt((c - 0) * (c - 0) + (l - 0) * (l - 0));
-                if (dist < melhor_dist) {
-                    melhor_dist = dist;
-                    melhor_coord.coluna = c;
-                    melhor_coord.linha = l;
-                }
+        coord = *devolve_cabeca(T);
+        int c = coord.coluna;
+        int l = coord.linha;
+        if (obter_jogador_atual(e) == 1) {
+            double dist = sqrt((c - 0) * (c - 0) + (l - 0) * (l - 0));
+            if (dist < melhor_dist) {
+                melhor_dist = dist;
+                melhor_coord.coluna = c;
+                melhor_coord.linha = l;
             }
-            if (obter_jogador_atual(e) == 2) {
-                double dist = sqrt((c - 7) * (c - 7) + (l - 7) * (l - 7));
-                if (dist < melhor_dist) {
-                    melhor_dist = dist;
-                    melhor_coord.coluna = c;
-                    melhor_coord.linha = l;
-                }
+        }
+        else if (obter_jogador_atual(e) == 2) {
+            double dist = sqrt((c - 7) * (c - 7) + (l - 7) * (l - 7));
+            if (dist < melhor_dist) {
+                melhor_dist = dist;
+                melhor_coord.coluna = c;
+                melhor_coord.linha = l;
             }
+        }
     }
     return melhor_coord;
 }
