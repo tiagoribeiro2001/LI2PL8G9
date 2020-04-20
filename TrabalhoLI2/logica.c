@@ -100,41 +100,39 @@ COORDENADA jog (ESTADO *e){
                 (*C).coluna = c;
                 (*C).linha = l;
                 L = insere_cabeca(L, C);
-                printf("%d %d \n", (*C).coluna, (*C).linha);
             }
         }
     }
     //COORDENADA *coord = (COORDENADA *) devolve_cabeca(L);
-    printf("ola");
-    COORDENADA *coord = (COORDENADA *) decide_jog(e,L);
-    return *coord;
+    return decide_jog(e,L);
 }
 
-COORDENADA *decide_jog (ESTADO *e, LISTA L){
-    printf("ola");
-    COORDENADA *coordenada = malloc(sizeof(COORDENADA));
-    double distm = 100;
-    printf("ola");
-    for(LISTA T = L; !lista_esta_vazia(T); T = proximo(T)) {
+COORDENADA decide_jog (ESTADO *e, LISTA L){
+    COORDENADA melhor_coord;
+    melhor_coord.coluna = 4;
+    melhor_coord.linha = 4;
+    COORDENADA *coordenada = (COORDENADA *) devolve_cabeca(L);
+    double melhor_dist = sqrt(((coordenada->coluna) - 0) * ((coordenada->coluna) - 0) + ((coordenada->linha) - 0) * ((coordenada->linha) - 0));
+    for (LISTA T = proximo(L); !lista_esta_vazia(T); T = proximo(T)) {
         COORDENADA *coord = (COORDENADA *) devolve_cabeca(T);
         int c = coord->coluna;
         int l = coord->linha;
             if (obter_jogador_atual(e) == 1) {
                 double dist = sqrt((c - 0) * (c - 0) + (l - 0) * (l - 0));
-                if (dist < distm) {
-                    distm = dist;
-                    (*coordenada).coluna = c;
-                    (*coordenada).linha = l;
+                if (dist < melhor_dist) {
+                    melhor_dist = dist;
+                    melhor_coord.coluna = c;
+                    melhor_coord.linha = l;
                 }
             }
             if (obter_jogador_atual(e) == 2) {
                 double dist = sqrt((c - 7) * (c - 7) + (l - 7) * (l - 7));
-                if (dist < distm) {
-                    distm = dist;
-                    (*coordenada).coluna = c;
-                    (*coordenada).linha = l;
+                if (dist < melhor_dist) {
+                    melhor_dist = dist;
+                    melhor_coord.coluna = c;
+                    melhor_coord.linha = l;
                 }
             }
     }
-    return coordenada;
+    return melhor_coord;
 }

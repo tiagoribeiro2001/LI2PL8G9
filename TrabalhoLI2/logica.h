@@ -59,6 +59,12 @@ void pos (ESTADO *e, int i);
 */
 COORDENADA jog (ESTADO *e);
 
-COORDENADA *decide_jog (ESTADO *e, LISTA L);
+/**
+\brief Seleciona a melhor jogada
+@param e Apontador para o estado
+@param L Lista de jogadas possíveis
+@returns A jogada escolhida para ser realizada
+*/
+COORDENADA decide_jog (ESTADO *e, LISTA L);
 
 #endif
