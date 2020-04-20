@@ -40,20 +40,115 @@ enum \hyperlink{dados_8h_aba91601f16d4c485b2d9b8c429f27039}{C\+A\+SA} \{ \newlin
 \begin{DoxyCompactList}\small\item\em Devolve o valor de uma casa. \end{DoxyCompactList}\item 
 int \hyperlink{dados_8h_abbfeab93575f20e5867482fd41a71cba}{obter\+\_\+numero\+\_\+de\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Devolve o número de jogadas. \end{DoxyCompactList}\item 
+void \hyperlink{dados_8h_accf16d15df37b4b5f03ecc447faf7207}{alterar\+\_\+numero\+\_\+de\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int n)
+\begin{DoxyCompactList}\small\item\em Altera o número de jogadas. \end{DoxyCompactList}\item 
 int \hyperlink{dados_8h_acc6c25533188a99cb69c12e7f2c406ef}{obter\+\_\+jogador\+\_\+atual} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Devolve o jogador atual. \end{DoxyCompactList}\item 
+void \hyperlink{dados_8h_a84a86061e07633ececbe445410902139}{alterar\+\_\+jogador\+\_\+atual} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int n)
+\begin{DoxyCompactList}\small\item\em Altera o jogador atual. \end{DoxyCompactList}\item 
 int \hyperlink{dados_8h_adf753ce414d743fcaf922e4ec42a4b06}{obter\+\_\+numero\+\_\+comandos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Devolve o número de comandos. \end{DoxyCompactList}\item 
+void \hyperlink{dados_8h_a361575c1d79cb0766541b161ac1b4fea}{alterar\+\_\+numero\+\_\+comandos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int n)
+\begin{DoxyCompactList}\small\item\em Altera o número de comandos. \end{DoxyCompactList}\item 
 int \hyperlink{dados_8h_a8b174742d889842727b5860e3c52e754}{obter\+\_\+total\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Devolve o número de jogadas ocorridas aquando da utilização do comando pos. \end{DoxyCompactList}\item 
+void \hyperlink{dados_8h_a7dfdf967f0bf009ba2de45e4fdd8543a}{alterar\+\_\+total\+\_\+jogadas} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int n)
+\begin{DoxyCompactList}\small\item\em Altera o número de jogadas ocorridas aquando da utilização do comando pos. \end{DoxyCompactList}\item 
 int \hyperlink{dados_8h_aff00b5bf9dc40bbff1e1d313be850fe6}{obter\+\_\+numj\+\_\+pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Devolve o jogador atual aquando da utilização do comando pos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Devolve o jogador atual aquando da utilização do comando pos. \end{DoxyCompactList}\item 
+void \hyperlink{dados_8h_a22d281ce55de823a7c1814e7de510923}{alterar\+\_\+numero\+\_\+jogador\+\_\+pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int n)
+\begin{DoxyCompactList}\small\item\em Altera o jogador atual aquando da utilização do comando pos. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Definição do estado e das funções que o manipulam 
 
 \subsection{Function Documentation}
+\mbox{\Hypertarget{dados_8h_a84a86061e07633ececbe445410902139}\label{dados_8h_a84a86061e07633ececbe445410902139}} 
+\index{dados.\+h@{dados.\+h}!alterar\+\_\+jogador\+\_\+atual@{alterar\+\_\+jogador\+\_\+atual}}
+\index{alterar\+\_\+jogador\+\_\+atual@{alterar\+\_\+jogador\+\_\+atual}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{alterar\+\_\+jogador\+\_\+atual()}{alterar\_jogador\_atual()}}
+{\footnotesize\ttfamily void alterar\+\_\+jogador\+\_\+atual (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Altera o jogador atual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em n} & Jogador para o qual se pretende alterar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a361575c1d79cb0766541b161ac1b4fea}\label{dados_8h_a361575c1d79cb0766541b161ac1b4fea}} 
+\index{dados.\+h@{dados.\+h}!alterar\+\_\+numero\+\_\+comandos@{alterar\+\_\+numero\+\_\+comandos}}
+\index{alterar\+\_\+numero\+\_\+comandos@{alterar\+\_\+numero\+\_\+comandos}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{alterar\+\_\+numero\+\_\+comandos()}{alterar\_numero\_comandos()}}
+{\footnotesize\ttfamily void alterar\+\_\+numero\+\_\+comandos (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Altera o número de comandos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em n} & Valor para o qual se pretende alterar o número de comandos \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_accf16d15df37b4b5f03ecc447faf7207}\label{dados_8h_accf16d15df37b4b5f03ecc447faf7207}} 
+\index{dados.\+h@{dados.\+h}!alterar\+\_\+numero\+\_\+de\+\_\+jogadas@{alterar\+\_\+numero\+\_\+de\+\_\+jogadas}}
+\index{alterar\+\_\+numero\+\_\+de\+\_\+jogadas@{alterar\+\_\+numero\+\_\+de\+\_\+jogadas}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{alterar\+\_\+numero\+\_\+de\+\_\+jogadas()}{alterar\_numero\_de\_jogadas()}}
+{\footnotesize\ttfamily void alterar\+\_\+numero\+\_\+de\+\_\+jogadas (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Altera o número de jogadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em n} & Número de jogadas para o qual se pretende alterar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a22d281ce55de823a7c1814e7de510923}\label{dados_8h_a22d281ce55de823a7c1814e7de510923}} 
+\index{dados.\+h@{dados.\+h}!alterar\+\_\+numero\+\_\+jogador\+\_\+pos@{alterar\+\_\+numero\+\_\+jogador\+\_\+pos}}
+\index{alterar\+\_\+numero\+\_\+jogador\+\_\+pos@{alterar\+\_\+numero\+\_\+jogador\+\_\+pos}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{alterar\+\_\+numero\+\_\+jogador\+\_\+pos()}{alterar\_numero\_jogador\_pos()}}
+{\footnotesize\ttfamily void alterar\+\_\+numero\+\_\+jogador\+\_\+pos (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Altera o jogador atual aquando da utilização do comando pos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em n} & Jogador para o qual se pretende alterar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a7dfdf967f0bf009ba2de45e4fdd8543a}\label{dados_8h_a7dfdf967f0bf009ba2de45e4fdd8543a}} 
+\index{dados.\+h@{dados.\+h}!alterar\+\_\+total\+\_\+jogadas@{alterar\+\_\+total\+\_\+jogadas}}
+\index{alterar\+\_\+total\+\_\+jogadas@{alterar\+\_\+total\+\_\+jogadas}!dados.\+h@{dados.\+h}}
+\subsubsection{\texorpdfstring{alterar\+\_\+total\+\_\+jogadas()}{alterar\_total\_jogadas()}}
+{\footnotesize\ttfamily void alterar\+\_\+total\+\_\+jogadas (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Altera o número de jogadas ocorridas aquando da utilização do comando pos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em n} & Valor para o qual se pretende alterar o número de jogadas ocorridas aquando da utilização do comando pos \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{dados_8h_a7e0c7e26fb685d9ab501e19b05e6954f}\label{dados_8h_a7e0c7e26fb685d9ab501e19b05e6954f}} 
 \index{dados.\+h@{dados.\+h}!inicializar\+\_\+estado@{inicializar\+\_\+estado}}
 \index{inicializar\+\_\+estado@{inicializar\+\_\+estado}!dados.\+h@{dados.\+h}}

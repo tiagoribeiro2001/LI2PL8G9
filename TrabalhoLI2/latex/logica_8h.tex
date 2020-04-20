@@ -1,6 +1,7 @@
 \hypertarget{logica_8h}{}\section{logica.\+h File Reference}
 \label{logica_8h}\index{logica.\+h@{logica.\+h}}
 {\ttfamily \#include \char`\"{}dados.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}listas.\+h\char`\"{}}\newline
 Include dependency graph for logica.\+h\+:
 % FIG 0
 \subsection*{Functions}
@@ -19,13 +20,35 @@ int \hyperlink{logica_8h_abe252fb00afcbeeef6fc4abad6bcad22}{verifica\+\_\+venced
 void \hyperlink{logica_8h_a0de576437e8b6e3c224a112334f018f1}{pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int i)
 \begin{DoxyCompactList}\small\item\em Altera o estado do jogo para uma jogada anterior. \end{DoxyCompactList}\item 
 \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}{jog} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
-\begin{DoxyCompactList}\small\item\em Permite ao jogador atual que peça ao computador para jogar por si. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Permite ao jogador atual que peça ao computador para jogar por si. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{logica_8h_af7cee748f34150fe18d4ec62ad72779e}{decide\+\_\+jog} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structnodo}{L\+I\+S\+TA} L)
+\begin{DoxyCompactList}\small\item\em Seleciona a melhor jogada. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Parte lógica do programa 
 
 \subsection{Function Documentation}
+\mbox{\Hypertarget{logica_8h_af7cee748f34150fe18d4ec62ad72779e}\label{logica_8h_af7cee748f34150fe18d4ec62ad72779e}} 
+\index{logica.\+h@{logica.\+h}!decide\+\_\+jog@{decide\+\_\+jog}}
+\index{decide\+\_\+jog@{decide\+\_\+jog}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{decide\+\_\+jog()}{decide\_jog()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} decide\+\_\+jog (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{\hyperlink{structnodo}{L\+I\+S\+TA}}]{L }\end{DoxyParamCaption})}
+
+
+
+Seleciona a melhor jogada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+{\em L} & Lista de jogadas possíveis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A jogada escolhida para ser realizada 
+\end{DoxyReturn}
 \mbox{\Hypertarget{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}\label{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}} 
 \index{logica.\+h@{logica.\+h}!jog@{jog}}
 \index{jog@{jog}!logica.\+h@{logica.\+h}}

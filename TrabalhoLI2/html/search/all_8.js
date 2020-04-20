@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['nodo',['nodo',['../structnodo.html',1,'nodo'],['../listas_8h.html#ab74c40cea97ab9b24f68471bb1ded1a2',1,'NODO():&#160;listas.h']]],
-  ['num_5fcomandos',['num_comandos',['../structESTADO.html#abe6faacdd6111160bf9a354f44b95b38',1,'ESTADO']]],
-  ['num_5fjogadas',['num_jogadas',['../structESTADO.html#a261495728744647e618b4e623f5a4b7a',1,'ESTADO']]],
-  ['numj_5fpos',['numj_pos',['../structESTADO.html#a9b710a364b05f91c4e417f3eb0549831',1,'ESTADO']]]
+  ['mostrar_5ftabuleiro',['mostrar_tabuleiro',['../interface_8h.html#aa0b6c1689e60ac852a73d67e066c1df5',1,'interface.c']]],
+  ['movs',['movs',['../interface_8h.html#a8d63019a8176de612e33bf8c72121760',1,'interface.c']]]
 ];

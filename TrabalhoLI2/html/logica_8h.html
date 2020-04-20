@@ -65,6 +65,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="dados_8h_source.html">dados.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="listas_8h_source.html">listas.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for logica.h:</div>
 <div class="dyncontent">
@@ -97,10 +98,51 @@ Functions</h2></td></tr>
 <tr class="memitem:a1955c9d7c965e5b40a24d3d61d126702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a1955c9d7c965e5b40a24d3d61d126702">jog</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
 <tr class="memdesc:a1955c9d7c965e5b40a24d3d61d126702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite ao jogador atual que peça ao computador para jogar por si.  <a href="#a1955c9d7c965e5b40a24d3d61d126702">More...</a><br /></td></tr>
 <tr class="separator:a1955c9d7c965e5b40a24d3d61d126702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cee748f34150fe18d4ec62ad72779e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#af7cee748f34150fe18d4ec62ad72779e">decide_jog</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, <a class="el" href="structnodo.html">LISTA</a> L)</td></tr>
+<tr class="memdesc:af7cee748f34150fe18d4ec62ad72779e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seleciona a melhor jogada.  <a href="#af7cee748f34150fe18d4ec62ad72779e">More...</a><br /></td></tr>
+<tr class="separator:af7cee748f34150fe18d4ec62ad72779e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parte lógica do programa </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="af7cee748f34150fe18d4ec62ad72779e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7cee748f34150fe18d4ec62ad72779e">&#9670;&nbsp;</a></span>decide_jog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> decide_jog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnodo.html">LISTA</a>&#160;</td>
+          <td class="paramname"><em>L</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seleciona a melhor jogada. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
+    <tr><td class="paramname">L</td><td>Lista de jogadas possíveis </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A jogada escolhida para ser realizada </dd></dl>
+
+</div>
+</div>
 <a id="a1955c9d7c965e5b40a24d3d61d126702"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1955c9d7c965e5b40a24d3d61d126702">&#9670;&nbsp;</a></span>jog()</h2>
 

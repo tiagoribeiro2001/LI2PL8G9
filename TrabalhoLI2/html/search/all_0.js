@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['casa',['CASA',['../dados_8h.html#aba91601f16d4c485b2d9b8c429f27039',1,'dados.h']]],
-  ['congratula_5fjogador',['congratula_jogador',['../interface_8h.html#aaaf509be89741f8de3260571974be8b0',1,'interface.c']]],
-  ['coordenada',['COORDENADA',['../structCOORDENADA.html',1,'']]],
-  ['criar_5flista',['criar_lista',['../listas_8h.html#ae3b99323b6f8f35d80bb69ff1a27985e',1,'listas.c']]]
+  ['alterar_5fjogador_5fatual',['alterar_jogador_atual',['../dados_8h.html#a84a86061e07633ececbe445410902139',1,'dados.c']]],
+  ['alterar_5fnumero_5fcomandos',['alterar_numero_comandos',['../dados_8h.html#a361575c1d79cb0766541b161ac1b4fea',1,'dados.c']]],
+  ['alterar_5fnumero_5fde_5fjogadas',['alterar_numero_de_jogadas',['../dados_8h.html#accf16d15df37b4b5f03ecc447faf7207',1,'dados.c']]],
+  ['alterar_5fnumero_5fjogador_5fpos',['alterar_numero_jogador_pos',['../dados_8h.html#a22d281ce55de823a7c1814e7de510923',1,'dados.c']]],
+  ['alterar_5ftotal_5fjogadas',['alterar_total_jogadas',['../dados_8h.html#a7dfdf967f0bf009ba2de45e4fdd8543a',1,'dados.c']]]
 ];

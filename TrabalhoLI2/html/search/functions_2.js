@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['guardar_5ftabuleiro',['guardar_tabuleiro',['../interface_8h.html#ad31f59d2bac47ba37db75dc4ed4c333e',1,'interface.c']]]
+  ['decide_5fjog',['decide_jog',['../logica_8h.html#af7cee748f34150fe18d4ec62ad72779e',1,'logica.c']]],
+  ['devolve_5fcabeca',['devolve_cabeca',['../listas_8h.html#abfcb205f3eb670157be0d1221021714b',1,'listas.c']]]
 ];

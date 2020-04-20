@@ -103,7 +103,6 @@ COORDENADA jog (ESTADO *e){
             }
         }
     }
-    //COORDENADA *coord = (COORDENADA *) devolve_cabeca(L);
     return decide_jog(e,L);
 }
 
