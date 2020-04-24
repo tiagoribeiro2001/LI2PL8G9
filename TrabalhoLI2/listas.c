@@ -8,15 +8,15 @@ LISTA criar_lista(){
     return novalista;
 }
 
-LISTA insere_cabeca(LISTA L, COORDENADA *v){
+LISTA insere_cabeca(LISTA L, void *v){
     LISTA n = criar_lista();
     n->valor = v;
     n->proximo = L;
     return n;
 }
 
-COORDENADA *devolve_cabeca(LISTA L){
-    COORDENADA *cabeca;
+void *devolve_cabeca(LISTA L){
+    void *cabeca;
     if (L == NULL) cabeca = NULL;
     else cabeca = L->valor;
     return cabeca;

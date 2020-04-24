@@ -12,7 +12,7 @@ Módulo das listas ligadas
 \brief Tipo para as listas ligadas
 */
 typedef struct nodo {
-    COORDENADA *valor;
+    void *valor;
     struct nodo *proximo;
 } NODO, *LISTA;
 
@@ -28,14 +28,15 @@ LISTA criar_lista();
 @param v Apontador para a nova cabeça
 @returns Devolve a lista com a nova cabeça
 */
-LISTA insere_cabeca(LISTA L, COORDENADA *v);
+LISTA insere_cabeca(LISTA L, void *v);
 
 /**
 \brief Indica qual é a cabeça da lista
 @param L Apontador para a lista
 @returns Devolve a cabeça da lista
 */
-COORDENADA *devolve_cabeca(LISTA L);
+void *devolve_cabeca(LISTA L);
+
 /**
 \brief Indica qual é a cauda da lista
 @param L Apontador para a lista

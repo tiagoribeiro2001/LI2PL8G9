@@ -107,31 +107,28 @@ COORDENADA jog(ESTADO *e) {
 }
 
 COORDENADA decide_jog(ESTADO *e, LISTA L) {
-    COORDENADA melhor_coord, coord;
-    melhor_coord.coluna = 4;
-    melhor_coord.linha = 4;
-    COORDENADA coordenada = *devolve_cabeca(L);
-    double melhor_dist = sqrt(((coordenada.coluna) - 0) * ((coordenada.coluna) - 0) + ((coordenada.linha) - 0) * ((coordenada.linha) - 0));
+    COORDENADA *coordenada = (COORDENADA*) devolve_cabeca(L);
+    double melhor_dist = sqrt(((coordenada->coluna) - 0) * ((coordenada->coluna) - 0) + ((coordenada->linha) - 0) * ((coordenada->linha) - 0));
     for (LISTA T = proximo(L); !lista_esta_vazia(T); T = proximo(T)) {
-        coord = *devolve_cabeca(T);
-        int c = coord.coluna;
-        int l = coord.linha;
+        COORDENADA *coord = (COORDENADA *) devolve_cabeca(T);
+        int c = coord->coluna;
+        int l = coord->linha;
         if (obter_jogador_atual(e) == 1) {
             double dist = sqrt((c - 0) * (c - 0) + (l - 0) * (l - 0));
             if (dist < melhor_dist) {
                 melhor_dist = dist;
-                melhor_coord.coluna = c;
-                melhor_coord.linha = l;
+                (*coordenada).coluna = c;
+                (*coordenada).linha = l;
             }
         }
         else if (obter_jogador_atual(e) == 2) {
             double dist = sqrt((c - 7) * (c - 7) + (l - 7) * (l - 7));
             if (dist < melhor_dist) {
                 melhor_dist = dist;
-                melhor_coord.coluna = c;
-                melhor_coord.linha = l;
+                (*coordenada).coluna = c;
+                (*coordenada).linha = l;
             }
         }
     }
-    return melhor_coord;
+    return *coordenada;
 }
