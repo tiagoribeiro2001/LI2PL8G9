@@ -24,7 +24,7 @@ ESTADO *inicializar_estado() {
 
 CASA obter_casa (ESTADO *e, int c, int l){
     CASA casa;
-    if (c>=0 && c<=8 && l>=0 && l<=8) {
+    if (c>=0 && c<8 && l>=0 && l<8) {
         casa = e->tab[c][l];
         return casa;
     }
@@ -79,4 +79,48 @@ int obter_numj_pos(ESTADO *e){
 
 void alterar_numero_jogador_pos(ESTADO *e, int n){
     e->numero_jogador_pos = n;
+}
+
+int obter_jogadas_jog1_coluna (ESTADO *e, int i){
+    int n;
+    n = e->jogadas[i].jogador1.coluna;
+    return n;
+}
+
+int obter_jogadas_jog1_linha (ESTADO *e, int i){
+    int n;
+    n = e->jogadas[i].jogador1.linha;
+    return n;
+}
+
+int obter_jogadas_jog2_coluna (ESTADO *e, int i){
+    int n;
+    n = e->jogadas[i].jogador2.coluna;
+    return n;
+}
+
+int obter_jogadas_jog2_linha (ESTADO *e, int i){
+    int n;
+    n = e->jogadas[i].jogador2.linha;
+    return n;
+}
+
+void alterar_jogadas_jog1 (ESTADO *e, int i, COORDENADA c){
+    e->jogadas[i].jogador1 = c;
+}
+
+void alterar_jogadas_jog2 (ESTADO *e, int i, COORDENADA c){
+    e->jogadas[i].jogador2 = c;
+}
+
+void alterar_tab (ESTADO *e, int c, int l, CASA casa){
+    e->tab[c][l] = casa;
+}
+
+void alterar_ultima_jogada_coluna (ESTADO *e, int c){
+    e->ultima_jogada.coluna = c;
+}
+
+void alterar_ultima_jogada_linha (ESTADO *e, int l){
+    e->ultima_jogada.linha = l;
 }

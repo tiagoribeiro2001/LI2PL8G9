@@ -47,9 +47,9 @@ int verifica_fim(ESTADO *e){
 }
 
 int verifica_pos(ESTADO *e){
-    int i=0, c, l, cm=(e->ultima_jogada.coluna)+1, lm=(e->ultima_jogada.linha)+1;
-    for (c=(e->ultima_jogada.coluna)-1; c<=cm; c++){
-        for (l=(e->ultima_jogada.linha)-1; l<=lm; l++){
+    int i=0, c, l, coluna=e->ultima_jogada.coluna, linha=e->ultima_jogada.linha;
+    for (c= coluna - 1; c < coluna + 2; c++){
+        for (l= linha -1; l< linha + 2; l++){
             if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA && obter_casa(e,c,l) != ERRO) i = 1;
         }
     }

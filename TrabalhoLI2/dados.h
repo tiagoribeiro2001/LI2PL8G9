@@ -139,4 +139,75 @@ int obter_numj_pos(ESTADO *e);
 */
 void alterar_numero_jogador_pos(ESTADO *e, int n);
 
+/**
+\brief Devolve a coluna que está no array jogadas na posição i do jogador 1
+@param e Apontador para o estado
+@param i Posição do array
+@returns Coluna que está no array jogadas na posição i do jogador 1
+*/
+int obter_jogadas_jog1_coluna (ESTADO *e, int i);
+
+/**
+\brief Devolve a linha que está no array jogadas na posição i do jogador 1
+@param e Apontador para o estado
+@param i Posição do array
+@returns Linha que está no array jogadas na posição i do jogador 1
+*/
+int obter_jogadas_jog1_linha (ESTADO *e, int i);
+
+/**
+\brief Devolve a coluna que está no array jogadas na posição i do jogador 2
+@param e Apontador para o estado
+@param i Posição do array
+@returns Coluna que está no array jogadas na posição i do jogador 2
+*/
+int obter_jogadas_jog2_coluna (ESTADO *e, int i);
+
+/**
+\brief Devolve a linha que está no array jogadas na posição i do jogador 2
+@param e Apontador para o estado
+@param i Posição do array
+@returns Linha que está no array jogadas na posição i do jogador 2
+*/
+int obter_jogadas_jog2_linha (ESTADO *e, int i);
+
+/**
+\brief Altera a coordenada do jogador 1 no array jogadas na posição i
+@param e Apontador para o estado
+@param i Índice que pretendemos alterar
+@param c Coordenada para o qual se pretende alterar
+*/
+void alterar_jogadas_jog1 (ESTADO *e, int i, COORDENADA c);
+
+/**
+\brief Altera a coordenada do jogador 2 no array jogadas na posição i
+@param e Apontador para o estado
+@param i Índice que pretendemos alterar
+@param c Coordenada para o qual se pretende alterar
+*/
+void alterar_jogadas_jog2 (ESTADO *e, int i, COORDENADA c);
+
+/**
+\brief Altera a casa de uma dada coordenada
+@param e Apontador para o estado
+@param c Coluna da coordenada a alterar
+@param l Linha da coordenada a alterar
+@param casa Casa para a qual pretendemos alterar
+ */
+void alterar_tab (ESTADO *e, int c, int l, CASA casa);
+
+/**
+\brief Altera a coluna da última jogada
+@param e Apontador para o estado
+@param c Coluna para a qual pretendemos alterar
+ */
+void alterar_ultima_jogada_coluna (ESTADO *e, int c);
+
+/**
+\brief Altera a linha da última jogada
+@param e Apontador para o estado
+@param l Linha para a qual pretendemos alterar
+ */
+void alterar_ultima_jogada_linha (ESTADO *e, int l);
+
 #endif //TRABALHOLI2_DADOS_H

@@ -34,20 +34,20 @@ void guardar_tabuleiro(char *nome, ESTADO *e){
     if (obter_numero_de_jogadas(e) != 0){
         if (obter_jogador_atual(e) == 1) {
             for (i = 0; i < obter_numero_de_jogadas(e); i++) {
-                fprintf(ficheiro,"%02d: %c%d %c%d\n", i + 1, e->jogadas[i].jogador1.coluna + 97,
-                        e->jogadas[i].jogador1.linha + 1,
-                        e->jogadas[i].jogador2.coluna + 97,
-                        e->jogadas[i].jogador2.linha + 1);
+                fprintf(ficheiro,"%02d: %c%d %c%d\n", i + 1, obter_jogadas_jog1_coluna(e, i) + 97,
+                        obter_jogadas_jog1_linha(e, i) + 1,
+                        obter_jogadas_jog2_coluna(e, i) + 97,
+                        obter_jogadas_jog2_linha(e, i) + 1);
             }
         } else {
             for (i = 0; i < obter_numero_de_jogadas(e)-1; i++) {
-                fprintf(ficheiro,"%02d: %c%d %c%d\n", i + 1, e->jogadas[i].jogador1.coluna + 97,
-                        e->jogadas[i].jogador1.linha + 1,
-                        e->jogadas[i].jogador2.coluna + 97,
-                        e->jogadas[i].jogador2.linha + 1);
+                fprintf(ficheiro,"%02d: %c%d %c%d\n", i + 1, obter_jogadas_jog1_coluna(e, i) + 97,
+                        obter_jogadas_jog1_linha(e, i) + 1,
+                        obter_jogadas_jog2_coluna(e, i) + 97,
+                        obter_jogadas_jog2_linha(e, i) + 1);
             }
-            fprintf(ficheiro,"%02d: %c%d\n", i + 1, e->jogadas[obter_numero_de_jogadas(e)-1].jogador1.coluna + 97,
-                    e->jogadas[obter_numero_de_jogadas(e)-1].jogador1.linha + 1);
+            fprintf(ficheiro,"%02d: %c%d\n", i + 1, obter_jogadas_jog1_coluna(e, obter_numero_de_jogadas(e)-1) + 97,
+                    obter_jogadas_jog1_linha(e, obter_numero_de_jogadas(e)-1) + 1);
         }
     }
     fclose(ficheiro);
@@ -66,18 +66,18 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
                 // Lê um caracter do ficheiro. Esse caracter contém um ponto ('.'),ou um ('*'), ou um ('#') ou um ('1') ou um ('2').
                 // Eu vou agora verificar qual destes carateres é que li e vou preencher a respetiva casa do tabuleiro da variável Estado
                 if (j == '.') {
-                    e->tab[c][l] = VAZIO;
+                    alterar_tab(e, c, l, VAZIO);
                 } else if (j == '*') {
-                    e->tab[c][l] = BRANCA;
-                    e->ultima_jogada.coluna=c;
-                    e->ultima_jogada.linha=l;
+                    alterar_tab(e, c, l, BRANCA);
+                    alterar_ultima_jogada_coluna(e, c);
+                    alterar_ultima_jogada_linha(e, l);
                 } else if (j == '#') {
-                    e->tab[c][l] = PRETA;
+                    alterar_tab(e, c, l, PRETA);
                     x++;
                 } else if (j == '1') {
-                    e->tab[c][l] = UM;
+                    alterar_tab(e, c, l, UM);
                 } else if (j =='2'){
-                    e->tab[c][l] = DOIS;
+                    alterar_tab(e, c, l, DOIS);
                 }
             }
             fscanf(ficheiro, "%c", &h);
@@ -100,8 +100,8 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
                     fscanf(ficheiro, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2);
                     COORDENADA coord1 = {*col1 - 'a', (*lin1 - '1')};
                     COORDENADA coord2 = {*col2 - 'a', (*lin2 - '1')};
-                    e->jogadas[i].jogador1 = coord1;
-                    e->jogadas[i].jogador2 = coord2;
+                    alterar_jogadas_jog1(e, i, coord1);
+                    alterar_jogadas_jog2(e, i, coord2);
                     fscanf(ficheiro, "%c", &h);
                 }
             } else {
@@ -110,14 +110,14 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
                     fscanf(ficheiro, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2);
                     COORDENADA coord1 = {*col1 - 'a', (*lin1 - '1')};
                     COORDENADA coord2 = {*col2 - 'a', (*lin2 - '1')};
-                    e->jogadas[k].jogador1 = coord1;
-                    e->jogadas[k].jogador2 = coord2;
+                    alterar_jogadas_jog1(e, k, coord1);
+                    alterar_jogadas_jog2(e, k, coord2);
                     fscanf(ficheiro, "%c", &h);
                 }
                 fscanf(ficheiro, "%c%c%c%c", &h, &h,&h,&h);
                 fscanf(ficheiro, "%[a-h]%[1-8]", col1, lin1);
                 COORDENADA coord1 = {*col1 - 'a', (*lin1 - '1')};
-                e->jogadas[obter_numero_de_jogadas(e)-1].jogador1 = coord1;
+                alterar_jogadas_jog1(e, obter_numero_de_jogadas(e)-1, coord1);
                 fscanf(ficheiro, "%c", &h);
             }
         }
@@ -154,8 +154,8 @@ int interpretador(ESTADO *e) {
     }
     else if (strcmp(token, "pos") == 0) {
         token = strtok(NULL, " \n");
-        x = *token -'0';
-        if ((token != NULL && x >= 0 && x < obter_total_jogadas(e)) || (x == obter_total_jogadas(e) && obter_numj_pos(e) == 1)) {
+        x = *token - '0';
+        if ((x >= 0 && x < obter_total_jogadas(e)) || (x == obter_total_jogadas(e) && obter_numj_pos(e) == 1)) {
             printf ("Jogada %s\n",token);
             pos(e, x);
             mostrar_tabuleiro(e);
@@ -203,20 +203,20 @@ void movs (ESTADO *e) {
     else {
         if (obter_jogador_atual(e) == 1) {
             for (i = 0; i < obter_numero_de_jogadas(e); i++) {
-                printf("%02d: %c%d %c%d\n", i + 1, e->jogadas[i].jogador1.coluna + 97,
-                       e->jogadas[i].jogador1.linha + 1,
-                       e->jogadas[i].jogador2.coluna + 97,
-                       e->jogadas[i].jogador2.linha + 1);
+                printf("%02d: %c%d %c%d\n", i + 1, obter_jogadas_jog1_coluna(e, i) + 97,
+                       obter_jogadas_jog1_linha(e, i) + 1,
+                       obter_jogadas_jog2_coluna(e, i) + 97,
+                       obter_jogadas_jog2_linha(e, i) + 1);
             }
         } else {
             for (i = 0; i < obter_numero_de_jogadas(e)-1; i++) {
-                printf("%02d: %c%d %c%d\n", i + 1, e->jogadas[i].jogador1.coluna + 97,
-                       e->jogadas[i].jogador1.linha + 1,
-                       e->jogadas[i].jogador2.coluna + 97,
-                       e->jogadas[i].jogador2.linha + 1);
+                printf("%02d: %c%d %c%d\n", i + 1, obter_jogadas_jog1_coluna(e, i) + 97,
+                       obter_jogadas_jog1_linha(e, i) + 1,
+                       obter_jogadas_jog2_coluna(e, i) + 97,
+                       obter_jogadas_jog2_linha(e, i) + 1);
             }
-                printf("%02d: %c%d\n", i + 1, e->jogadas[obter_numero_de_jogadas(e)-1].jogador1.coluna + 97,
-                       e->jogadas[obter_numero_de_jogadas(e)-1].jogador1.linha + 1);
+                printf("%02d: %c%d\n", i + 1, obter_jogadas_jog1_coluna(e, obter_numero_de_jogadas(e)-1) + 97,
+                       obter_jogadas_jog1_linha(e, obter_numero_de_jogadas(e)-1) + 1);
         }
     }
 }
