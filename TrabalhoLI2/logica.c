@@ -88,7 +88,7 @@ void pos (ESTADO *e, int n){
     alterar_numero_comandos(e, 2*n+1);
 }
 
-COORDENADA jog(ESTADO *e) {
+LISTA lista_jogadas_possiveis (ESTADO *e) {
     COORDENADA ult_coord = obter_ultima_jogada(e);
     int linha = ult_coord.linha, coluna = ult_coord.coluna, c, l;
     LISTA L = criar_lista();
@@ -102,10 +102,11 @@ COORDENADA jog(ESTADO *e) {
             }
         }
     }
-    return decide_jog(e, L);
+    return L;
 }
 
-COORDENADA decide_jog(ESTADO *e, LISTA L) {
+COORDENADA jog(ESTADO *e) {
+    LISTA L = lista_jogadas_possiveis(e);
     COORDENADA *coordenada = (COORDENADA*) malloc(sizeof(COORDENADA));
     COORDENADA *coord = (COORDENADA*) malloc(sizeof(COORDENADA));
     *coordenada = *(COORDENADA*) devolve_cabeca(L);

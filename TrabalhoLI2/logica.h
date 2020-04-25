@@ -53,18 +53,17 @@ int verifica_vencedor(ESTADO *e);
 void pos (ESTADO *e, int i);
 
 /**
+\brief Cria uma lista de possíveis jogadas a executar
+@param e Apontador para o estado
+@returns A lsita com as jogadas possíveis
+*/
+LISTA lista_jogadas_possiveis (ESTADO *e);
+
+/**
 \brief Permite ao jogador atual que peça ao computador para jogar por si
 @param e Apontador para o estado
 @returns A jogada escolhida para ser realizada
 */
-COORDENADA jog (ESTADO *e);
-
-/**
-\brief Seleciona a melhor jogada
-@param e Apontador para o estado
-@param L Lista de jogadas possíveis
-@returns A jogada escolhida para ser realizada
-*/
-COORDENADA decide_jog (ESTADO *e, LISTA L);
+COORDENADA jog(ESTADO *e);
 
 #endif
