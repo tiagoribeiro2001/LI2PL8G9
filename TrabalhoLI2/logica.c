@@ -109,7 +109,11 @@ COORDENADA decide_jog(ESTADO *e, LISTA L) {
     COORDENADA *coordenada = (COORDENADA*) malloc(sizeof(COORDENADA));
     COORDENADA *coord = (COORDENADA*) malloc(sizeof(COORDENADA));
     *coordenada = *(COORDENADA*) devolve_cabeca(L);
-    double melhor_dist = sqrt(((coordenada->coluna) - 0) * ((coordenada->coluna) - 0) + ((coordenada->linha) - 0) * ((coordenada->linha) - 0));
+    double melhor_dist;
+    if (obter_jogador_atual(e) == 1)
+        melhor_dist = sqrt(((coordenada->coluna) - 0) * ((coordenada->coluna) - 0) + ((coordenada->linha) - 0) * ((coordenada->linha) - 0));
+    else
+        melhor_dist = sqrt(((coordenada->coluna) - 7) * ((coordenada->coluna) - 7) + ((coordenada->linha) - 7) * ((coordenada->linha) - 7));
     for (LISTA T = proximo(L); !lista_esta_vazia(T); T = proximo(T)) {
         *coord = *(COORDENADA *) devolve_cabeca(T);
         int c = (*coord).coluna;

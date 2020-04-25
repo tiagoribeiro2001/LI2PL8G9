@@ -3,13 +3,11 @@
 #include <stdlib.h>
 
 LISTA criar_lista(){
-    LISTA novalista = malloc(sizeof(NODO));
-    novalista->proximo = NULL;
-    return novalista;
+    return NULL;
 }
 
 LISTA insere_cabeca(LISTA L, void *v){
-    LISTA n = criar_lista();
+    LISTA n = malloc(sizeof(NODO));
     n->valor = v;
     n->proximo = L;
     return n;
@@ -38,7 +36,5 @@ LISTA remove_cabeca(LISTA L){
 }
 
 int lista_esta_vazia(LISTA L){
-    int r = 0;
-    if (L == NULL) r=1;
-    return r;
+    return L == NULL;
 }
