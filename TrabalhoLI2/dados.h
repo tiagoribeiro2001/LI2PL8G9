@@ -180,12 +180,44 @@ int obter_jogadas_jog2_linha (ESTADO *e, int i);
 void alterar_jogadas_jog1 (ESTADO *e, int i, COORDENADA c);
 
 /**
+\brief Altera a coluna do jogador 1 no array jogadas na posição i
+@param e Apontador para o estado
+@param i Índice que pretendemos alterar
+@param c Coluna para o qual se pretende alterar
+*/
+void alterar_jogadas_jog1_coluna (ESTADO *e, int i, int c);
+
+/**
+\brief Altera a linha do jogador 1 no array jogadas na posição i
+@param e Apontador para o estado
+@param i Índice que pretendemos alterar
+@param c Linha para o qual se pretende alterar
+*/
+void alterar_jogadas_jog1_linha (ESTADO *e, int i, int l);
+
+/**
 \brief Altera a coordenada do jogador 2 no array jogadas na posição i
 @param e Apontador para o estado
 @param i Índice que pretendemos alterar
 @param c Coordenada para o qual se pretende alterar
 */
 void alterar_jogadas_jog2 (ESTADO *e, int i, COORDENADA c);
+
+/**
+\brief Altera a coluna do jogador 2 no array jogadas na posição i
+@param e Apontador para o estado
+@param i Índice que pretendemos alterar
+@param c Coluna para o qual se pretende alterar
+*/
+void alterar_jogadas_jog2_coluna (ESTADO *e, int i, int c);
+
+/**
+\brief Altera a linha do jogador 2 no array jogadas na posição i
+@param e Apontador para o estado
+@param i Índice que pretendemos alterar
+@param c Linha para o qual se pretende alterar
+*/
+void alterar_jogadas_jog2_linha (ESTADO *e, int i, int l);
 
 /**
 \brief Altera a casa de uma dada coordenada
@@ -209,5 +241,26 @@ void alterar_ultima_jogada_coluna (ESTADO *e, int c);
 @param l Linha para a qual pretendemos alterar
  */
 void alterar_ultima_jogada_linha (ESTADO *e, int l);
+
+/**
+\brief Devolve a coluna da última jogada
+@param e Apontador para o estado
+@returns A coluna da última jogada
+*/
+int obter_ultima_jogada_coluna (ESTADO *e);
+
+/**
+\brief Devolve a linha da última jogada
+@param e Apontador para o estado
+@returns A linha da última jogada
+*/
+int obter_ultima_jogada_linha (ESTADO *e);
+
+/**
+\brief Devolve a coordenada da última jogada
+@param e Apontador para o estado
+@returns A coordenada da última jogada
+*/
+COORDENADA obter_ultima_jogada (ESTADO *e);
 
 #endif //TRABALHOLI2_DADOS_H

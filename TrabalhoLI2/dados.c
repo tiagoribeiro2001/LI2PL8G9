@@ -109,8 +109,24 @@ void alterar_jogadas_jog1 (ESTADO *e, int i, COORDENADA c){
     e->jogadas[i].jogador1 = c;
 }
 
+void alterar_jogadas_jog1_coluna (ESTADO *e, int i, int c){
+    e->jogadas[i].jogador1.coluna = c;
+}
+
+void alterar_jogadas_jog1_linha (ESTADO *e, int i, int l){
+    e->jogadas[i].jogador1.linha = l;
+}
+
 void alterar_jogadas_jog2 (ESTADO *e, int i, COORDENADA c){
     e->jogadas[i].jogador2 = c;
+}
+
+void alterar_jogadas_jog2_coluna (ESTADO *e, int i, int c){
+    e->jogadas[i].jogador2.coluna = c;
+}
+
+void alterar_jogadas_jog2_linha (ESTADO *e, int i, int l){
+    e->jogadas[i].jogador2.linha = l;
 }
 
 void alterar_tab (ESTADO *e, int c, int l, CASA casa){
@@ -123,4 +139,16 @@ void alterar_ultima_jogada_coluna (ESTADO *e, int c){
 
 void alterar_ultima_jogada_linha (ESTADO *e, int l){
     e->ultima_jogada.linha = l;
+}
+
+int obter_ultima_jogada_coluna (ESTADO *e){
+    return e->ultima_jogada.coluna;
+}
+
+int obter_ultima_jogada_linha (ESTADO *e){
+    return e->ultima_jogada.linha;
+}
+
+COORDENADA obter_ultima_jogada (ESTADO *e){
+    return e->ultima_jogada;
 }

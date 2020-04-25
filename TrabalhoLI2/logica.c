@@ -1,26 +1,25 @@
 #include "logica.h"
 #include "dados.h"
 #include "listas.h"
-#include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 
 int jogar(ESTADO *e, COORDENADA c) {
-    int i = valida_jogada (e,c);
+    int i = valida_jogada (e, c);
     if (i) {
-        e->tab[e->ultima_jogada.coluna][e->ultima_jogada.linha] = PRETA;
-        e->tab[c.coluna][c.linha] = BRANCA;
-        e->ultima_jogada.coluna = c.coluna;
-        e->ultima_jogada.linha = c.linha;
+        alterar_tab(e, obter_ultima_jogada_coluna(e), obter_ultima_jogada_linha(e), PRETA);
+        alterar_tab(e, c.coluna, c.linha, BRANCA);
+        alterar_ultima_jogada_coluna(e, c.coluna);
+        alterar_ultima_jogada_linha(e, c.linha);
         if (obter_jogador_atual(e) == 1){
             alterar_jogador_atual(e, 2);
             alterar_numero_de_jogadas(e, obter_numero_de_jogadas(e) + 1);
-            e->jogadas[obter_numero_de_jogadas(e)-1].jogador1.coluna = c.coluna;
-            e->jogadas[obter_numero_de_jogadas(e)-1].jogador1.linha = c.linha;
+            alterar_jogadas_jog1_coluna(e, obter_numero_de_jogadas(e)-1, c.coluna);
+            alterar_jogadas_jog1_linha(e, obter_numero_de_jogadas(e)-1, c.linha);
         }
         else if (obter_jogador_atual(e) == 2){
-            e->jogadas[obter_numero_de_jogadas(e)-1].jogador2.coluna = c.coluna;
-            e->jogadas[obter_numero_de_jogadas(e)-1].jogador2.linha = c.linha;
+            alterar_jogadas_jog2_coluna(e, obter_numero_de_jogadas(e)-1, c.coluna);
+            alterar_jogadas_jog2_linha(e, obter_numero_de_jogadas(e)-1, c.linha);
             alterar_jogador_atual(e, 1);
         }
         alterar_numero_comandos(e,obter_numero_comandos(e) + 1);
@@ -31,15 +30,15 @@ int jogar(ESTADO *e, COORDENADA c) {
 }
 
 int valida_jogada(ESTADO *e, COORDENADA c){
-    int p=1;
-    if (obter_casa(e,c.coluna,c.linha) == PRETA || obter_casa(e,c.coluna,c.linha) == BRANCA || obter_casa(e,c.coluna,c.linha) == ERRO) p = 0;
-    if (c.coluna > (e->ultima_jogada.coluna)+1 || c.coluna < (e->ultima_jogada.coluna)-1) p = 0;
-    if (c.linha > (e->ultima_jogada.linha)+1 || c.linha < (e->ultima_jogada.linha)-1) p = 0;
+    int p = 1;
+    if (obter_casa(e, c.coluna, c.linha) == PRETA || obter_casa(e, c.coluna, c.linha) == BRANCA || obter_casa(e, c.coluna, c.linha) == ERRO) p = 0;
+    if (c.coluna > obter_ultima_jogada_coluna(e) + 1 || c.coluna < obter_ultima_jogada_coluna(e) - 1) p = 0;
+    if (c.linha > obter_ultima_jogada_linha(e) + 1 || c.linha < obter_ultima_jogada_linha(e) - 1) p = 0;
     return p;
 }
 
 int verifica_fim(ESTADO *e){
-    int i=1;
+    int i = 1;
     if (obter_casa(e,0,0) == BRANCA) i = 0;
     if (obter_casa(e,7,7) == BRANCA) i = 0;
     i = (i && verifica_pos(e));
@@ -47,10 +46,10 @@ int verifica_fim(ESTADO *e){
 }
 
 int verifica_pos(ESTADO *e){
-    int i=0, c, l, coluna=e->ultima_jogada.coluna, linha=e->ultima_jogada.linha;
-    for (c= coluna - 1; c < coluna + 2; c++){
-        for (l= linha -1; l< linha + 2; l++){
-            if (obter_casa(e,c,l) != PRETA && obter_casa(e,c,l) != BRANCA && obter_casa(e,c,l) != ERRO) i = 1;
+    int i = 0, c, l, coluna = obter_ultima_jogada_coluna(e), linha = obter_ultima_jogada_linha(e);
+    for (c = coluna - 1; c < coluna + 2; c++){
+        for (l = linha - 1; l< linha + 2; l++){
+            if (obter_casa(e, c ,l) != PRETA && obter_casa(e, c, l) != BRANCA && obter_casa(e, c, l) != ERRO) i = 1;
         }
     }
     return i;
@@ -67,30 +66,30 @@ int verifica_vencedor(ESTADO *e){
 
 void pos (ESTADO *e, int n){
     int i, j;
-    for (i=0; i<8; i++){
-        for (j=0; j<8; j++){
-            e->tab[i][j] = VAZIO;
+    for (i = 0; i < 8; i++){
+        for (j = 0; j < 8; j++){
+            alterar_tab(e, i, j, VAZIO);
         }
     }
-    e->tab[4][4] = BRANCA;
-    e->tab[0][0] = UM;
-    e->tab[7][7] = DOIS;
+    alterar_tab(e, 4, 4, BRANCA);
+    alterar_tab(e, 0, 0, UM);
+    alterar_tab(e, 7, 7, DOIS);
     alterar_jogador_atual(e, 1);
-    e->ultima_jogada.coluna = 4;
-    e->ultima_jogada.linha = 4;
-    for (i=0; i<n; i++){
-        e->tab[e->ultima_jogada.coluna][e->ultima_jogada.linha] = PRETA;
-        e->tab[e->jogadas[i].jogador1.coluna][e->jogadas[i].jogador1.linha] = PRETA;
-        e->tab[e->jogadas[i].jogador2.coluna][e->jogadas[i].jogador2.linha] = BRANCA;
-        e->ultima_jogada.coluna = e->jogadas[i].jogador2.coluna;
-        e->ultima_jogada.linha = e->jogadas[i].jogador2.linha;
+    alterar_ultima_jogada_coluna(e, 4);
+    alterar_ultima_jogada_linha(e, 4);
+    for (i = 0; i < n; i++){
+        alterar_tab(e, obter_ultima_jogada_coluna(e), obter_ultima_jogada_linha(e), PRETA);
+        alterar_tab(e, obter_jogadas_jog1_coluna(e, i), obter_jogadas_jog1_linha(e, i), PRETA);
+        alterar_tab(e, obter_jogadas_jog2_coluna(e, i), obter_jogadas_jog2_linha(e, i), BRANCA);
+        alterar_ultima_jogada_coluna(e, obter_jogadas_jog2_coluna(e, i));
+        alterar_ultima_jogada_linha(e, obter_jogadas_jog2_linha(e, i));
     }
     alterar_numero_de_jogadas(e, n);
     alterar_numero_comandos(e, 2*n+1);
 }
 
 COORDENADA jog(ESTADO *e) {
-    COORDENADA ult_coord = e->ultima_jogada;
+    COORDENADA ult_coord = obter_ultima_jogada(e);
     int linha = ult_coord.linha, coluna = ult_coord.coluna, c, l;
     LISTA L = criar_lista();
     for (c = coluna - 1; c < coluna + 2; c++) {
