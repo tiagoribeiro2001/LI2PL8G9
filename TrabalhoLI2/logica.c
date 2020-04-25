@@ -107,12 +107,14 @@ COORDENADA jog(ESTADO *e) {
 }
 
 COORDENADA decide_jog(ESTADO *e, LISTA L) {
-    COORDENADA *coordenada = (COORDENADA*) devolve_cabeca(L);
+    COORDENADA *coordenada = (COORDENADA*) malloc(sizeof(COORDENADA));
+    COORDENADA *coord = (COORDENADA*) malloc(sizeof(COORDENADA));
+    *coordenada = *(COORDENADA*) devolve_cabeca(L);
     double melhor_dist = sqrt(((coordenada->coluna) - 0) * ((coordenada->coluna) - 0) + ((coordenada->linha) - 0) * ((coordenada->linha) - 0));
     for (LISTA T = proximo(L); !lista_esta_vazia(T); T = proximo(T)) {
-        COORDENADA *coord = (COORDENADA *) devolve_cabeca(T);
-        int c = coord->coluna;
-        int l = coord->linha;
+        *coord = *(COORDENADA *) devolve_cabeca(T);
+        int c = (*coord).coluna;
+        int l = (*coord).linha;
         if (obter_jogador_atual(e) == 1) {
             double dist = sqrt((c - 0) * (c - 0) + (l - 0) * (l - 0));
             if (dist < melhor_dist) {
