@@ -66,4 +66,14 @@ LISTA lista_jogadas_possiveis (ESTADO *e);
 */
 COORDENADA jog(ESTADO *e);
 
+
+
+/**
+\brief Permite ao jogador atual que peça ao computador para jogar por si
+@param e Apontador para o estado
+@returns A jogada escolhida para ser realizada
+*/
+COORDENADA jog2(ESTADO e);
+
+
 #endif

@@ -1,8 +1,11 @@
+#include <stdio.h>
 #include "logica.h"
 #include "dados.h"
 #include "listas.h"
 #include <math.h>
 #include <stdlib.h>
+#include "interface.h"
+
 
 int jogar(ESTADO *e, COORDENADA c) {
     int i = valida_jogada (e, c);
@@ -96,14 +99,84 @@ LISTA lista_jogadas_possiveis (ESTADO *e) {
         for (l = linha - 1; l < linha + 2; l++) {
             if (obter_casa(e, c, l) != PRETA && obter_casa(e, c, l) != BRANCA && obter_casa(e, c, l) != ERRO) {
                 COORDENADA *C = (COORDENADA *) malloc(sizeof(COORDENADA));
-                (*C).coluna = c;
-                (*C).linha = l;
+                C->coluna = c;
+                C->linha = l;
                 L = insere_cabeca(L, C);
             }
         }
     }
     return L;
 }
+
+int minimax(ESTADO e, int depth){
+    depth++;
+    if (depth > 1000){
+        printf("erro minimax recursivo:\n");
+        exit(1);
+    }
+    if (verifica_fim(&e) == 0) {
+        int x = verifica_vencedor(&e);
+        printf("cheguei ao fim:%d\n",x);
+        mostrar_tabuleiro(&e);
+        if (x == 1) return 1;
+        else return -1;
+    }
+    else {
+        LISTA jogadas;
+        jogadas = lista_jogadas_possiveis(&e);
+        int resultado;
+        if (lista_esta_vazia(jogadas)) return 0;
+        for(LISTA n = jogadas; n != NULL; n = proximo(n)){
+            COORDENADA *coord = (COORDENADA *) n->valor;
+            printf(" [%d %d] ", coord->coluna,coord->linha);
+            jogar(&e, *coord);
+            resultado = minimax(e,depth);
+            // Para a jogada na coordenada "*coord", o minimax retornou -1 se o jogador 2 ganhou, 0 se empataram, 1 se o jogador 1 ganhou.
+            // Tendo em conta o jogador que está a jogar atualmente, ele escolherá esta jogada se ela lhe for favorável(vitória).
+            if ((obter_jogador_atual(&e)) == 2 && (resultado == 1)){
+                break;
+            }
+            else if ((obter_jogador_atual(&e)) == 1 && (resultado == -1)) {
+                break;
+            }
+        }
+        for(LISTA n = jogadas;n != NULL; n = proximo(n)){
+            remove_cabeca(n);
+        }
+        return resultado;
+    }
+}
+
+
+
+COORDENADA jog2(ESTADO e){// melhor_jogada
+    int i = 0;
+    LISTA jogadas;
+    jogadas = lista_jogadas_possiveis(&e);
+    LISTA n = jogadas;
+    COORDENADA *coord;
+    int resultado;
+    for(;n != NULL; n = proximo(n)){
+        coord = (COORDENADA *) n->valor;
+        printf("JOG2: [%d, %d]\n", coord->coluna,coord->linha);
+        jogar(&e, *coord);
+        resultado = minimax(e,i);
+        i=0;
+        if ((obter_jogador_atual(&e)) == 2 && (resultado == 1)){
+            break;
+        }
+        else if ((obter_jogador_atual(&e)) == 1 && (resultado == -1)) {
+            break;
+        }
+    }
+    for(n = jogadas;n != NULL; n = proximo(n)){
+        remove_cabeca(n);
+    }
+    return *coord;
+}
+
+
+
 
 COORDENADA jog(ESTADO *e) {
     LISTA L = lista_jogadas_possiveis(e);
@@ -138,3 +211,5 @@ COORDENADA jog(ESTADO *e) {
     }
     return *coordenada;
 }
+
+

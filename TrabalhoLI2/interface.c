@@ -145,6 +145,13 @@ int interpretador(ESTADO *e) {
        movs(e);
        printf("\n>");
     }
+    else if (strcmp(token, "jog2\n")== 0){
+        COORDENADA C = jog2(*e);
+        jogar(e,C);
+        putchar('\n');
+        mostrar_tabuleiro(e);
+        prompt(e);
+    }
     else if (strcmp(token, "jog\n") == 0) {
         COORDENADA C = jog(e);
         jogar(e,C);

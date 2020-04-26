@@ -152,3 +152,4 @@ int obter_ultima_jogada_linha (ESTADO *e){
 COORDENADA obter_ultima_jogada (ESTADO *e){
     return e->ultima_jogada;
 }
+
