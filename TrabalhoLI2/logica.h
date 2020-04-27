@@ -71,23 +71,32 @@ COORDENADA jog(ESTADO *e);
 /**
 \brief Permite ao jogador atual que peça ao computador para jogar por si
 @param e  Estado atual do jogo
-@returns A jogada escolhida para ser realizada
+@returns A melhor jogada escolhida para ser realizada
 */
 COORDENADA jog2(ESTADO e);
 
 
-
+/**
+\brief Calcula a distância entre duas coordenadas
+@param c  Coordenada
+@param d  Coordenada
+@returns A distância entre as duas coordenadas
+*/
 double dist_2_coordenadas(COORDENADA c, COORDENADA d);
 
+
+/**
+\brief Determina a posição da casa UM
+@returns A coordenada da casa UM
+*/
 COORDENADA casa_1();
 
+
+/**
+\brief Determina a posição da casa DOIS
+@returns A coordenada da casa DOIS
+*/
 COORDENADA casa_2();
-
-
-
-
-
-
 
 
 #endif
