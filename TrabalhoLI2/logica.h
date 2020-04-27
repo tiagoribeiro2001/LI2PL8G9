@@ -70,10 +70,24 @@ COORDENADA jog(ESTADO *e);
 
 /**
 \brief Permite ao jogador atual que peça ao computador para jogar por si
-@param e Apontador para o estado
+@param e  Estado atual do jogo
 @returns A jogada escolhida para ser realizada
 */
 COORDENADA jog2(ESTADO e);
+
+
+
+double dist_2_coordenadas(COORDENADA c, COORDENADA d);
+
+COORDENADA casa_1();
+
+COORDENADA casa_2();
+
+
+
+
+
+
 
 
 #endif

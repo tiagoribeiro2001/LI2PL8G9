@@ -109,71 +109,151 @@ LISTA lista_jogadas_possiveis (ESTADO *e) {
 }
 
 int minimax(ESTADO e, int depth){
-    depth++;
-    if (depth > 1000){
-        printf("erro minimax recursivo:\n");
-        exit(1);
+    depth--;
+    if (depth < 1){
+        return 0;
     }
     if (verifica_fim(&e) == 0) {
         int x = verifica_vencedor(&e);
-        printf("cheguei ao fim:%d\n",x);
-        mostrar_tabuleiro(&e);
-        if (x == 1) return 1;
-        else return -1;
+        if (x == 1) {
+            return depth;
+        }
+        else return -depth;
     }
     else {
         LISTA jogadas;
         jogadas = lista_jogadas_possiveis(&e);
         int resultado;
-        if (lista_esta_vazia(jogadas)) return 0;
+        int min = 999, max = -999;
+        if (lista_esta_vazia(jogadas)){
+            return 0;
+        }
         for(LISTA n = jogadas; n != NULL; n = proximo(n)){
+            ESTADO tmp = e;
             COORDENADA *coord = (COORDENADA *) n->valor;
-            printf(" [%d %d] ", coord->coluna,coord->linha);
-            jogar(&e, *coord);
-            resultado = minimax(e,depth);
-            // Para a jogada na coordenada "*coord", o minimax retornou -1 se o jogador 2 ganhou, 0 se empataram, 1 se o jogador 1 ganhou.
-            // Tendo em conta o jogador que está a jogar atualmente, ele escolherá esta jogada se ela lhe for favorável(vitória).
-            if ((obter_jogador_atual(&e)) == 2 && (resultado == 1)){
-                break;
+            jogar(&tmp, *coord);
+            resultado = minimax(tmp,depth);
+            if(resultado < min){
+                min = resultado;
             }
-            else if ((obter_jogador_atual(&e)) == 1 && (resultado == -1)) {
-                break;
+            if(resultado > max){
+                max = resultado;
             }
         }
         for(LISTA n = jogadas;n != NULL; n = proximo(n)){
             remove_cabeca(n);
         }
-        return resultado;
+        if (obter_jogador_atual(&e) == 1){
+            return max;
+        }
+        else {
+            return min;
+        }
     }
 }
 
-
+#define PROFUNDIDADE 11
+#define JOGADAS_EM_DISTANCIA 3
 
 COORDENADA jog2(ESTADO e){// melhor_jogada
-    int i = 0;
     LISTA jogadas;
     jogadas = lista_jogadas_possiveis(&e);
     LISTA n = jogadas;
     COORDENADA *coord;
+    COORDENADA min_coord, max_coord, coord_mais_perto;
     int resultado;
-    for(;n != NULL; n = proximo(n)){
+    int min = 999, max = -999;
+    double minimo = 100;
+    for(;n != NULL; n = proximo(n)) {
+        ESTADO tmp = e;
         coord = (COORDENADA *) n->valor;
-        printf("JOG2: [%d, %d]\n", coord->coluna,coord->linha);
-        jogar(&e, *coord);
-        resultado = minimax(e,i);
-        i=0;
-        if ((obter_jogador_atual(&e)) == 2 && (resultado == 1)){
-            break;
+        if (obter_numero_de_jogadas(&e) < JOGADAS_EM_DISTANCIA) {
+            if (obter_jogador_atual(&e) == 1) {
+                double dist = dist_2_coordenadas(*coord, casa_1());
+                if (dist < minimo) {
+                    minimo = dist;
+                    coord_mais_perto = *coord;
+                }
+            }
+            else {
+                double dist = dist_2_coordenadas(*coord, casa_2());
+                if (dist < minimo) {
+                    minimo = dist;
+                    coord_mais_perto = *coord;
+                }
+            }
         }
-        else if ((obter_jogador_atual(&e)) == 1 && (resultado == -1)) {
-            break;
+        else {
+            jogar(&tmp, *coord);
+            resultado = minimax(tmp, PROFUNDIDADE);
+            if (resultado < min) {
+                min = resultado;
+                min_coord = *coord;
+            }
+            if (resultado > max) {
+                max = resultado;
+                max_coord = *coord;
+            }
         }
     }
     for(n = jogadas;n != NULL; n = proximo(n)){
         remove_cabeca(n);
     }
-    return *coord;
+    if (obter_numero_de_jogadas(&e) < JOGADAS_EM_DISTANCIA){
+        return coord_mais_perto;
+    }
+    else {
+        if (obter_jogador_atual(&e) == 1){
+            if(max > 0){
+                printf("É possível que o Jogador 1 ganhe em %d jogadas.\n", PROFUNDIDADE-1 - max);
+            }
+            else if (max < 0){
+                printf("É possível que o Jogador 2 ganhe em %d jogadas.\n", PROFUNDIDADE-1 + max);
+            }
+            else{
+                printf("Fim imprevisto.\n");
+            }
+            return max_coord;
+        }
+        else {
+            if(min > 0){
+                printf("É possível que o Jogador 1 ganhe em %d jogadas.\n", PROFUNDIDADE-1 - min);
+            }
+            else if (min < 0){
+                printf("É possível que o Jogador 2 ganhe em %d jogadas.\n", PROFUNDIDADE-1 + min);
+            }
+            else{
+                printf("Fim imprevisto.\n");
+            }
+            return min_coord;
+        }
+    }
 }
+
+double dist_2_coordenadas(COORDENADA c, COORDENADA d){
+    double x;
+    x = sqrt(pow((c.linha - d.linha),2) + pow((c.coluna-d.coluna),2));
+    return x;
+}
+
+
+
+COORDENADA casa_1(){
+    COORDENADA c;
+    c.coluna = 0;
+    c.linha = 0;
+    return c;
+
+}
+
+COORDENADA casa_2(){
+    COORDENADA c;
+    c.coluna = 7;
+    c.linha = 7;
+    return c;
+}
+
+
 
 
 
