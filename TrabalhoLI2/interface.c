@@ -53,6 +53,8 @@ void guardar_tabuleiro(char *nome, ESTADO *e){
     fclose(ficheiro);
 }
 
+
+
 void ler_tabuleiro(char *nome, ESTADO *e) {
     FILE *ficheiro = fopen(nome, "r");
     char j, h;
