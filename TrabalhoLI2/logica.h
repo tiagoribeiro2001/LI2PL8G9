@@ -66,15 +66,12 @@ LISTA lista_jogadas_possiveis (ESTADO *e);
 */
 COORDENADA jog(ESTADO *e);
 
-
-
 /**
 \brief Permite ao jogador atual que peça ao computador para jogar por si
 @param e  Estado atual do jogo
 @returns A melhor jogada escolhida para ser realizada
 */
 COORDENADA jog2(ESTADO e);
-
 
 /**
 \brief Calcula a distância entre duas coordenadas
@@ -84,13 +81,11 @@ COORDENADA jog2(ESTADO e);
 */
 double dist_2_coordenadas(COORDENADA c, COORDENADA d);
 
-
 /**
 \brief Determina a posição da casa UM
 @returns A coordenada da casa UM
 */
 COORDENADA casa_1();
-
 
 /**
 \brief Determina a posição da casa DOIS

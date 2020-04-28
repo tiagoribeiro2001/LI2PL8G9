@@ -204,27 +204,9 @@ COORDENADA jog2(ESTADO e){// melhor_jogada
     }
     else {
         if (obter_jogador_atual(&e) == 1){
-            if(max > 0){
-                printf("É possível que o Jogador 1 ganhe em %d jogadas.\n", PROFUNDIDADE-1 - max);
-            }
-            else if (max < 0){
-                printf("É possível que o Jogador 2 ganhe em %d jogadas.\n", PROFUNDIDADE-1 + max);
-            }
-            else{
-                printf("Fim imprevisto.\n");
-            }
             return max_coord;
         }
         else {
-            if(min > 0){
-                printf("É possível que o Jogador 1 ganhe em %d jogadas.\n", PROFUNDIDADE-1 - min);
-            }
-            else if (min < 0){
-                printf("É possível que o Jogador 2 ganhe em %d jogadas.\n", PROFUNDIDADE-1 + min);
-            }
-            else{
-                printf("Fim imprevisto.\n");
-            }
             return min_coord;
         }
     }
