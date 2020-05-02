@@ -4,7 +4,6 @@
 #include <string.h>
 #include "logica.h"
 #include <stdlib.h>
-#include <time.h>
 
 #define BUF_SIZE 1024
 

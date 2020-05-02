@@ -11,10 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" afterDir="false" />
-    </list>
+    <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +118,7 @@
       <workItem from="1588328150107" duration="5436000" />
       <workItem from="1588338985454" duration="1722000" />
       <workItem from="1588343285728" duration="7000" />
-      <workItem from="1588427820748" duration="7204000" />
+      <workItem from="1588427820748" duration="7975000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -524,10 +521,10 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="649" y="327" width="622" height="411" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.991@0.27.1920.991" timestamp="1588430626203" />
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1588435563998">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1588436588623">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1588435563998" />
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1588436588623" />
     <state x="100" y="127" width="1720" height="791" key="DiffContextDialog" timestamp="1587136166697">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
