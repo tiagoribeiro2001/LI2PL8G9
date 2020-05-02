@@ -12,7 +12,9 @@ Módulo das listas ligadas
 \brief Tipo para as listas ligadas
 */
 typedef struct nodo {
+    /** Apontador para o valor*/
     void *valor;
+    /** Apontador para o próximo nodo */
     struct nodo *proximo;
 } NODO, *LISTA;
 

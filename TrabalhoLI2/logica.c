@@ -4,8 +4,6 @@
 #include "listas.h"
 #include <math.h>
 #include <stdlib.h>
-#include "interface.h"
-
 
 int jogar(ESTADO *e, COORDENADA c) {
     int i = valida_jogada (e, c);
@@ -140,9 +138,6 @@ int minimax(ESTADO e, int depth){
                 max = resultado;
             }
         }
-        for(LISTA n = jogadas;n != NULL; n = proximo(n)){
-            remove_cabeca(n);
-        }
         if (obter_jogador_atual(&e) == 1){
             return max;
         }
@@ -152,8 +147,8 @@ int minimax(ESTADO e, int depth){
     }
 }
 
-#define PROFUNDIDADE 11
-#define JOGADAS_EM_DISTANCIA 3
+#define PROFUNDIDADE 10
+#define JOGADAS_EM_DISTANCIA 2
 
 COORDENADA jog2(ESTADO e){// melhor_jogada
     LISTA jogadas;
@@ -196,9 +191,7 @@ COORDENADA jog2(ESTADO e){// melhor_jogada
             }
         }
     }
-    for(n = jogadas;n != NULL; n = proximo(n)){
-        remove_cabeca(n);
-    }
+    free(jogadas);
     if (obter_numero_de_jogadas(&e) < JOGADAS_EM_DISTANCIA){
         return coord_mais_perto;
     }
@@ -218,14 +211,11 @@ double dist_2_coordenadas(COORDENADA c, COORDENADA d){
     return x;
 }
 
-
-
 COORDENADA casa_1(){
     COORDENADA c;
     c.coluna = 0;
     c.linha = 0;
     return c;
-
 }
 
 COORDENADA casa_2(){
@@ -234,11 +224,6 @@ COORDENADA casa_2(){
     c.linha = 7;
     return c;
 }
-
-
-
-
-
 
 COORDENADA jog(ESTADO *e) {
     LISTA L = lista_jogadas_possiveis(e);
@@ -271,6 +256,8 @@ COORDENADA jog(ESTADO *e) {
             }
         }
     }
+    free(L);
+    free(coord);
     return *coordenada;
 }
 

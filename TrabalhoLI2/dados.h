@@ -14,7 +14,9 @@ typedef enum {VAZIO, BRANCA, PRETA, UM, DOIS, ERRO} CASA;
 \brief Tipo de dados para as coordenadas
 */
 typedef struct {
+    /** Coluna */
     int coluna;
+    /** Linha */
     int linha;
 } COORDENADA;
 
@@ -22,7 +24,9 @@ typedef struct {
 \brief Tipo de dados para a jogada
 */
 typedef struct {
+    /** Coordenada do jogador 1 */
     COORDENADA jogador1;
+    /** Coordenada do jogador 2 */
     COORDENADA jogador2;
 } JOGADA;
 
@@ -225,21 +229,21 @@ void alterar_jogadas_jog2_linha (ESTADO *e, int i, int l);
 @param c Coluna da coordenada a alterar
 @param l Linha da coordenada a alterar
 @param casa Casa para a qual pretendemos alterar
- */
+*/
 void alterar_tab (ESTADO *e, int c, int l, CASA casa);
 
 /**
 \brief Altera a coluna da última jogada
 @param e Apontador para o estado
 @param c Coluna para a qual pretendemos alterar
- */
+*/
 void alterar_ultima_jogada_coluna (ESTADO *e, int c);
 
 /**
 \brief Altera a linha da última jogada
 @param e Apontador para o estado
 @param l Linha para a qual pretendemos alterar
- */
+*/
 void alterar_ultima_jogada_linha (ESTADO *e, int l);
 
 /**

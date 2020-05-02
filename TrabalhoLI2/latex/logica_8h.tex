@@ -19,35 +19,71 @@ int \hyperlink{logica_8h_abe252fb00afcbeeef6fc4abad6bcad22}{verifica\+\_\+venced
 \begin{DoxyCompactList}\small\item\em Verifica qual jogador venceu o jogo. \end{DoxyCompactList}\item 
 void \hyperlink{logica_8h_a0de576437e8b6e3c224a112334f018f1}{pos} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, int i)
 \begin{DoxyCompactList}\small\item\em Altera o estado do jogo para uma jogada anterior. \end{DoxyCompactList}\item 
+\hyperlink{structnodo}{L\+I\+S\+TA} \hyperlink{logica_8h_a862d551b5b0805fc9afb81c96dd1de3c}{lista\+\_\+jogadas\+\_\+possiveis} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Cria uma lista de possíveis jogadas a executar. \end{DoxyCompactList}\item 
 \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}{jog} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Permite ao jogador atual que peça ao computador para jogar por si. \end{DoxyCompactList}\item 
-\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{logica_8h_af7cee748f34150fe18d4ec62ad72779e}{decide\+\_\+jog} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$e, \hyperlink{structnodo}{L\+I\+S\+TA} L)
-\begin{DoxyCompactList}\small\item\em Seleciona a melhor jogada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+int \hyperlink{logica_8h_a63c077ed1ef3d4c3c187f9e2963623aa}{minimax} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} e, int depth)
+\begin{DoxyCompactList}\small\item\em Define a melhor jogada possível. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{logica_8h_a6a0a43fac9a5639cdd8eeeda6717bf32}{jog2} (\hyperlink{structESTADO}{E\+S\+T\+A\+DO} e)
+\begin{DoxyCompactList}\small\item\em Permite ao jogador atual que peça ao computador para jogar por si. \end{DoxyCompactList}\item 
+double \hyperlink{logica_8h_add492ccbc8de95f8d8e849a445726e01}{dist\+\_\+2\+\_\+coordenadas} (\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} c, \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} d)
+\begin{DoxyCompactList}\small\item\em Calcula a distância entre duas coordenadas. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{logica_8h_accace748b01f45ad8afc4065c48a1976}{casa\+\_\+1} ()
+\begin{DoxyCompactList}\small\item\em Determina a posição da casa UM. \end{DoxyCompactList}\item 
+\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} \hyperlink{logica_8h_a2993a6ffa8d7b0540dee13c7204f136c}{casa\+\_\+2} ()
+\begin{DoxyCompactList}\small\item\em Determina a posição da casa D\+O\+IS. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Parte lógica do programa 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{logica_8h_af7cee748f34150fe18d4ec62ad72779e}\label{logica_8h_af7cee748f34150fe18d4ec62ad72779e}} 
-\index{logica.\+h@{logica.\+h}!decide\+\_\+jog@{decide\+\_\+jog}}
-\index{decide\+\_\+jog@{decide\+\_\+jog}!logica.\+h@{logica.\+h}}
-\subsubsection{\texorpdfstring{decide\+\_\+jog()}{decide\_jog()}}
-{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} decide\+\_\+jog (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e,  }\item[{\hyperlink{structnodo}{L\+I\+S\+TA}}]{L }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{logica_8h_accace748b01f45ad8afc4065c48a1976}\label{logica_8h_accace748b01f45ad8afc4065c48a1976}} 
+\index{logica.\+h@{logica.\+h}!casa\+\_\+1@{casa\+\_\+1}}
+\index{casa\+\_\+1@{casa\+\_\+1}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{casa\+\_\+1()}{casa\_1()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} casa\+\_\+1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Seleciona a melhor jogada. 
+Determina a posição da casa UM. 
+
+\begin{DoxyReturn}{Returns}
+A coordenada da casa UM 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_a2993a6ffa8d7b0540dee13c7204f136c}\label{logica_8h_a2993a6ffa8d7b0540dee13c7204f136c}} 
+\index{logica.\+h@{logica.\+h}!casa\+\_\+2@{casa\+\_\+2}}
+\index{casa\+\_\+2@{casa\+\_\+2}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{casa\+\_\+2()}{casa\_2()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} casa\+\_\+2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determina a posição da casa D\+O\+IS. 
+
+\begin{DoxyReturn}{Returns}
+A coordenada da casa D\+O\+IS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_add492ccbc8de95f8d8e849a445726e01}\label{logica_8h_add492ccbc8de95f8d8e849a445726e01}} 
+\index{logica.\+h@{logica.\+h}!dist\+\_\+2\+\_\+coordenadas@{dist\+\_\+2\+\_\+coordenadas}}
+\index{dist\+\_\+2\+\_\+coordenadas@{dist\+\_\+2\+\_\+coordenadas}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{dist\+\_\+2\+\_\+coordenadas()}{dist\_2\_coordenadas()}}
+{\footnotesize\ttfamily double dist\+\_\+2\+\_\+coordenadas (\begin{DoxyParamCaption}\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}]{c,  }\item[{\hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}]{d }\end{DoxyParamCaption})}
+
+
+
+Calcula a distância entre duas coordenadas. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em e} & Apontador para o estado \\
+{\em c} & Coordenada \\
 \hline
-{\em L} & Lista de jogadas possíveis \\
+{\em d} & Coordenada \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A jogada escolhida para ser realizada 
+A distância entre as duas coordenadas 
 \end{DoxyReturn}
 \mbox{\Hypertarget{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}\label{logica_8h_a1955c9d7c965e5b40a24d3d61d126702}} 
 \index{logica.\+h@{logica.\+h}!jog@{jog}}
@@ -66,6 +102,24 @@ Permite ao jogador atual que peça ao computador para jogar por si.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A jogada escolhida para ser realizada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_a6a0a43fac9a5639cdd8eeeda6717bf32}\label{logica_8h_a6a0a43fac9a5639cdd8eeeda6717bf32}} 
+\index{logica.\+h@{logica.\+h}!jog2@{jog2}}
+\index{jog2@{jog2}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{jog2()}{jog2()}}
+{\footnotesize\ttfamily \hyperlink{structCOORDENADA}{C\+O\+O\+R\+D\+E\+N\+A\+DA} jog2 (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}}]{e }\end{DoxyParamCaption})}
+
+
+
+Permite ao jogador atual que peça ao computador para jogar por si. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual do jogo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A melhor jogada escolhida para ser realizada 
 \end{DoxyReturn}
 \mbox{\Hypertarget{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}\label{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}} 
 \index{logica.\+h@{logica.\+h}!jogar@{jogar}}
@@ -86,6 +140,44 @@ Altera os parâmetros no estado mediante a jogada.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Devolve um se for possível jogar e zero caso não seja possível. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_a862d551b5b0805fc9afb81c96dd1de3c}\label{logica_8h_a862d551b5b0805fc9afb81c96dd1de3c}} 
+\index{logica.\+h@{logica.\+h}!lista\+\_\+jogadas\+\_\+possiveis@{lista\+\_\+jogadas\+\_\+possiveis}}
+\index{lista\+\_\+jogadas\+\_\+possiveis@{lista\+\_\+jogadas\+\_\+possiveis}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{lista\+\_\+jogadas\+\_\+possiveis()}{lista\_jogadas\_possiveis()}}
+{\footnotesize\ttfamily \hyperlink{structnodo}{L\+I\+S\+TA} lista\+\_\+jogadas\+\_\+possiveis (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Cria uma lista de possíveis jogadas a executar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Apontador para o estado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A lista com as jogadas possíveis 
+\end{DoxyReturn}
+\mbox{\Hypertarget{logica_8h_a63c077ed1ef3d4c3c187f9e2963623aa}\label{logica_8h_a63c077ed1ef3d4c3c187f9e2963623aa}} 
+\index{logica.\+h@{logica.\+h}!minimax@{minimax}}
+\index{minimax@{minimax}!logica.\+h@{logica.\+h}}
+\subsubsection{\texorpdfstring{minimax()}{minimax()}}
+{\footnotesize\ttfamily int minimax (\begin{DoxyParamCaption}\item[{\hyperlink{structESTADO}{E\+S\+T\+A\+DO}}]{e,  }\item[{int}]{depth }\end{DoxyParamCaption})}
+
+
+
+Define a melhor jogada possível. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Estado atual do jogo \\
+\hline
+{\em depth} & Profundidade da escolha da jogada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o valor da melhor jogada possível 
 \end{DoxyReturn}
 \mbox{\Hypertarget{logica_8h_a0de576437e8b6e3c224a112334f018f1}\label{logica_8h_a0de576437e8b6e3c224a112334f018f1}} 
 \index{logica.\+h@{logica.\+h}!pos@{pos}}

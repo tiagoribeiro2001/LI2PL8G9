@@ -55,7 +55,7 @@ void pos (ESTADO *e, int i);
 /**
 \brief Cria uma lista de possíveis jogadas a executar
 @param e Apontador para o estado
-@returns A lsita com as jogadas possíveis
+@returns A lista com as jogadas possíveis
 */
 LISTA lista_jogadas_possiveis (ESTADO *e);
 
@@ -65,6 +65,14 @@ LISTA lista_jogadas_possiveis (ESTADO *e);
 @returns A jogada escolhida para ser realizada
 */
 COORDENADA jog(ESTADO *e);
+
+/**
+\brief Define a melhor jogada possível
+@param e  Estado atual do jogo
+@param depth Profundidade da escolha da jogada
+@returns Retorna o valor da melhor jogada possível
+*/
+int minimax(ESTADO e, int depth);
 
 /**
 \brief Permite ao jogador atual que peça ao computador para jogar por si

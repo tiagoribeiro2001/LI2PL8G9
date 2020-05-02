@@ -21,10 +21,7 @@ void *devolve_cabeca(LISTA L){
 }
 
 LISTA proximo(LISTA L){
-    LISTA p;
-    if (L == NULL) p = NULL;
-    else p = L->proximo;
-    return p;
+    return L->proximo;
 }
 
 LISTA remove_cabeca(LISTA L){

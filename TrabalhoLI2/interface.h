@@ -46,6 +46,13 @@ int interpretador(ESTADO *e);
 void movs (ESTADO *e);
 
 /**
+\brief Imprime uma linha do comando movs
+@param e Apontador para o estado
+@param i Número da linha
+*/
+void printf_movs (ESTADO *e, int i);
+
+/**
 \brief Imprime a mensagem que congratula o jogador vencedor
 @param e Apontador para o estado
 */

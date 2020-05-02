@@ -95,33 +95,88 @@ Functions</h2></td></tr>
 <tr class="memitem:a0de576437e8b6e3c224a112334f018f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a0de576437e8b6e3c224a112334f018f1">pos</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, int i)</td></tr>
 <tr class="memdesc:a0de576437e8b6e3c224a112334f018f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Altera o estado do jogo para uma jogada anterior.  <a href="#a0de576437e8b6e3c224a112334f018f1">More...</a><br /></td></tr>
 <tr class="separator:a0de576437e8b6e3c224a112334f018f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a862d551b5b0805fc9afb81c96dd1de3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnodo.html">LISTA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a862d551b5b0805fc9afb81c96dd1de3c">lista_jogadas_possiveis</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
+<tr class="memdesc:a862d551b5b0805fc9afb81c96dd1de3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria uma lista de possíveis jogadas a executar.  <a href="#a862d551b5b0805fc9afb81c96dd1de3c">More...</a><br /></td></tr>
+<tr class="separator:a862d551b5b0805fc9afb81c96dd1de3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1955c9d7c965e5b40a24d3d61d126702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a1955c9d7c965e5b40a24d3d61d126702">jog</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e)</td></tr>
 <tr class="memdesc:a1955c9d7c965e5b40a24d3d61d126702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite ao jogador atual que peça ao computador para jogar por si.  <a href="#a1955c9d7c965e5b40a24d3d61d126702">More...</a><br /></td></tr>
 <tr class="separator:a1955c9d7c965e5b40a24d3d61d126702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7cee748f34150fe18d4ec62ad72779e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#af7cee748f34150fe18d4ec62ad72779e">decide_jog</a> (<a class="el" href="structESTADO.html">ESTADO</a> *e, <a class="el" href="structnodo.html">LISTA</a> L)</td></tr>
-<tr class="memdesc:af7cee748f34150fe18d4ec62ad72779e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seleciona a melhor jogada.  <a href="#af7cee748f34150fe18d4ec62ad72779e">More...</a><br /></td></tr>
-<tr class="separator:af7cee748f34150fe18d4ec62ad72779e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c077ed1ef3d4c3c187f9e2963623aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a63c077ed1ef3d4c3c187f9e2963623aa">minimax</a> (<a class="el" href="structESTADO.html">ESTADO</a> e, int depth)</td></tr>
+<tr class="memdesc:a63c077ed1ef3d4c3c187f9e2963623aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a melhor jogada possível.  <a href="#a63c077ed1ef3d4c3c187f9e2963623aa">More...</a><br /></td></tr>
+<tr class="separator:a63c077ed1ef3d4c3c187f9e2963623aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0a43fac9a5639cdd8eeeda6717bf32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a6a0a43fac9a5639cdd8eeeda6717bf32">jog2</a> (<a class="el" href="structESTADO.html">ESTADO</a> e)</td></tr>
+<tr class="memdesc:a6a0a43fac9a5639cdd8eeeda6717bf32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite ao jogador atual que peça ao computador para jogar por si.  <a href="#a6a0a43fac9a5639cdd8eeeda6717bf32">More...</a><br /></td></tr>
+<tr class="separator:a6a0a43fac9a5639cdd8eeeda6717bf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add492ccbc8de95f8d8e849a445726e01"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#add492ccbc8de95f8d8e849a445726e01">dist_2_coordenadas</a> (<a class="el" href="structCOORDENADA.html">COORDENADA</a> c, <a class="el" href="structCOORDENADA.html">COORDENADA</a> d)</td></tr>
+<tr class="memdesc:add492ccbc8de95f8d8e849a445726e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a distância entre duas coordenadas.  <a href="#add492ccbc8de95f8d8e849a445726e01">More...</a><br /></td></tr>
+<tr class="separator:add492ccbc8de95f8d8e849a445726e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accace748b01f45ad8afc4065c48a1976"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#accace748b01f45ad8afc4065c48a1976">casa_1</a> ()</td></tr>
+<tr class="memdesc:accace748b01f45ad8afc4065c48a1976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determina a posição da casa UM.  <a href="#accace748b01f45ad8afc4065c48a1976">More...</a><br /></td></tr>
+<tr class="separator:accace748b01f45ad8afc4065c48a1976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2993a6ffa8d7b0540dee13c7204f136c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a2993a6ffa8d7b0540dee13c7204f136c">casa_2</a> ()</td></tr>
+<tr class="memdesc:a2993a6ffa8d7b0540dee13c7204f136c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determina a posição da casa DOIS.  <a href="#a2993a6ffa8d7b0540dee13c7204f136c">More...</a><br /></td></tr>
+<tr class="separator:a2993a6ffa8d7b0540dee13c7204f136c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parte lógica do programa </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="af7cee748f34150fe18d4ec62ad72779e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7cee748f34150fe18d4ec62ad72779e">&#9670;&nbsp;</a></span>decide_jog()</h2>
+<a id="accace748b01f45ad8afc4065c48a1976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accace748b01f45ad8afc4065c48a1976">&#9670;&nbsp;</a></span>casa_1()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> decide_jog </td>
+          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> casa_1 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determina a posição da casa UM. </p>
+<dl class="section return"><dt>Returns</dt><dd>A coordenada da casa UM </dd></dl>
+
+</div>
+</div>
+<a id="a2993a6ffa8d7b0540dee13c7204f136c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2993a6ffa8d7b0540dee13c7204f136c">&#9670;&nbsp;</a></span>casa_2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> casa_2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determina a posição da casa DOIS. </p>
+<dl class="section return"><dt>Returns</dt><dd>A coordenada da casa DOIS </dd></dl>
+
+</div>
+</div>
+<a id="add492ccbc8de95f8d8e849a445726e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add492ccbc8de95f8d8e849a445726e01">&#9670;&nbsp;</a></span>dist_2_coordenadas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double dist_2_coordenadas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structnodo.html">LISTA</a>&#160;</td>
-          <td class="paramname"><em>L</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structCOORDENADA.html">COORDENADA</a>&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -131,15 +186,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Seleciona a melhor jogada. </p>
+<p>Calcula a distância entre duas coordenadas. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
-    <tr><td class="paramname">L</td><td>Lista de jogadas possíveis </td></tr>
+    <tr><td class="paramname">c</td><td>Coordenada </td></tr>
+    <tr><td class="paramname">d</td><td>Coordenada </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A jogada escolhida para ser realizada </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A distância entre as duas coordenadas </dd></dl>
 
 </div>
 </div>
@@ -167,6 +222,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A jogada escolhida para ser realizada </dd></dl>
+
+</div>
+</div>
+<a id="a6a0a43fac9a5639cdd8eeeda6717bf32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0a43fac9a5639cdd8eeeda6717bf32">&#9670;&nbsp;</a></span>jog2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCOORDENADA.html">COORDENADA</a> jog2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a>&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permite ao jogador atual que peça ao computador para jogar por si. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Estado atual do jogo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A melhor jogada escolhida para ser realizada </dd></dl>
 
 </div>
 </div>
@@ -205,6 +287,71 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Devolve um se for possível jogar e zero caso não seja possível. </dd></dl>
+
+</div>
+</div>
+<a id="a862d551b5b0805fc9afb81c96dd1de3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862d551b5b0805fc9afb81c96dd1de3c">&#9670;&nbsp;</a></span>lista_jogadas_possiveis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnodo.html">LISTA</a> lista_jogadas_possiveis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria uma lista de possíveis jogadas a executar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Apontador para o estado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A lista com as jogadas possíveis </dd></dl>
+
+</div>
+</div>
+<a id="a63c077ed1ef3d4c3c187f9e2963623aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63c077ed1ef3d4c3c187f9e2963623aa">&#9670;&nbsp;</a></span>minimax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int minimax </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structESTADO.html">ESTADO</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a melhor jogada possível. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Estado atual do jogo </td></tr>
+    <tr><td class="paramname">depth</td><td>Profundidade da escolha da jogada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Retorna o valor da melhor jogada possível </dd></dl>
 
 </div>
 </div>
