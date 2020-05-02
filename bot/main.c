@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "bot.c"
+#include "bot.h"
 
 int main(int argc, char *argv[]) {
     if (argc == 3) {

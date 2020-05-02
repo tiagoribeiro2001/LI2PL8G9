@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="" />
+    <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +120,7 @@
       <workItem from="1588328150107" duration="5436000" />
       <workItem from="1588338985454" duration="1722000" />
       <workItem from="1588343285728" duration="7000" />
-      <workItem from="1588427820748" duration="7975000" />
+      <workItem from="1588427820748" duration="8090000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -442,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588435564257</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Atualização do ficheiro interface.c">
+      <created>1588436598499</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1588436598499</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modificados os comandos" />
     <MESSAGE value="Alteração no comando ler" />
     <MESSAGE value="Implementação do ocmando movs" />
     <MESSAGE value="Documentação de funções" />
@@ -510,7 +518,8 @@
     <MESSAGE value="Comando jog funcional" />
     <MESSAGE value="Alterações na função jog" />
     <MESSAGE value="Bot adicionado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bot adicionado" />
+    <MESSAGE value="Atualização do ficheiro interface.c" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização do ficheiro interface.c" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="184" width="800" height="684" key="#New_File_Extensions" timestamp="1588428005159">
@@ -521,10 +530,10 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="649" y="327" width="622" height="411" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.991@0.27.1920.991" timestamp="1588430626203" />
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1588436588623">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1588436598438">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1588436588623" />
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1588436598438" />
     <state x="100" y="127" width="1720" height="791" key="DiffContextDialog" timestamp="1587136166697">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
@@ -533,22 +542,22 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1588428098948" />
-    <state width="1874" height="265" key="GridCell.Tab.0.bottom" timestamp="1588434472472">
+    <state width="1874" height="265" key="GridCell.Tab.0.bottom" timestamp="1588436614935">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="265" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1588434472472" />
-    <state width="1874" height="265" key="GridCell.Tab.0.center" timestamp="1588434472472">
+    <state width="1874" height="265" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1588436614935" />
+    <state width="1874" height="265" key="GridCell.Tab.0.center" timestamp="1588436614932">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="265" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1588434472472" />
-    <state width="1874" height="265" key="GridCell.Tab.0.left" timestamp="1588434472472">
+    <state width="1874" height="265" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1588436614932" />
+    <state width="1874" height="265" key="GridCell.Tab.0.left" timestamp="1588436614931">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="265" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1588434472472" />
-    <state width="1874" height="265" key="GridCell.Tab.0.right" timestamp="1588434472472">
+    <state width="1874" height="265" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1588436614931" />
+    <state width="1874" height="265" key="GridCell.Tab.0.right" timestamp="1588436614934">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="265" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1588434472472" />
+    <state width="1874" height="265" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1588436614934" />
     <state width="1874" height="308" key="GridCell.Tab.1.bottom" timestamp="1587826793359">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
