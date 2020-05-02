@@ -12,56 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bot/.idea/bot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/Doxyfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doxyfile.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Doxyfile.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/interface.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TrabalhoLI2.dir/logica.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/dados.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/dados.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/dados_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dados_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/functions_vars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/globals_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/interface_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/interface_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/interface_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/logica_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/logica_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/logica_8h_source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/all_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/functions_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/variables_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/variables_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/search/variables_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/search/variables_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/structCOORDENADA-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structCOORDENADA-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/structCOORDENADA.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structCOORDENADA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/structJOGADA-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structJOGADA-members.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/structJOGADA.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/structJOGADA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/interface_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/interface_8h.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/logica_8h.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/logica_8h.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/structCOORDENADA.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/structCOORDENADA.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/latex/structJOGADA.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/structJOGADA.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas.c" beforeDir="false" afterPath="$PROJECT_DIR$/listas.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas.h" beforeDir="false" afterPath="$PROJECT_DIR$/listas.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/logica.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logica.h" beforeDir="false" afterPath="$PROJECT_DIR$/logica.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +121,7 @@
       <workItem from="1588328150107" duration="5436000" />
       <workItem from="1588338985454" duration="1722000" />
       <workItem from="1588343285728" duration="7000" />
-      <workItem from="1588427820748" duration="6964000" />
+      <workItem from="1588427820748" duration="7204000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -486,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587829375414</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Bot adicionado">
+      <created>1588435564257</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1588435564257</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Atualizado o Doxygen" />
     <MESSAGE value="Modificados os comandos" />
     <MESSAGE value="Alteração no comando ler" />
     <MESSAGE value="Implementação do ocmando movs" />
@@ -554,7 +512,8 @@
     <MESSAGE value="Alterações nas funções da camada de lógica" />
     <MESSAGE value="Comando jog funcional" />
     <MESSAGE value="Alterações na função jog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterações na função jog" />
+    <MESSAGE value="Bot adicionado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bot adicionado" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="184" width="800" height="684" key="#New_File_Extensions" timestamp="1588428005159">
@@ -565,10 +524,10 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="649" y="327" width="622" height="411" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.991@0.27.1920.991" timestamp="1588430626203" />
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1588435535007">
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2" timestamp="1588435563998">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1588435535007" />
+    <state x="830" y="184" width="860" height="814" key="CommitChangelistDialog2/0.27.1920.991@0.27.1920.991" timestamp="1588435563998" />
     <state x="100" y="127" width="1720" height="791" key="DiffContextDialog" timestamp="1587136166697">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
