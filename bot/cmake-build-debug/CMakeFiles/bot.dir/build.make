@@ -70,32 +70,77 @@ CMakeFiles/bot.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/bot/main.c -o CMakeFiles/bot.dir/main.c.s
 
-CMakeFiles/bot.dir/bot.c.o: CMakeFiles/bot.dir/flags.make
-CMakeFiles/bot.dir/bot.c.o: ../bot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bot.dir/bot.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bot.dir/bot.c.o   -c /home/tiago/CLionProjects/LI2/bot/bot.c
+CMakeFiles/bot.dir/dados.c.o: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/dados.c.o: ../dados.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bot.dir/dados.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bot.dir/dados.c.o   -c /home/tiago/CLionProjects/LI2/bot/dados.c
 
-CMakeFiles/bot.dir/bot.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/bot.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/bot/bot.c > CMakeFiles/bot.dir/bot.c.i
+CMakeFiles/bot.dir/dados.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/dados.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/bot/dados.c > CMakeFiles/bot.dir/dados.c.i
 
-CMakeFiles/bot.dir/bot.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/bot.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/bot/bot.c -o CMakeFiles/bot.dir/bot.c.s
+CMakeFiles/bot.dir/dados.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/dados.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/bot/dados.c -o CMakeFiles/bot.dir/dados.c.s
+
+CMakeFiles/bot.dir/interface.c.o: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/interface.c.o: ../interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/bot.dir/interface.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bot.dir/interface.c.o   -c /home/tiago/CLionProjects/LI2/bot/interface.c
+
+CMakeFiles/bot.dir/interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/interface.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/bot/interface.c > CMakeFiles/bot.dir/interface.c.i
+
+CMakeFiles/bot.dir/interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/interface.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/bot/interface.c -o CMakeFiles/bot.dir/interface.c.s
+
+CMakeFiles/bot.dir/logica.c.o: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/logica.c.o: ../logica.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/bot.dir/logica.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bot.dir/logica.c.o   -c /home/tiago/CLionProjects/LI2/bot/logica.c
+
+CMakeFiles/bot.dir/logica.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/logica.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/bot/logica.c > CMakeFiles/bot.dir/logica.c.i
+
+CMakeFiles/bot.dir/logica.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/logica.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/bot/logica.c -o CMakeFiles/bot.dir/logica.c.s
+
+CMakeFiles/bot.dir/listas.c.o: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/listas.c.o: ../listas.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/bot.dir/listas.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/bot.dir/listas.c.o   -c /home/tiago/CLionProjects/LI2/bot/listas.c
+
+CMakeFiles/bot.dir/listas.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/listas.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tiago/CLionProjects/LI2/bot/listas.c > CMakeFiles/bot.dir/listas.c.i
+
+CMakeFiles/bot.dir/listas.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/listas.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tiago/CLionProjects/LI2/bot/listas.c -o CMakeFiles/bot.dir/listas.c.s
 
 # Object files for target bot
 bot_OBJECTS = \
 "CMakeFiles/bot.dir/main.c.o" \
-"CMakeFiles/bot.dir/bot.c.o"
+"CMakeFiles/bot.dir/dados.c.o" \
+"CMakeFiles/bot.dir/interface.c.o" \
+"CMakeFiles/bot.dir/logica.c.o" \
+"CMakeFiles/bot.dir/listas.c.o"
 
 # External object files for target bot
 bot_EXTERNAL_OBJECTS =
 
 bot: CMakeFiles/bot.dir/main.c.o
-bot: CMakeFiles/bot.dir/bot.c.o
+bot: CMakeFiles/bot.dir/dados.c.o
+bot: CMakeFiles/bot.dir/interface.c.o
+bot: CMakeFiles/bot.dir/logica.c.o
+bot: CMakeFiles/bot.dir/listas.c.o
 bot: CMakeFiles/bot.dir/build.make
 bot: CMakeFiles/bot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable bot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

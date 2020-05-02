@@ -78,10 +78,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tiago/CLionProjects/LI2/bot/bot.c">
+		<Unit filename="/home/tiago/CLionProjects/LI2/bot/dados.c">
 			<Option target="bot"/>
 		</Unit>
-		<Unit filename="/home/tiago/CLionProjects/LI2/bot/bot.h">
+		<Unit filename="/home/tiago/CLionProjects/LI2/bot/dados.h">
+			<Option target="bot"/>
+		</Unit>
+		<Unit filename="/home/tiago/CLionProjects/LI2/bot/interface.c">
+			<Option target="bot"/>
+		</Unit>
+		<Unit filename="/home/tiago/CLionProjects/LI2/bot/interface.h">
+			<Option target="bot"/>
+		</Unit>
+		<Unit filename="/home/tiago/CLionProjects/LI2/bot/listas.c">
+			<Option target="bot"/>
+		</Unit>
+		<Unit filename="/home/tiago/CLionProjects/LI2/bot/listas.h">
+			<Option target="bot"/>
+		</Unit>
+		<Unit filename="/home/tiago/CLionProjects/LI2/bot/logica.c">
+			<Option target="bot"/>
+		</Unit>
+		<Unit filename="/home/tiago/CLionProjects/LI2/bot/logica.h">
 			<Option target="bot"/>
 		</Unit>
 		<Unit filename="/home/tiago/CLionProjects/LI2/bot/main.c">

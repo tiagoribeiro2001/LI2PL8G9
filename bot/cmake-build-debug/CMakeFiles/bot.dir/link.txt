@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/bot.dir/main.c.o CMakeFiles/bot.dir/bot.c.o  -o bot 
+/usr/bin/cc -g   CMakeFiles/bot.dir/main.c.o CMakeFiles/bot.dir/dados.c.o CMakeFiles/bot.dir/interface.c.o CMakeFiles/bot.dir/logica.c.o CMakeFiles/bot.dir/listas.c.o  -o bot 

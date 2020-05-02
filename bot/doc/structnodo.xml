@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structnodo" kind="struct" language="C++" prot="public">
     <compoundname>nodo</compoundname>
-    <includes refid="bot_8h" local="no">bot.h</includes>
+    <includes refid="listas_8h" local="no">listas.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structnodo_1ab63adcdb83ea1fdcf4fa10f3cafc4a6a" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -15,7 +15,7 @@
 <para>Apontador para o valor </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="66" column="1" bodyfile="bot.h" bodystart="66" bodyend="-1"/>
+        <location file="listas.h" line="15" column="1" bodyfile="listas.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structnodo_1aaaabdcb6641ddcdac8990402242b154a" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structnodo" kindref="compound">nodo</ref> *</type>
@@ -28,7 +28,7 @@
 <para>Apontador para o próximo nodo </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="68" column="1" bodyfile="bot.h" bodystart="68" bodyend="-1"/>
+        <location file="listas.h" line="17" column="1" bodyfile="listas.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -44,7 +44,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="bot.h" line="64" column="1" bodyfile="bot.h" bodystart="64" bodyend="69"/>
+    <location file="listas.h" line="13" column="1" bodyfile="listas.h" bodystart="13" bodyend="18"/>
     <listofallmembers>
       <member refid="structnodo_1aaaabdcb6641ddcdac8990402242b154a" prot="public" virt="non-virtual"><scope>nodo</scope><name>proximo</name></member>
       <member refid="structnodo_1ab63adcdb83ea1fdcf4fa10f3cafc4a6a" prot="public" virt="non-virtual"><scope>nodo</scope><name>valor</name></member>

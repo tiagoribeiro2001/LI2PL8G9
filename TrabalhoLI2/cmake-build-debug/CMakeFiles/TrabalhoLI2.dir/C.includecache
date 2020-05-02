@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.c
-dados.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
-stdlib.h
--
-
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
 
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.c
@@ -27,58 +21,18 @@ logica.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.h
 stdlib.h
 -
-time.h
--
 
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.h
 dados.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
 
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.c
-listas.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h
-stdio.h
--
-stdlib.h
--
-
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h
 dados.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
-
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.c
-stdio.h
--
-logica.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.h
-dados.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
-listas.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h
-math.h
--
-stdlib.h
--
 
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.h
 dados.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
-listas.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h
-
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/main.c
-dados.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/dados.h
-interface.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/interface.h
-logica.h
-/home/tiago/CLionProjects/LI2/TrabalhoLI2/logica.h
-stdio.h
--
-stdlib.h
--
-string.h
--
 listas.h
 /home/tiago/CLionProjects/LI2/TrabalhoLI2/listas.h
 

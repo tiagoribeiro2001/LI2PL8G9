@@ -2,10 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structESTADO" kind="struct" language="C++" prot="public">
     <compoundname>ESTADO</compoundname>
-    <includes refid="bot_8h" local="no">bot.h</includes>
+    <includes refid="dados_8h" local="no">dados.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structESTADO_1ab56f0f1be16954d3768b4174d14c087d" prot="public" static="no" mutable="no">
-        <type><ref refid="bot_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
+        <type><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
         <definition>CASA ESTADO::tab[8][8]</definition>
         <argsstring>[8][8]</argsstring>
         <name>tab</name>
@@ -15,7 +15,7 @@
 <para>O tabuleiro </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="44" column="1" bodyfile="bot.h" bodystart="44" bodyend="-1"/>
+        <location file="dados.h" line="43" column="1" bodyfile="dados.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structESTADO_1a4896a5c5c1f40b43fb795623327e3f47" prot="public" static="no" mutable="no">
         <type><ref refid="structCOORDENADA" kindref="compound">COORDENADA</ref></type>
@@ -28,10 +28,10 @@
 <para>A coordenada da última jogada </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="46" column="1" bodyfile="bot.h" bodystart="46" bodyend="-1"/>
+        <location file="dados.h" line="45" column="1" bodyfile="dados.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" prot="public" static="no" mutable="no">
-        <type><ref refid="bot_8h_1a94c221d29a1760f008b7834093259b7d" kindref="member">JOGADAS</ref></type>
+        <type><ref refid="dados_8h_1a94c221d29a1760f008b7834093259b7d" kindref="member">JOGADAS</ref></type>
         <definition>JOGADAS ESTADO::jogadas</definition>
         <argsstring></argsstring>
         <name>jogadas</name>
@@ -41,7 +41,7 @@
 <para>As jogadas </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="48" column="1" bodyfile="bot.h" bodystart="48" bodyend="-1"/>
+        <location file="dados.h" line="47" column="1" bodyfile="dados.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structESTADO_1a261495728744647e618b4e623f5a4b7a" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
 <para>O número das jogadas, usado no prompt </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="50" column="1" bodyfile="bot.h" bodystart="50" bodyend="-1"/>
+        <location file="dados.h" line="49" column="1" bodyfile="dados.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -67,7 +67,7 @@
 <para>O jogador atual </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="52" column="1" bodyfile="bot.h" bodystart="52" bodyend="-1"/>
+        <location file="dados.h" line="51" column="1" bodyfile="dados.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structESTADO_1abe6faacdd6111160bf9a354f44b95b38" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -80,7 +80,7 @@
 <para>O número de comando, usado no prompt </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="54" column="1" bodyfile="bot.h" bodystart="54" bodyend="-1"/>
+        <location file="dados.h" line="53" column="1" bodyfile="dados.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structESTADO_1ab58bf7ac469c4b021bed1daba7d8e836" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -93,7 +93,7 @@
 <para>O número de jogadas ocorridas aquando da utilização do comando pos </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="56" column="1" bodyfile="bot.h" bodystart="56" bodyend="-1"/>
+        <location file="dados.h" line="55" column="1" bodyfile="dados.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structESTADO_1a6af31484b3d5ef0baa84eae954413c68" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -106,7 +106,7 @@
 <para>O jogador atual aquando da utilização do comando pos </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="bot.h" line="58" column="1" bodyfile="bot.h" bodystart="58" bodyend="-1"/>
+        <location file="dados.h" line="57" column="1" bodyfile="dados.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -137,7 +137,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="bot.h" line="42" column="1" bodyfile="bot.h" bodystart="42" bodyend="59"/>
+    <location file="dados.h" line="41" column="1" bodyfile="dados.h" bodystart="41" bodyend="58"/>
     <listofallmembers>
       <member refid="structESTADO_1afae43b87a488fad0f2b56a18bad31d18" prot="public" virt="non-virtual"><scope>ESTADO</scope><name>jogadas</name></member>
       <member refid="structESTADO_1a5dd28e2e68b7aef2b6b7ea88e02eff58" prot="public" virt="non-virtual"><scope>ESTADO</scope><name>jogador_atual</name></member>

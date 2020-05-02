@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['proximo',['proximo',['../structnodo.html#aaaabdcb6641ddcdac8990402242b154a',1,'nodo::proximo()'],['../bot_8h.html#ad9380152361127432c55c1c6067e05ae',1,'proximo():&#160;bot.c']]]
+  ['remove_5fcabeca',['remove_cabeca',['../listas_8h.html#a9026a681a68322b5ec7f07137b864cbd',1,'listas.c']]]
 ];

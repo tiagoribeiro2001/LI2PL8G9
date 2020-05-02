@@ -13,6 +13,87 @@
   <component name="ChangeListManager">
     <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/Doxyfile.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/bot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/bot.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/bot.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Progress/count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/bot.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/bot.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/bot.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/doc/bot_8c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/doc/bot_8h.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/doc/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/doc/main_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/main_8c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/doc/structCOORDENADA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/structCOORDENADA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/doc/structESTADO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/structESTADO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/doc/structJOGADA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/structJOGADA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/doc/structnodo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/structnodo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/bot_8h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/bot_8h_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/globals_enum.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/globals_enum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/globals_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/globals_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/globals_type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_f.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/enums_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/enums_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/files_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/typedefs_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/typedefs_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/search/typedefs_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/typedefs_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/structCOORDENADA.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/structCOORDENADA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/structESTADO.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/structESTADO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/structJOGADA.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/structJOGADA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/html/structnodo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/structnodo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/latex/bot_8h.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/files.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/refman.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/latex/structCOORDENADA.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/structCOORDENADA.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/latex/structESTADO.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/structESTADO.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/latex/structESTADO.tex.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/latex/structJOGADA.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/structJOGADA.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/latex/structnodo.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/structnodo.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +202,7 @@
       <workItem from="1588338985454" duration="1722000" />
       <workItem from="1588343285728" duration="7000" />
       <workItem from="1588427820748" duration="8090000" />
+      <workItem from="1588457616593" duration="2980000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>

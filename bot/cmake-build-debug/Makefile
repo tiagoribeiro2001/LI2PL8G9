@@ -123,32 +123,113 @@ bot/fast:
 	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/build
 .PHONY : bot/fast
 
-bot.o: bot.c.o
+dados.o: dados.c.o
 
-.PHONY : bot.o
+.PHONY : dados.o
 
 # target to build an object file
-bot.c.o:
-	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/bot.c.o
-.PHONY : bot.c.o
+dados.c.o:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/dados.c.o
+.PHONY : dados.c.o
 
-bot.i: bot.c.i
+dados.i: dados.c.i
 
-.PHONY : bot.i
+.PHONY : dados.i
 
 # target to preprocess a source file
-bot.c.i:
-	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/bot.c.i
-.PHONY : bot.c.i
+dados.c.i:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/dados.c.i
+.PHONY : dados.c.i
 
-bot.s: bot.c.s
+dados.s: dados.c.s
 
-.PHONY : bot.s
+.PHONY : dados.s
 
 # target to generate assembly for a file
-bot.c.s:
-	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/bot.c.s
-.PHONY : bot.c.s
+dados.c.s:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/dados.c.s
+.PHONY : dados.c.s
+
+interface.o: interface.c.o
+
+.PHONY : interface.o
+
+# target to build an object file
+interface.c.o:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/interface.c.o
+.PHONY : interface.c.o
+
+interface.i: interface.c.i
+
+.PHONY : interface.i
+
+# target to preprocess a source file
+interface.c.i:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/interface.c.i
+.PHONY : interface.c.i
+
+interface.s: interface.c.s
+
+.PHONY : interface.s
+
+# target to generate assembly for a file
+interface.c.s:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/interface.c.s
+.PHONY : interface.c.s
+
+listas.o: listas.c.o
+
+.PHONY : listas.o
+
+# target to build an object file
+listas.c.o:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/listas.c.o
+.PHONY : listas.c.o
+
+listas.i: listas.c.i
+
+.PHONY : listas.i
+
+# target to preprocess a source file
+listas.c.i:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/listas.c.i
+.PHONY : listas.c.i
+
+listas.s: listas.c.s
+
+.PHONY : listas.s
+
+# target to generate assembly for a file
+listas.c.s:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/listas.c.s
+.PHONY : listas.c.s
+
+logica.o: logica.c.o
+
+.PHONY : logica.o
+
+# target to build an object file
+logica.c.o:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/logica.c.o
+.PHONY : logica.c.o
+
+logica.i: logica.c.i
+
+.PHONY : logica.i
+
+# target to preprocess a source file
+logica.c.i:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/logica.c.i
+.PHONY : logica.c.i
+
+logica.s: logica.c.s
+
+.PHONY : logica.s
+
+# target to generate assembly for a file
+logica.c.s:
+	$(MAKE) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/logica.c.s
+.PHONY : logica.c.s
 
 main.o: main.c.o
 
@@ -186,9 +267,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bot"
 	@echo "... edit_cache"
-	@echo "... bot.o"
-	@echo "... bot.i"
-	@echo "... bot.s"
+	@echo "... dados.o"
+	@echo "... dados.i"
+	@echo "... dados.s"
+	@echo "... interface.o"
+	@echo "... interface.i"
+	@echo "... interface.s"
+	@echo "... listas.o"
+	@echo "... listas.i"
+	@echo "... listas.s"
+	@echo "... logica.o"
+	@echo "... logica.i"
+	@echo "... logica.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

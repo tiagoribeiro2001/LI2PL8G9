@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "bot.h"
+#include "dados.h"
+#include "interface.h"
+#include "logica.h"
 
 int main(int argc, char *argv[]) {
     if (argc == 3) {

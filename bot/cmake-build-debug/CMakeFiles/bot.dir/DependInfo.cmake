@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/tiago/CLionProjects/LI2/bot/bot.c" "/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles/bot.dir/bot.c.o"
+  "/home/tiago/CLionProjects/LI2/bot/dados.c" "/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles/bot.dir/dados.c.o"
+  "/home/tiago/CLionProjects/LI2/bot/interface.c" "/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles/bot.dir/interface.c.o"
+  "/home/tiago/CLionProjects/LI2/bot/listas.c" "/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles/bot.dir/listas.c.o"
+  "/home/tiago/CLionProjects/LI2/bot/logica.c" "/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles/bot.dir/logica.c.o"
   "/home/tiago/CLionProjects/LI2/bot/main.c" "/home/tiago/CLionProjects/LI2/bot/cmake-build-debug/CMakeFiles/bot.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
