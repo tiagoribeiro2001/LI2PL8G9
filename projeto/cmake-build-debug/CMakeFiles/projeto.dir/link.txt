@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/projeto.dir/main.c.o CMakeFiles/projeto.dir/dados.c.o CMakeFiles/projeto.dir/interface.c.o CMakeFiles/projeto.dir/logica.c.o CMakeFiles/projeto.dir/listas.c.o  -o projeto -lm 
