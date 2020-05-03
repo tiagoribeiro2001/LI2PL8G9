@@ -53,18 +53,7 @@ void guardar_tabuleiro(char *nome, ESTADO *e){
     fclose(ficheiro);
 }
 
-void ler_jogadas(FILE* f, int num_jogadas, ESTADO* e) {
-    char col1[2], lin1[2], col2[2], lin2[2];
-    for (int k = 0; k < obter_numero_de_jogadas(e)-1; k++) {
-        if (fscanf(f, "%*c%*c%*c%*c") == 4) {};
-        if (fscanf(f, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2) == 4) {};
-        COORDENADA coord1 = {*col1 - 'a', (*lin1 - '1')};
-        COORDENADA coord2 = {*col2 - 'a', (*lin2 - '1')};
-        alterar_jogadas_jog1(e, k, coord1);
-        alterar_jogadas_jog2(e, k, coord2);
-        if (fscanf(f, "%*c") == 1) {};
-    }
-}
+
 
 void ler_tabuleiro(char *nome, ESTADO *e) {
     FILE *ficheiro = fopen(nome, "r");
@@ -106,9 +95,25 @@ void ler_tabuleiro(char *nome, ESTADO *e) {
         if (fscanf(ficheiro, "%*c") == 1) {};
         if (obter_numero_de_jogadas(e) != 0) {
             if (obter_jogador_atual(e) == 1) {
-                ler_jogadas(ficheiro, obter_numero_de_jogadas(e), e);
+                for (int i = 0; i < obter_numero_de_jogadas(e); i++) {
+                    if (fscanf(ficheiro, "%*c%*c%*c%*c") == 4) {};
+                    if (fscanf(ficheiro, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2) == 4) {};
+                    COORDENADA coord1 = {*col1 - 'a', (*lin1 - '1')};
+                    COORDENADA coord2 = {*col2 - 'a', (*lin2 - '1')};
+                    alterar_jogadas_jog1(e, i, coord1);
+                    alterar_jogadas_jog2(e, i, coord2);
+                    if (fscanf(ficheiro, "%*c") == 1) {};
+                }
             } else {
-                ler_jogadas(ficheiro, obter_numero_de_jogadas(e)-1, e);
+                for (int k = 0; k < obter_numero_de_jogadas(e)-1; k++) {
+                    if (fscanf(ficheiro, "%*c%*c%*c%*c") == 4) {};
+                    if (fscanf(ficheiro, "%[a-h]%[1-8] %[a-h]%[1-8]", col1, lin1, col2, lin2) == 4) {};
+                    COORDENADA coord1 = {*col1 - 'a', (*lin1 - '1')};
+                    COORDENADA coord2 = {*col2 - 'a', (*lin2 - '1')};
+                    alterar_jogadas_jog1(e, k, coord1);
+                    alterar_jogadas_jog2(e, k, coord2);
+                    if (fscanf(ficheiro, "%*c") == 1) {};
+                }
                 if (fscanf(ficheiro, "%*c%*c%*c%*c") == 4) {};
                 if (fscanf(ficheiro, "%[a-h]%[1-8]", col1, lin1) == 2) {};
                 COORDENADA coord1 = {*col1 - 'a', (*lin1 - '1')};

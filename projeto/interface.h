@@ -5,8 +5,8 @@ Funções utilizadas na interface do jogo
 #ifndef PROJETO_INTERFACE_H
 #define PROJETO_INTERFACE_H
 
-#include <stdio.h>
 #include "dados.h"
+
 /**
 \brief Imprime o tabuleiro
 @param e Apontador para o estado
@@ -62,13 +62,5 @@ void congratula_jogador (ESTADO *e);
 \brief Imprime a mensagem que indica que a jogada introduzida é inválida
 */
 void jogada_invalida();
-
-/**
-\brief Lê linhas de jogadas de um ficheiro
-@param f Apontador para o ficheiro
-@param num_jogadas Número de jogadas a ler
-@param e Apontador para o Estado
-*/
-void ler_jogadas(FILE* f, int num_jogadas, ESTADO* e);
 
 #endif //PROJETO_INTERFACE_H
