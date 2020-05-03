@@ -13,87 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="629e1b8a-3983-482e-a8a7-370f67154411" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoLI2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/Doxyfile.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/bot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/bot.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/bot.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Progress/count.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/bot.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/bot.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/bot.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/cmake-build-debug/bot.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/doc/bot_8c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/doc/bot_8h.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/doc/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/doc/main_8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/main_8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/doc/structCOORDENADA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/structCOORDENADA.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/doc/structESTADO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/structESTADO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/doc/structJOGADA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/structJOGADA.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/doc/structnodo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/doc/structnodo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/bot_8h.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/bot_8h_source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/files.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/globals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/globals_enum.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/globals_enum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/globals_func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/globals_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/globals_type.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/menudata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_b.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_c.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/all_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/all_f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/enums_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/enums_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/files_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/functions_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/functions_a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/searchdata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/typedefs_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/typedefs_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/search/typedefs_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/search/typedefs_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/structCOORDENADA.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/structCOORDENADA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/structESTADO.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/structESTADO.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/structJOGADA.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/structJOGADA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/html/structnodo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/html/structnodo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/latex/bot_8h.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/files.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/refman.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/latex/structCOORDENADA.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/structCOORDENADA.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/latex/structESTADO.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/structESTADO.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/latex/structESTADO.tex.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/latex/structJOGADA.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/structJOGADA.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/latex/structnodo.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/latex/structnodo.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bot/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../bot/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bot/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bot" />
   </component>
   <component name="RunManager">
     <configuration name="TrabalhoLI2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TrabalhoLI2" TARGET_NAME="TrabalhoLI2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TrabalhoLI2" RUN_TARGET_NAME="TrabalhoLI2">
@@ -202,7 +124,8 @@
       <workItem from="1588338985454" duration="1722000" />
       <workItem from="1588343285728" duration="7000" />
       <workItem from="1588427820748" duration="8090000" />
-      <workItem from="1588457616593" duration="2980000" />
+      <workItem from="1588457616593" duration="3345000" />
+      <workItem from="1588497525486" duration="437000" />
     </task>
     <task id="LOCAL-00001" summary="Main correta">
       <created>1584098118079</created>
@@ -620,26 +543,26 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="100" y="127" width="1720" height="791" key="DiffContextDialog/0.27.1920.991@0.27.1920.991" timestamp="1587136166697" />
-    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1588428098948">
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl" timestamp="1588497959599">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1588428098948" />
-    <state width="1874" height="265" key="GridCell.Tab.0.bottom" timestamp="1588436614935">
+    <state x="743" y="280" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.991@0.27.1920.991" timestamp="1588497959599" />
+    <state width="1874" height="265" key="GridCell.Tab.0.bottom" timestamp="1588461602720">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="265" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1588436614935" />
-    <state width="1874" height="265" key="GridCell.Tab.0.center" timestamp="1588436614932">
+    <state width="1874" height="265" key="GridCell.Tab.0.bottom/0.27.1920.991@0.27.1920.991" timestamp="1588461602720" />
+    <state width="1874" height="265" key="GridCell.Tab.0.center" timestamp="1588461602719">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="265" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1588436614932" />
-    <state width="1874" height="265" key="GridCell.Tab.0.left" timestamp="1588436614931">
+    <state width="1874" height="265" key="GridCell.Tab.0.center/0.27.1920.991@0.27.1920.991" timestamp="1588461602719" />
+    <state width="1874" height="265" key="GridCell.Tab.0.left" timestamp="1588461602719">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="265" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1588436614931" />
-    <state width="1874" height="265" key="GridCell.Tab.0.right" timestamp="1588436614934">
+    <state width="1874" height="265" key="GridCell.Tab.0.left/0.27.1920.991@0.27.1920.991" timestamp="1588461602719" />
+    <state width="1874" height="265" key="GridCell.Tab.0.right" timestamp="1588461602720">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state width="1874" height="265" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1588436614934" />
+    <state width="1874" height="265" key="GridCell.Tab.0.right/0.27.1920.991@0.27.1920.991" timestamp="1588461602720" />
     <state width="1874" height="308" key="GridCell.Tab.1.bottom" timestamp="1587826793359">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
@@ -660,10 +583,10 @@
       <screen x="0" y="27" width="1920" height="991" />
     </state>
     <state x="803" y="440" width="303" height="171" key="VCS.ChangelistChooser/0.27.1920.991@0.27.1920.991" timestamp="1584098271549" />
-    <state x="613" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1588343286019">
+    <state x="613" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1588497526074">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
-    <state x="613" y="351" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1588343286019" />
+    <state x="613" y="351" key="com.intellij.ide.util.TipDialog/0.27.1920.991@0.27.1920.991" timestamp="1588497526074" />
     <state x="852" y="275" width="432" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584722478592">
       <screen x="0" y="27" width="1920" height="991" />
     </state>
